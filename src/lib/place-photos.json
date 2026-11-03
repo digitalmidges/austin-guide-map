@@ -1,0 +1,401 @@
+{
+  "zilker-boats": {
+    "src": "/images/venues/zilker-boats.jpg",
+    "credit": {
+      "source": "https://www.zilkerboats.com/plan-your-visit-1",
+      "credit": "Photo: Zilker Park Boat Rentals (official website)"
+    }
+  },
+  "ski-shores": {
+    "src": "/images/venues/ski-shores.jpg",
+    "credit": {
+      "source": "https://www.skishorescafe.com/",
+      "credit": "Photo: Ski Shores Cafe / Justin Cook (official website)"
+    }
+  },
+  "interstellar": {
+    "src": "/images/venues/interstellar.jpg",
+    "credit": {
+      "source": "https://theinterstellarbbq.com/",
+      "credit": "Photo: InterStellar BBQ (official website)"
+    }
+  },
+  "leroy": {
+    "src": "/images/venues/leroy.jpg",
+    "credit": {
+      "source": "https://leroyandlewisbbq.com/",
+      "credit": "Photo: LeRoy and Lewis (official website)"
+    }
+  },
+  "bouldin": {
+    "src": "/images/venues/bouldin.jpg",
+    "credit": {
+      "source": "https://lamar.bouldinacres.com/",
+      "credit": "Photo: Bouldin Acres (official website)"
+    }
+  },
+  "pins": {
+    "src": "/images/venues/pins.jpg",
+    "credit": {
+      "source": "https://www.pinsbar.com/locations/austin",
+      "credit": "Photo: Pins Mechanical Co. (official website)"
+    }
+  },
+  "pinstack": {
+    "src": "/images/venues/pinstack.jpg",
+    "credit": {
+      "source": "https://pinstackbowl.com/locations/austin-texas/",
+      "credit": "Photo: PINSTACK (official website)"
+    }
+  },
+  "main-event": {
+    "src": "/images/venues/main-event.jpg",
+    "credit": {
+      "source": "https://www.mainevent.com/locations/texas/austin/",
+      "credit": "Photo: Main Event (official website)"
+    }
+  },
+  "topgolf": {
+    "src": "/images/venues/topgolf.jpg",
+    "credit": {
+      "source": "https://topgolf.com/us/austin/",
+      "credit": "Photo: Topgolf (official website)"
+    }
+  },
+  "petes": {
+    "src": "/images/venues/petes.jpg",
+    "credit": {
+      "source": "https://www.petesduelingpianobar.com/austin/",
+      "credit": "Photo: Pete’s Dueling Piano Bar (official website)"
+    }
+  },
+  "cota": {
+    "src": "/images/venues/cota.jpg",
+    "credit": {
+      "source": "https://commons.wikimedia.org/wiki/File:Tower_at_Circuit_of_the_Americas.jpg",
+      "credit": "Photo: Earl McGehee / Wikimedia Commons · CC BY-SA 3.0 · resized"
+    }
+  },
+  "meanwhile": {
+    "src": "/images/venues/meanwhile.jpg",
+    "credit": {
+      "source": "https://www.meanwhilebeer.com/",
+      "credit": "Photo: Meanwhile Brewing (official website)"
+    }
+  },
+  "mozarts": {
+    "src": "/images/venues/mozarts.jpg",
+    "credit": {
+      "source": "https://mozartscoffee.com/blogs/blog/your-office-away-from-the-office-with-free-wifi",
+      "credit": "Photo: Mozart’s Coffee Roasters (official website)"
+    }
+  },
+  "ben-and-lynn-s": {
+    "src": "/images/venues/food-ben-and-lynn-s.jpg",
+    "credit": {
+      "source": "https://www.benandlynns.com/",
+      "credit": "Photo: Ben & Lynn's (official website; resized)"
+    }
+  },
+  "sugarwolf": {
+    "src": "/images/venues/food-sugarwolf.jpg",
+    "credit": {
+      "source": "https://www.sugarwolfbakery.com/",
+      "credit": "Photo: Sugarwolf (official website; resized)"
+    }
+  },
+  "ema-austin": {
+    "src": "/images/venues/food-ema-austin.jpg",
+    "credit": {
+      "source": "https://www.emarestaurants.com/austin",
+      "credit": "Photo: Ēma Austin / Chase Daniel (official website; resized)"
+    }
+  },
+  "fogo-de-chao-brazilian-steakhouse": {
+    "src": "/images/venues/food-fogo-de-chao-brazilian-steakhouse.jpg",
+    "credit": {
+      "source": "https://fogodechao.com/location/austin/",
+      "credit": "Photo: Fogo de Chão Brazilian Steakhouse (official website; resized)"
+    }
+  },
+  "north-italia": {
+    "src": "/images/venues/food-north-italia.jpg",
+    "credit": {
+      "source": "https://www.northitalia.com/locations/austin-tx-the-domain/",
+      "credit": "Photo: North Italia (official website; resized)"
+    }
+  },
+  "two-hands": {
+    "src": "/images/venues/food-two-hands.jpg",
+    "credit": {
+      "source": "https://www.twohandshospitality.com/location/two-hands-austin/",
+      "credit": "Photo: Two Hands (official website; resized)"
+    }
+  },
+  "nadc-burger": {
+    "src": "/images/venues/food-nadc-burger.jpg",
+    "credit": {
+      "source": "https://www.nadcburger.com/",
+      "credit": "Photo: NADC Burger (official website; resized)"
+    }
+  },
+  "phoenicia": {
+    "src": "/images/venues/food-phoenicia.jpg",
+    "credit": {
+      "source": "https://phoeniciatx.com/",
+      "credit": "Photo: Phoenicia Bakery & Deli (official website; resized)"
+    }
+  },
+  "desnudo-coffee-downtown": {
+    "src": "/images/venues/food-desnudo-coffee-downtown.jpg",
+    "credit": {
+      "source": "https://desnudocoffee.com/pages/locations",
+      "credit": "Photo: Desnudo Coffee: Downtown (official website; resized)"
+    }
+  },
+  "mezzeme": {
+    "src": "/images/venues/food-mezzeme.jpg",
+    "credit": {
+      "source": "https://www.mezzeme.com/?y_source=1_OTMxODc4My03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "credit": "Photo: MezzeMe (official website; resized)"
+    }
+  },
+  "kg": {
+    "src": "/images/venues/food-kg.jpg",
+    "credit": {
+      "source": "https://www.kgbbq.com/",
+      "credit": "Photo: KG BBQ (official website; resized)"
+    }
+  },
+  "easy-tiger-the-linc": {
+    "src": "/images/venues/food-easy-tiger-the-linc.jpg",
+    "credit": {
+      "source": "https://www.easytigeraustin.com/",
+      "credit": "Photo: Easy Tiger - The Linc (official website; resized)"
+    }
+  },
+  "another-broken-egg-cafe": {
+    "src": "/images/venues/food-another-broken-egg-cafe.jpg",
+    "credit": {
+      "source": "https://www.anotherbrokenegg.com/",
+      "credit": "Photo: Another Broken Egg Cafe (official chain menu photography; resized)"
+    }
+  },
+  "machi-sushi-all-you-can-eat-austin": {
+    "src": "/images/venues/food-machi-sushi-all-you-can-eat-austin.jpg",
+    "credit": {
+      "source": "https://machisushiaustin.com/",
+      "credit": "Photo: Machi Sushi All You Can Eat (Austin) (official website; resized)"
+    }
+  },
+  "jewboy-burgers": {
+    "src": "/images/venues/food-jewboy-burgers.jpg",
+    "credit": {
+      "source": "https://jewboyburgers.com/",
+      "credit": "Photo: Jewboy Burgers (official website; resized)"
+    }
+  },
+  "jinya-ramen-bar-austin": {
+    "src": "/images/venues/food-jinya-ramen-bar-austin.jpg",
+    "credit": {
+      "source": "https://www.jinyaramenbar.com/locations/austin/",
+      "credit": "Photo: JINYA Ramen Bar (official chain menu photography; resized)"
+    }
+  },
+  "zeds-real-fruit-ice-cream": {
+    "src": "/images/venues/food-zeds-real-fruit-ice-cream.jpg",
+    "credit": {
+      "source": "https://www.zedsicecream.com/eastside",
+      "credit": "Photo: Zeds Real Fruit Ice Cream (official website; resized)"
+    }
+  },
+  "saltgrass-steak-house": {
+    "src": "/images/venues/food-saltgrass-steak-house.jpg",
+    "credit": {
+      "source": "https://www.saltgrass.com/location/saltgrass-austin/",
+      "credit": "Photo: Saltgrass Steak House (official chain food photography; resized)"
+    }
+  },
+  "perla-s": {
+    "src": "/images/venues/food-perla-s.jpg",
+    "credit": {
+      "source": "https://perlasaustin.com/",
+      "credit": "Photo: Perla's (official website; resized)"
+    }
+  },
+  "sangam-chettinad-indian-cuisine": {
+    "src": "/images/venues/food-sangam-chettinad-indian-cuisine.jpg",
+    "credit": {
+      "source": "https://www.sangamchettinad.com/menu/",
+      "credit": "Photo: Sangam Chettinad Indian Cuisine (official website; resized)"
+    }
+  },
+  "the-one-pho": {
+    "src": "/images/venues/food-the-one-pho.jpg",
+    "credit": {
+      "source": "https://order.toasttab.com/online/the-one-pho-10721-research-blvd-b110",
+      "credit": "Photo: The One Pho (official Toast ordering page; resized)"
+    }
+  },
+  "gourdough-s-big-fat-donuts-and-coffee": {
+    "src": "/images/venues/food-gourdough-s-big-fat-donuts-and-coffee.jpg",
+    "credit": {
+      "source": "https://gourdoughs.com/",
+      "credit": "Photo: Gourdough's Big Fat Donuts & Coffee (official website; resized)"
+    }
+  },
+  "swedish-hill": {
+    "src": "/images/venues/food-swedish-hill.jpg",
+    "credit": {
+      "source": "https://www.swedishhillbakery.com/westsixth",
+      "credit": "Photo: Swedish Hill / Justin Cook (official website)"
+    }
+  },
+  "tinys-milk-and-cookies-austin": {
+    "src": "/images/venues/food-tinys-milk-and-cookies-austin.jpg",
+    "credit": {
+      "source": "https://tinysmilkandcookies.com/",
+      "credit": "Photo: Tiny’s Milk & Cookies (official bakery photo)"
+    }
+  },
+  "teapioca-lounge": {
+    "src": "/images/venues/food-teapioca-lounge.jpg",
+    "credit": {
+      "source": "https://teapiocalounge.com/teapioca-arboretum-austin-boba-tea/",
+      "credit": "Photo: Teapioca Lounge Arboretum (official website)"
+    }
+  },
+  "the-lighthouse-restaurant-and-lounge": {
+    "src": "/images/venues/food-the-lighthouse-restaurant-and-lounge.jpg",
+    "credit": {
+      "source": "https://thelighthouseonthelake.com/",
+      "credit": "Photo: The Lighthouse Restaurant & Lounge (official website)"
+    }
+  },
+  "county-line-on-the-lake": {
+    "src": "/images/venues/food-county-line-on-the-lake.jpg",
+    "credit": {
+      "source": "https://countyline.com/lake-austin-tx/",
+      "credit": "Photo: County Line on the Lake (official website)"
+    }
+  },
+  "steiner-ranch-steakhouse": {
+    "src": "/images/venues/food-steiner-ranch-steakhouse.jpg",
+    "credit": {
+      "source": "https://www.steinersteakhouse.com/",
+      "credit": "Photo: Steiner Ranch Steakhouse (official website)"
+    }
+  },
+  "the-original-pancake-house": {
+    "src": "/images/venues/food-the-original-pancake-house.jpg",
+    "credit": {
+      "source": "https://www.austinoph.com/",
+      "credit": "Photo: The Original Pancake House Austin (official website)"
+    }
+  },
+  "julie-s-noodles": {
+    "src": "/images/venues/food-julie-s-noodles.jpg",
+    "credit": {
+      "source": "https://juliesnoodlesaustin.com/",
+      "credit": "Photo: Julie’s Noodles Austin (official website)"
+    }
+  },
+  "whisler-s": {
+    "src": "/images/venues/food-whisler-s.jpg",
+    "credit": {
+      "source": "https://www.whislersatx.com/",
+      "credit": "Photo: Whisler’s (official website)"
+    }
+  },
+  "aba": {
+    "src": "/images/venues/food-aba.jpg",
+    "credit": {
+      "source": "https://www.abarestaurants.com/austin",
+      "credit": "Photo: Aba / Jeff Marini (official website)"
+    }
+  },
+  "stiles": {
+    "src": "/images/venues/food-stiles.jpg",
+    "credit": {
+      "source": "https://austin.stilesswitchbbq.com/",
+      "credit": "Photo: Stiles Switch BBQ Austin (official website)"
+    }
+  },
+  "rudy-s-country-store-and-bar-b-q": {
+    "src": "/images/venues/food-rudy-s-country-store-and-bar-b-q.jpg",
+    "credit": {
+      "source": "https://rudysbbq.com/",
+      "credit": "Photo: Rudy’s Country Store and Bar-B-Q (official menu photo)"
+    }
+  },
+  "85-c-bakery-cafe-airport-blvd": {
+    "src": "/images/venues/food-85-c-bakery-cafe-airport-blvd.jpg",
+    "credit": {
+      "source": "https://www.85cbakerycafe.com/",
+      "credit": "Photo: 85°C Bakery Cafe (official chain bakery photo)"
+    }
+  },
+  "85-c-bakery-cafe-lakeline": {
+    "src": "/images/venues/food-85-c-bakery-cafe-lakeline.jpg",
+    "credit": {
+      "source": "https://www.85cbakerycafe.com/",
+      "credit": "Photo: 85°C Bakery Cafe (official chain bakery photo)"
+    }
+  },
+  "sazan-ramen": {
+    "src": "/images/venues/food-sazan-ramen.jpg",
+    "credit": {
+      "source": "https://sazanramen.com/",
+      "credit": "Photo: Sazan Ramen (official website)"
+    }
+  },
+  "flora-coffee-and-culture": {
+    "src": "/images/venues/food-flora-coffee-and-culture.jpg",
+    "credit": {
+      "source": "https://www.floracoffee.co/",
+      "credit": "Photo: Flora Coffee & Culture (official website)"
+    }
+  },
+  "las-mangonadas-3": {
+    "src": "/images/venues/food-las-mangonadas-3.jpg",
+    "credit": {
+      "source": "https://order.online/store/LasMangonadas3-1880812",
+      "credit": "Photo: Las Mangonadas #3 (restaurant ordering page)"
+    }
+  },
+  "chuy-s": {
+    "src": "/images/venues/food-chuy-s.jpg",
+    "credit": {
+      "source": "https://www.chuys.com/",
+      "credit": "Photo: Chuy’s (official chain menu photo)"
+    }
+  },
+  "dean-s-italian-steakhouse": {
+    "src": "/images/venues/food-dean-s-italian-steakhouse.jpg",
+    "credit": {
+      "source": "https://www.deanssteakhouseaustin.com/",
+      "credit": "Photo: Dean’s Italian Steakhouse Austin (official website)"
+    }
+  },
+  "bulevar-mexican-kitchen": {
+    "src": "/images/venues/food-bulevar-mexican-kitchen.jpg",
+    "credit": {
+      "source": "https://www.bulevaratx.com/",
+      "credit": "Photo: Bulevar Mexican Kitchen (official website)"
+    }
+  },
+  "ichiumi-sushi-haru-sushi": {
+    "src": "/images/venues/food-ichiumi-sushi-haru-sushi.jpg",
+    "credit": {
+      "source": "https://ichiumisushitx.com/menu/18710912",
+      "credit": "Photo: Ichi-Umi Sushi (official restaurant menu)"
+    }
+  },
+  "lumi-s-crepes": {
+    "src": "/images/venues/food-lumi-s-crepes.jpg",
+    "credit": {
+      "source": "https://order.online/store/lumi%27s-crepes-austin-26096079/?hideModal=true",
+      "credit": "Photo: Lumi’s Crepes (restaurant menu photo)"
+    }
+  }
+}

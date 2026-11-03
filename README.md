@@ -1,6 +1,6 @@
 # Austin guide
 
-A public map of Austin places, with venue photos, personal notes, category filters, and Google Maps links. No ChatGPT account is needed to view it.
+A public map of Austin places, with venue photos, public descriptions, category filters, and Google Maps links. No ChatGPT account is needed to view it.
 
 - Website: https://digitalmidges.github.io/austin-guide-map/
 - Draft editor: https://digitalmidges.github.io/austin-guide-map/editor.html
@@ -10,9 +10,9 @@ The initial release includes 72 places, including all 49 entries from the owner'
 
 ## Update the guide
 
-1. Open the draft editor. Change notes, ratings, order, photos, or map pins.
+1. Open the draft editor. Change public descriptions, order, photos, or map pins. Private notes and your personal rating stay in the local draft.
 2. **Save draft** keeps your work in this browser. It does not update the public website.
-3. Export `guide.json`. Only places marked visible are included in that publishing file.
+3. Export `guide.json`. Only places marked visible are included in that publishing file. Private notes and personal ratings are removed.
 4. Follow **Publish on GitHub**, upload the exported `guide.json` into `src/data`, and commit the replacement. GitHub requires repository write access for this step.
 5. The **Publish Austin guide** workflow rebuilds and updates the public website after a commit to `main`.
 
@@ -39,3 +39,11 @@ The Vite build uses relative URLs so photos, map styles, and the map worker work
 Venue photographs are credited in the place details and `PHOTO-SOURCES.md`. Map data and styling are described in `MAP-SOURCES.md`; location provenance is in `LOCATION-SOURCES.md`. Official venue photography is credited to its source, with no claim that it has an open license. The two 85°C locations use a clearly credited official chain product photograph.
 
 This repository contains the static public guide. It has no ChatGPT authentication, Cloudflare database, API server, credentials, or private import captures.
+
+## Private notes
+
+The legacy note field is private. It is never shown to visitors or included in public search, CSV/KML, or publication JSON. Use Public description for wording intended for visitors. Save private notes in the local draft or a private backup; never upload a private backup to this public repository. The build refuses guide data containing private notes or hidden places.
+
+## Google ratings
+
+Google stars and review counts are separate from personal ratings. Values are dated snapshots with a link to Google Maps; they are not automatically refreshed.

@@ -71,7 +71,7 @@ a { color:inherit; text-decoration:none; }
 .place-card:hover { box-shadow:0 3px 15px #263e2d0d; border-color:#b4c9ba; }
 .place-card.selected { border-color:var(--accent); box-shadow:0 0 0 2px #16756320; }
 .place-card.place-hidden { opacity:.67; }
-.place-card-button { display:block; padding:0; width:100%; height:100%; border:0; text-align:left; background:none; }
+.place-card-button { display:block; padding:0; width:100%; border:0; text-align:left; background:none; }
 .card-photo { position:relative; height:145px; background:#e7ede7; overflow:hidden; }
 .card-photo img,.detail-photo img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .25s; }
 .place-card-button:hover .card-photo img { transform:scale(1.035); }
@@ -190,3 +190,19 @@ dialog::backdrop { background:#253d3070; backdrop-filter:blur(2px); }
 .draft-message { color:#47755f; }
 .draft-error { color:#a35046; }
 @media(max-width:760px) { .draft-toolbar { margin:12px; padding:15px; }.draft-explanation p,.draft-message,.draft-error { font-size:11px; }.draft-tools { gap:7px; }.draft-tools .button { font-size:10px; padding:8px 9px; min-height:34px; } }
+
+/* Google ratings are snapshots, separate from the owner's private score. */
+.card-google-rating { padding:0 12px 12px; }
+.google-rating { margin:0 0 14px; font-size:11px; color:#5f7168; }
+.google-rating-line { display:flex; align-items:center; gap:7px; flex-wrap:wrap; line-height:1.5; }
+.google-rating-source { font-weight:600; color:#586b61; }
+.google-rating-score { display:inline-flex; align-items:center; gap:3px; color:#9a7424; font-weight:650; }
+.google-review-count { display:inline-flex; align-items:center; gap:3px; color:#397863; text-decoration:underline; text-underline-offset:2px; }
+.google-review-count:hover { color:#105c4d; }
+.google-rating-unrated { font-size:10px; color:#809086; }
+.google-rating-checked { display:block; margin-top:3px; color:#8d9b92; font-size:9px; line-height:1.4; }
+.google-rating-compact { margin:0; font-size:10px; }
+.google-rating-compact .google-rating-line { gap:5px; }
+.google-rating-compact .google-rating-checked { font-size:8px; }
+.private-note { border:1px dashed #ccd8cd; }
+@media(max-width:760px) { .card-google-rating { padding:0 12px 12px; }.google-rating-compact { font-size:9px; }.google-rating-compact .google-rating-checked { font-size:8px; } }

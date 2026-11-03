@@ -8,7 +8,7 @@ export default function GoogleRating({ place, compact = false }: { place: Place;
   const link = googleRatingLink(record);
   const checked = googleRatingCheckedLabel(record.checkedAt);
   const count = record.reviewCount?.toLocaleString('en-US');
-  const countText = count !== undefined ? `${count} ${record.reviewCount === 1 ? 'review' : 'reviews'}` : 'Read reviews';
+  const countText = record.rating === null && record.reviewCount === null ? 'View on Maps' : count !== undefined ? `${count} ${record.reviewCount === 1 ? 'review' : 'reviews'}` : 'Read reviews';
   return <div className={`google-rating ${compact ? 'google-rating-compact' : ''}`}>
     <div className="google-rating-line">
       <span className="google-rating-source">Google</span>

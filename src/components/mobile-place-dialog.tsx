@@ -24,5 +24,9 @@ export default function MobilePlaceDialog({ open, onClose, children }: { open: b
     };
   }, [open]);
 
-  return <dialog ref={ref} className="mobile-place-dialog" aria-labelledby="place-detail-title" onCancel={event => { event.preventDefault(); onClose(); }}>{children}</dialog>;
+  return <dialog ref={ref} className="mobile-place-dialog" aria-labelledby="place-detail-title" onCancel={event => { event.preventDefault(); onClose(); }} onClick={event => {
+    if (event.target !== event.currentTarget) return;
+    const rect = event.currentTarget.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) onClose();
+  }}>{children}</dialog>;
 }

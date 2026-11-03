@@ -11,6 +11,7 @@ import { assetUrl } from '@/lib/assets';
 import { downloadPrivateBackup } from '@/lib/drafts';
 import GoogleRating from './google-rating';
 import CategoryArt from './category-art';
+import { sortPlaces, type PlaceSort } from '@/lib/place-sorting';
 
 type Props = { initialGuide: GuideData; canEdit: boolean; editing?: boolean; revision?: number; onSaveDraft?: (guide: GuideData) => void | Promise<void>; onDraftChange?: (guide: GuideData) => void };
 const safeUrl = (url: string) => /^https?:\/\//i.test(url) || url.startsWith('/') ? url : undefined;
@@ -23,6 +24,7 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
   const [currentRevision, setCurrentRevision] = useState(revision);
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('All');
+  const [sort, setSort] = useState<PlaceSort>('guide');
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [fitToken, setFitToken] = useState(0);
   const [placingPin, setPlacingPin] = useState(false);
@@ -37,7 +39,8 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
   const mapPanelRef = useRef<HTMLElement>(null);
   const dirty = JSON.stringify(guide) !== savedData;
   const needsSave = dirty || currentRevision === 0;
-  const places = useMemo(() => guide.places.filter(place => (isEditor || place.included) && (category === 'All' || categoryFor(place) === category) && `${place.name} ${categoryFor(place)} ${place.area} ${place.why} ${isEditor ? place.note : ''}`.toLowerCase().includes(query.trim().toLowerCase())), [guide.places, isEditor, category, query]);
+  const filteredPlaces = useMemo(() => guide.places.filter(place => (isEditor || place.included) && (category === 'All' || categoryFor(place) === category) && `${place.name} ${categoryFor(place)} ${place.area} ${place.why} ${isEditor ? place.note : ''}`.toLowerCase().includes(query.trim().toLowerCase())), [guide.places, isEditor, category, query]);
+  const places = useMemo(() => sortPlaces(filteredPlaces, sort), [filteredPlaces, sort]);
   const pinCount = places.filter(place => locationFor(place)).length;
   const selected = places.find(place => place.id === selectedId) || null;
   const selectedIndex = selected ? guide.places.findIndex(place => place.id === selected.id) : -1;
@@ -59,6 +62,7 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
     setSaveError('');
   }
   function movePlace(id: string, direction: number) {
+    setSort('guide');
     setGuide(current => {
       const next = [...current.places];
       const index = next.findIndex(place => place.id === id);
@@ -96,7 +100,7 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
     setSelectedId(id);
 
   }
-  function resetFilters() { setQuery(''); setCategory('All'); setFitToken(token => token + 1); }
+  function resetFilters() { setQuery(''); setCategory('All'); setSort('guide'); setFitToken(token => token + 1); }
   function selectPlace(id: string) {
     setSelectedId(id);
     if (window.matchMedia('(max-width: 760px)').matches) mapPanelRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -132,7 +136,7 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
       {saveError && <div className="save-error" role="alert">{saveError}<button onClick={downloadDraft}>Download private backup</button></div>}
       <div className="explore-layout">
         <section ref={mapPanelRef} className={`map-panel ${placingPin ? 'pin-placement' : ''}`} aria-label="Austin places map">
-          <MapView places={places} selectedId={selected?.id || null} onSelect={selectFromMap} fitToken={fitToken} onPick={isEditor && placingPin && selected ? (lat, lng) => { updatePlace(selected.id, { lat, lng }); setPlacingPin(false); setToast('Pin moved in your draft. Save draft to keep it on this device.'); } : undefined} />
+          <MapView places={filteredPlaces} selectedId={selected?.id || null} onSelect={selectFromMap} fitToken={fitToken} onPick={isEditor && placingPin && selected ? (lat, lng) => { updatePlace(selected.id, { lat, lng }); setPlacingPin(false); setToast('Pin moved in your draft. Save draft to keep it on this device.'); } : undefined} />
           <div className="map-hint"><span className="live-dot" />{pinCount} places on the map</div>
           {placingPin && <div className="pin-instruction" role="status"><span>Click the map to place the pin.</span><button onClick={() => setPlacingPin(false)}>Cancel</button></div>}
           <button className="button fit-map-button" onClick={() => setFitToken(token => token + 1)}><MapIcon size={14} />Show all pins</button>
@@ -140,7 +144,7 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
           {detail}
         </section>
         <section className="browse-panel" aria-label="Browse places">
-          <div className="browse-heading"><div><h2>{category === 'All' ? 'Find your next stop' : category}</h2><p>{places.length} {places.length === 1 ? 'place' : 'places'}{query ? ` matching “${query}”` : ' to explore'}{isEditor && guide.places.some(place => !place.included) && ` · ${guide.places.filter(place => !place.included).length} hidden in editor`}</p></div>{(query || category !== 'All') && <button className="clear-filters" onClick={resetFilters}>Reset</button>}</div>
+          <div className="browse-heading"><div><h2>{category === 'All' ? 'Find your next stop' : category}</h2><p>{places.length} {places.length === 1 ? 'place' : 'places'}{query ? ` matching “${query}”` : ' to explore'}{isEditor && guide.places.some(place => !place.included) && ` · ${guide.places.filter(place => !place.included).length} hidden in editor`}</p></div><div className="browse-controls"><label className="sort-control"><span>Sort by</span><select value={sort} onChange={event => setSort(event.target.value as PlaceSort)}><option value="guide">Guide order</option><option value="rating-desc">Google rating (highest)</option><option value="rating-asc">Google rating (lowest)</option><option value="name-asc">Name (A–Z)</option><option value="name-desc">Name (Z–A)</option></select></label>{(query || category !== 'All' || sort !== 'guide') && <button className="clear-filters" onClick={resetFilters}>Reset</button>}</div></div>
           <div className="photo-grid">{places.map(place => <article key={place.id} className={`place-card ${selected?.id === place.id ? 'selected' : ''} ${!place.included ? 'place-hidden' : ''}`}><button className="place-card-button" aria-label={`Explore ${place.name}`} aria-pressed={selected?.id === place.id} onClick={() => selectPlace(place.id)}><div className="card-photo"><PlacePhoto place={place} compact />{place.pinned && <span className="card-favorite" aria-label="Favorite"><Heart size={13} fill="currentColor" /></span>}{!place.included && <span className="card-hidden">Hidden</span>}</div><div className="card-copy"><span className="card-category" style={{ color: CATEGORY_COLORS[categoryFor(place)] }}><CategoryIcon category={categoryFor(place)} size={11} />{categoryFor(place)}</span><h3>{place.name}</h3><div className="card-meta"><span><MapPin size={11} />{place.area || 'Austin, TX'}</span>{isEditor && place.rating ? <span className="card-rating" title="Your private rating"><Star size={11} fill="currentColor" />{place.rating}</span> : null}</div></div></button><div className="card-google-rating"><GoogleRating place={place} compact /></div></article>)}</div>
           {places.length === 0 && <div className="empty-state"><Search size={25} /><h3>No places found</h3><p>Try a different place, area, or category.</p><button className="button" onClick={resetFilters}>Clear filters</button></div>}
         </section>

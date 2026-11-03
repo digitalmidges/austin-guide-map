@@ -63,7 +63,7 @@ Checked November 3, 2026, in the user-visible Google Maps listings. These values
 | Enchanted Rock | 4.8 | 8177 | [Google Maps](https://www.google.com/maps/place/Enchanted+Rock+State+Natural+Area/@30.4951229,-98.8199993,17z/data=!4m8!3m7!1s0x865bec1584eb84e7:0xf758d5a9830ee484!8m2!3d30.4951229!4d-98.8199993!9m1!1b1!16s%2Fg%2F1hc0gs3q4) |
 | McKinney Falls State Park | 4.6 | 8217 | [Google Maps](https://www.google.com/maps/place/McKinney+Falls+State+Park/@30.1836487,-97.7221944,17z/data=!4m8!3m7!1s0x8644b3be3538b38b:0xfb83098f6001c693!8m2!3d30.1836487!4d-97.7221944!9m1!1b1!16s%2Fm%2F02qbk6z) |
 | Lake Travis | 4.7 | 775 | [Google Maps](https://www.google.com/maps/place/Lake+Travis/@30.4637255,-98.0646404,11z/data=!4m8!3m7!1s0x865b234b3c3d1495:0x74e585eef7396b82!8m2!3d30.4205138!4d-97.9102647!9m1!1b1!16zL20vMDE2NXRx) |
-| Ski Shores Cafe | 4.3 | 2203 | [Google Maps](https://www.google.com/maps/search/) |
+| Ski Shores Cafe | 4.3 | 2203 | [Google Maps](https://www.google.com/maps/search/?api=1&query=Ski%20Shores%20Cafe%2C%20Lake%20Austin%2C%20Texas) |
 | Leroy and Lewis Barbecue | 4.4 | 2579 | [Google Maps](https://www.google.com/maps/place/Leroy+and+Lewis+Barbecue/@30.2098566,-97.7873058,17z/data=!4m8!3m7!1s0x8644b495681d7af5:0x91a8de87bc0c5716!8m2!3d30.2098566!4d-97.7873058!9m1!1b1!16s%2Fg%2F11dxj0bvcg) |
 | Bouldin Acres | 4.5 | 1215 | [Google Maps](https://www.google.com/maps/place/Bouldin+Acres/data=!4m7!3m6!1s0x8644b5a7f6162b03:0x616ba830e701a29c!8m2!3d30.2482149!4d-97.7686448!16s%2Fg%2F11fnvwfvwt!19sChIJAysW9qe1RIYRnKIB5zCoa2E) |
 | Pins Mechanical Co. | 4.4 | 431 | [Google Maps](https://www.google.com/maps/place/Pins+Mechanical+Co./@30.2183566,-97.7649238,17z/data=!4m8!3m7!1s0x8644b5002897c639:0x5e76de555fb4e911!8m2!3d30.2183566!4d-97.7649238!9m1!1b1!16s%2Fg%2F11y8flbznj) |
@@ -75,4 +75,4 @@ Checked November 3, 2026, in the user-visible Google Maps listings. These values
 | Thinkery | 4.6 | 5720 | [Google Maps](https://www.google.com/maps/place/Thinkery/@30.297417,-97.704971,17z/data=!4m8!3m7!1s0x8644b5089ad5aa81:0x505e64e261623ea7!8m2!3d30.297417!4d-97.704971!9m1!1b1!16s%2Fm%2F0k3rfw4) |
 | Circuit of The Americas | 4.6 | 18076 | [Google Maps](https://www.google.com/maps/place/Circuit+of+The+Americas/@30.1358413,-97.6383332,17z/data=!4m8!3m7!1s0x8644b03ad152eaf9:0x8ae827dd1ff5e0ed!8m2!3d30.1358413!4d-97.6383332!9m1!1b1!16s%2Fm%2F0czd9dd) |
 | Mozart's Coffee Roasters | 4.5 | 10994 | [Google Maps](https://www.google.com/maps/place/Mozart's+Coffee+Roasters/@30.2954696,-97.7839512,17z/data=!4m8!3m7!1s0x8644b5554461664d:0xbc4ff333ec9ad1ad!8m2!3d30.2954696!4d-97.7839512!9m1!1b1!16s%2Fm%2F020z4hc) |
-| Fredericksburg | Not rated | — | [Google Maps](https://www.google.com/maps/search/) |
+| Fredericksburg | Not rated | — | [Google Maps](https://www.google.com/maps/search/?api=1&query=Fredericksburg%2C%20Hill%20Country%2C%20Texas) |

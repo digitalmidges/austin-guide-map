@@ -12,10 +12,12 @@ import { downloadPrivateBackup } from '@/lib/drafts';
 import GoogleRating from './google-rating';
 import CategoryArt from './category-art';
 import { sortPlaces, type PlaceSort } from '@/lib/place-sorting';
+import MobilePlaceDialog from './mobile-place-dialog';
 
 type Props = { initialGuide: GuideData; canEdit: boolean; editing?: boolean; revision?: number; onSaveDraft?: (guide: GuideData) => void | Promise<void>; onDraftChange?: (guide: GuideData) => void };
 const safeUrl = (url: string) => /^https?:\/\//i.test(url) || url.startsWith('/') ? url : undefined;
 const mapsLink = (place: Place) => /^https?:\/\//i.test(place.mapsUrl) ? place.mapsUrl : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name}, Austin, TX`)}`;
+const compactCategoryLabel = (category: string) => category === 'All' ? 'All' : category === 'Food & drink' ? 'Food' : category === 'Water activities' ? 'Water' : category === 'Sports & games' ? 'Sports' : category === 'Parks & nature' ? 'Nature' : category;
 
 export default function Guide({ initialGuide, canEdit, editing = false, revision = 0, onSaveDraft, onDraftChange }: Props) {
   const isEditor = canEdit && editing;
@@ -25,6 +27,7 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('All');
   const [sort, setSort] = useState<PlaceSort>('guide');
+  const [isMobile, setIsMobile] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [fitToken, setFitToken] = useState(0);
   const [placingPin, setPlacingPin] = useState(false);
@@ -45,6 +48,16 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
   const selected = places.find(place => place.id === selectedId) || null;
   const selectedIndex = selected ? guide.places.findIndex(place => place.id === selected.id) : -1;
 
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 760px), (max-width: 1100px) and (pointer: coarse)');
+    const update = () => setIsMobile(media.matches);
+    update();
+    media.addEventListener('change', update);
+    return () => media.removeEventListener('change', update);
+  }, []);
+  useEffect(() => {
+    if (isMobile && placingPin) mapPanelRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [isMobile, placingPin]);
   useEffect(() => {
     if (!dirty) return;
     const onUnload = (event: BeforeUnloadEvent) => { event.preventDefault(); };
@@ -103,13 +116,12 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
   function resetFilters() { setQuery(''); setCategory('All'); setSort('guide'); setFitToken(token => token + 1); }
   function selectPlace(id: string) {
     setSelectedId(id);
-    if (window.matchMedia('(max-width: 760px)').matches) mapPanelRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   const detail = selected && <section className="place-detail" aria-label={`${selected.name} details`}>
     <div className="detail-photo"><PlacePhoto place={selected} /><button className="photo-close" aria-label="Close place details" onClick={() => setSelectedId(null)}><X size={18} /></button></div>
     <div className="detail-scroll">
-      <div className="detail-heading"><div><span className="detail-category"><i style={{ background: CATEGORY_COLORS[categoryFor(selected)] }} />{categoryFor(selected)}</span><h2>{selected.name}</h2><p><MapPin size={12} />{selected.area || 'Austin, TX'}{!selected.included && <span className="hidden-label">Hidden</span>}</p></div></div>
+      <div className="detail-heading"><div><span className="detail-category"><i style={{ background: CATEGORY_COLORS[categoryFor(selected)] }} />{categoryFor(selected)}</span><h2 id="place-detail-title">{selected.name}</h2><p><MapPin size={12} />{selected.area || 'Austin, TX'}{!selected.included && <span className="hidden-label">Hidden</span>}</p></div></div>
       <div className="detail-content">
         {((isEditor && selected.rating) || selected.pinned) && <div className="place-flags">{isEditor && selected.rating ? <span><Star size={13} fill="currentColor" />Your rating: {selected.rating}/5</span> : null}{selected.pinned && <span><Heart size={13} />Favorite</span>}</div>}
         <GoogleRating place={selected} />
@@ -131,8 +143,8 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
       <nav aria-label="Guide controls"><MapsExport places={places.filter(place => place.included)} sharedListUrl={guide.settings.googleMapsListUrl || ''} onSharedListUrlChange={isEditor ? url => setGuide(current => ({ ...current, settings: { ...current.settings, googleMapsListUrl: url } })) : undefined} />{isEditor ? <><a className="view-guide-link" href={assetUrl('index.html')} target="_blank" rel="noreferrer">View guide<ExternalLink size={12} /></a><span className={`save-status ${needsSave ? 'unsaved' : ''}`}>{needsSave ? 'Unsaved draft' : 'Draft saved on this device'}</span><button className="button primary save-button" onClick={saveGuide} disabled={!needsSave || saving}>{saving ? 'Saving…' : 'Save draft'}</button></> : canEdit && <a className="button edit-guide-link" href={assetUrl('editor.html')}><Pencil size={14} />Edit guide</a>}</nav>
     </header>
     <main className="explore-main">
-      <div className="explore-heading"><div><h1>Explore Austin</h1><p>Good food, time outside, and a few places worth the drive.</p></div>{isEditor && <button className="button" onClick={addPlace}><Plus size={15} />Add place</button>}</div>
-      <div className="category-bar" role="group" aria-label="Choose what to explore">{['All', ...MAP_CATEGORIES.filter(item => item !== 'All')].map(item => <button key={item} className={`category-button ${category === item ? 'active' : ''}`} data-category={item} aria-pressed={category === item} onClick={() => { setCategory(item); setSelectedId(null); setFitToken(token => token + 1); }}><span className="category-art"><CategoryArt category={item} size={34} /></span><span>{item === 'All' ? 'All places' : item}</span></button>)}</div>
+      {isEditor && <div className="explore-heading"><button className="button" onClick={addPlace}><Plus size={15} />Add place</button></div>}
+      <div className="category-bar" role="group" aria-label="Choose what to explore">{['All', ...MAP_CATEGORIES.filter(item => item !== 'All')].map(item => <button key={item} className={`category-button ${category === item ? 'active' : ''}`} data-category={item} aria-label={item === 'All' ? 'All places' : item} aria-pressed={category === item} onClick={() => { setCategory(item); setSelectedId(null); setFitToken(token => token + 1); }}><span className="category-art"><CategoryArt category={item} size={34} /></span><span className="category-label"><span className="category-label-wide">{item === 'All' ? 'All places' : item}</span><span className="category-label-compact">{compactCategoryLabel(item)}</span></span></button>)}</div>
       {saveError && <div className="save-error" role="alert">{saveError}<button onClick={downloadDraft}>Download private backup</button></div>}
       <div className="explore-layout">
         <section ref={mapPanelRef} className={`map-panel ${placingPin ? 'pin-placement' : ''}`} aria-label="Austin places map">
@@ -141,16 +153,17 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
           {placingPin && <div className="pin-instruction" role="status"><span>Click the map to place the pin.</span><button onClick={() => setPlacingPin(false)}>Cancel</button></div>}
           <button className="button fit-map-button" onClick={() => setFitToken(token => token + 1)}><MapIcon size={14} />Show all pins</button>
           {!selected && <div className="map-tip"><MapPin size={16} /><span>Tap a pin or a photo to take a closer look.</span></div>}
-          {detail}
+          {!isMobile && detail}
         </section>
         <section className="browse-panel" aria-label="Browse places">
-          <div className="browse-heading"><div><h2>{category === 'All' ? 'Find your next stop' : category}</h2><p>{places.length} {places.length === 1 ? 'place' : 'places'}{query ? ` matching “${query}”` : ' to explore'}{isEditor && guide.places.some(place => !place.included) && ` · ${guide.places.filter(place => !place.included).length} hidden in editor`}</p></div><div className="browse-controls"><label className="sort-control"><span>Sort by</span><select value={sort} onChange={event => setSort(event.target.value as PlaceSort)}><option value="guide">Guide order</option><option value="rating-desc">Google rating (highest)</option><option value="rating-asc">Google rating (lowest)</option><option value="name-asc">Name (A–Z)</option><option value="name-desc">Name (Z–A)</option></select></label>{(query || category !== 'All' || sort !== 'guide') && <button className="clear-filters" onClick={resetFilters}>Reset</button>}</div></div>
+          <div className="browse-heading"><div><h2>{category === 'All' ? 'All places' : category}</h2><p>{places.length} {places.length === 1 ? 'place' : 'places'}{query ? ` matching “${query}”` : ''}{isEditor && guide.places.some(place => !place.included) && ` · ${guide.places.filter(place => !place.included).length} hidden in editor`}</p></div><div className="browse-controls"><label className="sort-control"><span>Sort by</span><select value={sort} onChange={event => setSort(event.target.value as PlaceSort)}><option value="guide">Guide order</option><option value="rating-desc">Google rating (highest)</option><option value="rating-asc">Google rating (lowest)</option><option value="name-asc">Name (A–Z)</option><option value="name-desc">Name (Z–A)</option></select></label>{(query || category !== 'All' || sort !== 'guide') && <button className="clear-filters" onClick={resetFilters}>Reset</button>}</div></div>
           <div className="photo-grid">{places.map(place => <article key={place.id} className={`place-card ${selected?.id === place.id ? 'selected' : ''} ${!place.included ? 'place-hidden' : ''}`}><button className="place-card-button" aria-label={`Explore ${place.name}`} aria-pressed={selected?.id === place.id} onClick={() => selectPlace(place.id)}><div className="card-photo"><PlacePhoto place={place} compact />{place.pinned && <span className="card-favorite" aria-label="Favorite"><Heart size={13} fill="currentColor" /></span>}{!place.included && <span className="card-hidden">Hidden</span>}</div><div className="card-copy"><span className="card-category" style={{ color: CATEGORY_COLORS[categoryFor(place)] }}><CategoryIcon category={categoryFor(place)} size={11} />{categoryFor(place)}</span><h3>{place.name}</h3><div className="card-meta"><span><MapPin size={11} />{place.area || 'Austin, TX'}</span>{isEditor && place.rating ? <span className="card-rating" title="Your private rating"><Star size={11} fill="currentColor" />{place.rating}</span> : null}</div></div></button><div className="card-google-rating"><GoogleRating place={place} compact /></div></article>)}</div>
           {places.length === 0 && <div className="empty-state"><Search size={25} /><h3>No places found</h3><p>Try a different place, area, or category.</p><button className="button" onClick={resetFilters}>Clear filters</button></div>}
         </section>
       </div>
-      <footer className="guide-footer"><span>Pick a place. Read the details. Get directions.</span><span>Austin, Texas</span></footer>
     </main>
+
+    <MobilePlaceDialog open={isMobile && !!selected && !placingPin} onClose={() => setSelectedId(null)}>{isMobile && detail}</MobilePlaceDialog>
 
     <dialog ref={dialogRef} className="edit-dialog" onCancel={event => { event.preventDefault(); setDraft(null); }}>
       {draft && <form onSubmit={event => { event.preventDefault(); const submitted = { ...draft, name: draft.name.trim() }; if (isNew) setGuide(current => ({ ...current, places: [...current.places, submitted] })); else updatePlace(submitted.id, submitted); setCategory('All'); setQuery(''); setSelectedId(submitted.id); setDraft(null); setSaveError(''); }}>

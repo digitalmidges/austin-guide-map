@@ -26,11 +26,28 @@ export default function MapView({ places, selectedId, onSelect, fitToken, onPick
   useEffect(() => {
     let cancelled = false;
     let observer: ResizeObserver | undefined;
+    let removeInteractionListener: (() => void) | undefined;
     Promise.all([import('leaflet'), import('./vector-basemap')]).then(([L, { addBasemap }]) => {
       if (cancelled || !containerRef.current) return;
       leafletRef.current = L;
-      const map = L.map(containerRef.current, { zoomControl: false, scrollWheelZoom: false, minZoom: 4, maxZoom: 19 }).setView([30.31, -97.82], 11);
+      const container = containerRef.current;
+      const mobileLayout = window.matchMedia('(max-width: 760px), (max-width: 1100px) and (pointer: coarse)');
+      const previousTouchAction = container.style.touchAction;
+      const map = L.map(container, { zoomControl: false, scrollWheelZoom: false, dragging: !mobileLayout.matches, minZoom: 4, maxZoom: 19 }).setView([30.31, -97.82], 11);
       mapRef.current = map;
+      // Leave one-finger swipes to page scrolling. Leaflet's two-finger
+      // touchZoom handler, marker taps, and zoom buttons remain available.
+      const updateInteraction = () => {
+        if (mobileLayout.matches) map.dragging.disable();
+        else map.dragging.enable();
+        container.style.touchAction = mobileLayout.matches ? 'pan-y' : previousTouchAction;
+      };
+      updateInteraction();
+      mobileLayout.addEventListener('change', updateInteraction);
+      removeInteractionListener = () => {
+        mobileLayout.removeEventListener('change', updateInteraction);
+        container.style.touchAction = previousTouchAction;
+      };
       map.on('click', event => onPickRef.current?.(event.latlng.lat, event.latlng.lng));
       L.control.zoom({ position: 'bottomright' }).addTo(map);
       const basemap = addBasemap(map);
@@ -42,7 +59,7 @@ export default function MapView({ places, selectedId, onSelect, fitToken, onPick
       observer.observe(containerRef.current);
       setReady(true);
     }).catch(error => { if (!cancelled) { console.error('Map initialization failed', error); setFailed(true); } });
-    return () => { cancelled = true; observer?.disconnect(); mapRef.current?.remove(); mapRef.current = null; layerRef.current = null; };
+    return () => { cancelled = true; removeInteractionListener?.(); observer?.disconnect(); mapRef.current?.remove(); mapRef.current = null; layerRef.current = null; };
   }, []);
 
   useEffect(() => {
@@ -74,7 +91,7 @@ export default function MapView({ places, selectedId, onSelect, fitToken, onPick
     markersRef.current.forEach((marker, id) => {
       marker.getElement()?.classList.toggle('selected-marker', id === selectedId);
       marker.setZIndexOffset(id === selectedId ? 1000 : 0);
-      if (id === selectedId && mapRef.current && leafletRef.current) {
+      if (id === selectedId && mapRef.current && leafletRef.current && !window.matchMedia('(max-width: 760px), (max-width: 1100px) and (pointer: coarse)').matches) {
         const map = mapRef.current;
         const width = map.getSize().x;
         const targetX = width > 500 ? (width - 350) / 2 : 35;

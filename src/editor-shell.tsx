@@ -4,7 +4,7 @@ import Guide from './components/guide';
 import publishedGuide from './data/guide.json';
 import type { GuideData } from './lib/guide-types';
 import { guideSchema } from './lib/guide-validation';
-import { downloadPublishedGuide, draftStorageKey } from './lib/drafts';
+import { downloadPrivateBackup, downloadPublishedGuide, draftStorageKey } from './lib/drafts';
 import { assetUrl } from './lib/assets';
 
 function initialDraft(): { guide: GuideData; saved: boolean; message: string } {
@@ -68,19 +68,26 @@ export default function EditorShell() {
     try {
       downloadPublishedGuide(currentGuide.current);
       setError('');
-      setMessage('Exported guide.json with visible places only. Upload it to GitHub and commit to update the public guide.');
+      setMessage('Exported the public guide.json with visible places only. Private notes and your ratings were excluded. Upload this file to GitHub to update the website.');
     } catch {
       setError('Some draft details are invalid. Check website links and map coordinates before exporting.');
     }
   }
 
+  function exportPrivateBackup() {
+    downloadPrivateBackup(currentGuide.current);
+    setMessage('Downloaded a private backup with your notes and hidden entries. Keep it on your device; never upload this backup to GitHub.');
+    setError('');
+  }
+
   return <>
     <section className="draft-toolbar" aria-label="Local draft editor">
-      <div className="draft-explanation"><strong>Draft editor</strong><p>Changes stay on this device. To update the public guide, export <span>guide.json</span>, upload it to GitHub’s <span>src/data</span> folder, then choose <strong>Commit changes</strong>.</p></div>
+      <div className="draft-explanation"><strong>Draft editor</strong><p>Private notes and your ratings stay on this device. To update public descriptions and places, export the public <span>guide.json</span>, upload it to GitHub’s <span>src/data</span> folder, then choose <strong>Commit changes</strong>.</p></div>
       <div className="draft-tools">
         <button className="button" onClick={() => fileInput.current?.click()}><Upload size={14} />Import JSON</button>
         <input ref={fileInput} className="sr-only" type="file" accept=".json,application/json" aria-label="Import guide JSON file" onChange={event => void importDraft(event.target.files?.[0])} />
-        <button className="button primary" onClick={exportGuide}><Download size={14} />Export guide.json</button>
+        <button className="button primary" onClick={exportGuide}><Download size={14} />Export public guide.json</button>
+        <button className="button" onClick={exportPrivateBackup}><Download size={14} />Private backup</button>
         <a className="button" href="https://github.com/digitalmidges/austin-guide-map/upload/main/src/data" target="_blank" rel="noreferrer">Publish on GitHub<ExternalLink size={12} /></a>
         <a className="text-link" href={assetUrl('index.html')} target="_blank" rel="noreferrer">View public guide<ExternalLink size={11} /></a>
       </div>

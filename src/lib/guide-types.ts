@@ -4,10 +4,12 @@ export type Place = {
   category: string;
   area: string;
   why: string;
+  /** Private editor annotation. Never publish or include in Maps exports. */
   note: string;
   image: string | null;
   credit: { source: string; credit: string } | null;
   included: boolean;
+  /** Your private score; Google business ratings live in a separate catalog. */
   rating: number | null;
   pinned: boolean;
   mapsUrl: string;

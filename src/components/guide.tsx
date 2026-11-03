@@ -10,6 +10,7 @@ import { mediaFor } from '@/lib/place-media';
 import { assetUrl } from '@/lib/assets';
 import { downloadPrivateBackup } from '@/lib/drafts';
 import GoogleRating from './google-rating';
+import CategoryArt from './category-art';
 
 type Props = { initialGuide: GuideData; canEdit: boolean; editing?: boolean; revision?: number; onSaveDraft?: (guide: GuideData) => void | Promise<void>; onDraftChange?: (guide: GuideData) => void };
 const safeUrl = (url: string) => /^https?:\/\//i.test(url) || url.startsWith('/') ? url : undefined;
@@ -127,7 +128,7 @@ export default function Guide({ initialGuide, canEdit, editing = false, revision
     </header>
     <main className="explore-main">
       <div className="explore-heading"><div><h1>Explore Austin</h1><p>Good food, time outside, and a few places worth the drive.</p></div>{isEditor && <button className="button" onClick={addPlace}><Plus size={15} />Add place</button>}</div>
-      <div className="category-bar" role="group" aria-label="Choose what to explore">{['All', ...MAP_CATEGORIES.filter(item => item !== 'All')].map(item => <button key={item} className={`category-button ${category === item ? 'active' : ''}`} aria-pressed={category === item} onClick={() => { setCategory(item); setSelectedId(null); setFitToken(token => token + 1); }}><CategoryIcon category={item} size={19} /><span>{item === 'All' ? 'Map · All places' : item}</span></button>)}</div>
+      <div className="category-bar" role="group" aria-label="Choose what to explore">{['All', ...MAP_CATEGORIES.filter(item => item !== 'All')].map(item => <button key={item} className={`category-button ${category === item ? 'active' : ''}`} data-category={item} aria-pressed={category === item} onClick={() => { setCategory(item); setSelectedId(null); setFitToken(token => token + 1); }}><span className="category-art"><CategoryArt category={item} size={34} /></span><span>{item === 'All' ? 'All places' : item}</span></button>)}</div>
       {saveError && <div className="save-error" role="alert">{saveError}<button onClick={downloadDraft}>Download private backup</button></div>}
       <div className="explore-layout">
         <section ref={mapPanelRef} className={`map-panel ${placingPin ? 'pin-placement' : ''}`} aria-label="Austin places map">

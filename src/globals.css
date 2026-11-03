@@ -32,13 +32,20 @@ a { color:inherit; text-decoration:none; }
 .explore-heading { display:flex; justify-content:space-between; align-items:center; gap:20px; margin-bottom:23px; }
 .explore-heading h1 { margin:0 0 8px; font-size:29px; line-height:1.1; letter-spacing:-1px; font-weight:700; }
 .explore-heading p { margin:0; color:var(--muted); font-size:13px; line-height:1.5; }
-.category-bar { display:flex; align-items:center; gap:9px; margin-bottom:22px; overflow-x:auto; scrollbar-width:none; padding:2px 2px 4px; }
+.category-bar { display:flex; align-items:center; gap:10px; margin-bottom:22px; overflow-x:auto; scrollbar-width:none; padding:3px 2px 6px; }
 .category-bar::-webkit-scrollbar { display:none; }
-.category-button { flex-shrink:0; display:flex; align-items:center; justify-content:center; gap:9px; min-height:46px; padding:12px 17px; background:#fff; border:1px solid #e1e7e0; border-radius:10px; font-size:12px; font-weight:500; color:#66776c; white-space:nowrap; transition:background .15s,border-color .15s; }
-.category-button svg { color:#758b7b; }
-.category-button:hover { border-color:#b2c5b5; background:#f1f6f1; }
-.category-button.active { border-color:var(--accent); background:var(--accent); color:white; }
-.category-button.active svg { color:#d7f1e0; }
+.category-button { --category-ink:#287565; --category-tint:#eaf4ef; --category-border:#a3caba; flex-shrink:0; display:flex; align-items:center; justify-content:center; gap:9px; min-height:58px; padding:8px 14px 8px 9px; background:#fff; border:1px solid #e1e7e0; border-radius:12px; font-size:12px; font-weight:600; color:#526159; white-space:nowrap; transition:background .15s,border-color .15s,box-shadow .15s; }
+.category-button[data-category="Food & drink"] { --category-ink:#a74b21; --category-tint:#fff0e5; --category-border:#e5a477; }
+.category-button[data-category="Water activities"] { --category-ink:#1b659b; --category-tint:#e9f5ff; --category-border:#88bde3; }
+.category-button[data-category="Sports & games"] { --category-ink:#78509f; --category-tint:#f4edfb; --category-border:#bea0d9; }
+.category-button[data-category="Parks & nature"] { --category-ink:#367447; --category-tint:#edf6e9; --category-border:#a0c68c; }
+.category-button[data-category="Entertainment"] { --category-ink:#a33e67; --category-tint:#fff0f5; --category-border:#e3a2bc; }
+.category-button[data-category="Day trips"] { --category-ink:#8d6626; --category-tint:#fcf4df; --category-border:#d7b975; }
+.category-art { width:38px; height:38px; display:grid; place-items:center; flex-shrink:0; background:var(--category-tint); border-radius:10px; }
+.category-art svg { display:block; width:34px; height:34px; }
+.category-button:hover { border-color:var(--category-border); background:var(--category-tint); }
+.category-button.active { border-color:var(--category-border); background:var(--category-tint); color:var(--category-ink); box-shadow:inset 0 -2px 0 var(--category-ink); }
+.category-button:focus-visible { outline-color:var(--category-ink); }
 .explore-layout { display:grid; grid-template-columns:minmax(0,1.45fr) minmax(390px,1fr); align-items:start; gap:23px; min-height:440px; }
 .map-panel { position:sticky; top:20px; height:clamp(440px,calc(100dvh - 280px),760px); min-width:0; background:#f6f5f0; border:1px solid #e2e6e1; border-radius:14px; overflow:hidden; scroll-margin-top:15px; }
 .leaflet-map { position:absolute; inset:0; width:100%; height:100%; z-index:0; background:#f6f5f0; font-family:inherit; }
@@ -206,3 +213,12 @@ dialog::backdrop { background:#253d3070; backdrop-filter:blur(2px); }
 .google-rating-compact .google-rating-checked { font-size:8px; }
 .private-note { border:1px dashed #ccd8cd; }
 @media(max-width:760px) { .card-google-rating { padding:0 12px 12px; }.google-rating-compact { font-size:9px; }.google-rating-compact .google-rating-checked { font-size:8px; } }
+
+@media(max-width:1200px) { .category-button { padding:8px 12px 8px 8px; } }
+@media(max-width:760px) {
+  .category-bar { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:7px; overflow:visible; margin-right:0; padding:2px 0 4px; }
+  .category-button { flex-direction:column; gap:4px; min-height:82px; padding:7px 4px; border-radius:10px; font-size:10px; line-height:1.25; white-space:normal; text-align:center; }
+  .category-art { width:34px; height:34px; border-radius:9px; }
+  .category-art svg { width:32px; height:32px; }
+  .category-button>span:last-child { display:flex; align-items:center; justify-content:center; min-height:25px; }
+}

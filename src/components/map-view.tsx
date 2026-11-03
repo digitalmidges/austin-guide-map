@@ -27,7 +27,8 @@ export default function MapView({ places, selectedId, onSelect, fitToken, onPick
     let cancelled = false;
     let observer: ResizeObserver | undefined;
     let removeInteractionListener: (() => void) | undefined;
-    Promise.all([import('leaflet'), import('./vector-basemap')]).then(([L, { addBasemap }]) => {
+    const loadingTimeout = window.setTimeout(() => { if (!cancelled) setFailed(true); }, 15000);
+    import('leaflet').then(L => {
       if (cancelled || !containerRef.current) return;
       leafletRef.current = L;
       const container = containerRef.current;
@@ -50,16 +51,29 @@ export default function MapView({ places, selectedId, onSelect, fitToken, onPick
       };
       map.on('click', event => onPickRef.current?.(event.latlng.lat, event.latlng.lng));
       L.control.zoom({ position: 'bottomright' }).addTo(map);
-      const basemap = addBasemap(map);
-      basemap.on('load', () => { if (!cancelled) { setBasemapReady(true); setFailed(false); } });
-      basemap.on('error', event => { console.error('Basemap could not load', event.error); if (!cancelled && !basemap.loaded()) setFailed(true); });
+      // Browser-cached image tiles avoid a second map engine, WebGL worker,
+      // style, glyph, and sprite downloads. Only the visible map is requested.
+      const basemap = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors',
+        maxZoom: 19,
+        keepBuffer: 1,
+        updateWhenIdle: true,
+      });
+      let loadedTiles = 0;
+      basemap.on('tileload', () => {
+        loadedTiles += 1;
+        window.clearTimeout(loadingTimeout);
+        if (!cancelled) { setBasemapReady(true); setFailed(false); }
+      });
+      basemap.on('load', () => { if (!cancelled && loadedTiles === 0) setFailed(true); });
+      basemap.addTo(map);
       map.attributionControl.setPrefix(false);
       layerRef.current = L.layerGroup().addTo(map);
       observer = new ResizeObserver(() => map.invalidateSize());
       observer.observe(containerRef.current);
       setReady(true);
     }).catch(error => { if (!cancelled) { console.error('Map initialization failed', error); setFailed(true); } });
-    return () => { cancelled = true; removeInteractionListener?.(); observer?.disconnect(); mapRef.current?.remove(); mapRef.current = null; layerRef.current = null; };
+    return () => { cancelled = true; window.clearTimeout(loadingTimeout); removeInteractionListener?.(); observer?.disconnect(); mapRef.current?.remove(); mapRef.current = null; layerRef.current = null; };
   }, []);
 
   useEffect(() => {
@@ -110,5 +124,5 @@ export default function MapView({ places, selectedId, onSelect, fitToken, onPick
     map.fitBounds(L.latLngBounds(points), { padding: [55, 55], maxZoom: 14, animate: true, duration: 0.4 });
   }, [fitToken, ready]);
 
-  return <><div ref={containerRef} className="leaflet-map" aria-label="Map of places in Austin" />{(!ready || !basemapReady) && <div className="map-loading" role="status">{failed ? 'Map could not load. Use the place list for directions.' : 'Loading map…'}</div>}</>;
+  return <><div ref={containerRef} className="leaflet-map" aria-label="Map of places in Austin" />{(!ready || !basemapReady) && <div className="map-loading" role="status">{!failed && <span className="loading-spinner" aria-hidden="true" />}<span>{failed ? 'Map is taking longer. You can still browse the places below.' : 'Loading map…'}</span></div>}</>;
 }

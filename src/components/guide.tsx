@@ -183,7 +183,7 @@ function CategoryIcon({ category, size = 18 }: { category: string; size?: number
 
 function PlacePhoto({ place, compact = false }: { place: Place; compact?: boolean }) {
   const media = mediaFor(place);
-  const source = media?.src;
+  const source = compact ? media?.thumbnail || media?.src : media?.src;
   const [failed, setFailed] = useState(false);
   useEffect(() => setFailed(false), [source]);
   return <>{source && !failed ? <img src={assetUrl(source)} alt={place.name} loading={compact ? 'lazy' : 'eager'} decoding="async" onError={() => setFailed(true)} /> : <div className="photo-placeholder"><CategoryIcon category={categoryFor(place)} size={30} /><span>{categoryFor(place)}</span></div>}{!compact && media?.credit && !failed && <a className="photo-credit" href={safeUrl(media.credit.source)} target="_blank" rel="noreferrer">Photo: {media.credit.credit.replace(/^Photo:\s*/i, '')}</a>}</>;

@@ -6,9 +6,43 @@
     <meta name="description" content="Good food, time outside, and places worth the drive in Austin, Texas." />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <title>Austin guide</title>
+    <style>
+      #startup-status{min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;font:15px system-ui,sans-serif;color:#52665b;background:#f6f8f6;text-align:center;padding:24px}
+      #startup-status .spinner{width:26px;height:26px;border:3px solid #cfe0d8;border-top-color:#167563;border-radius:50%;animation:startup-spin .8s linear infinite}
+      #startup-retry{padding:10px 18px;background:white;border:1px solid #cad8d0;border-radius:8px;color:#167563;font:inherit;cursor:pointer}
+      @keyframes startup-spin{to{transform:rotate(360deg)}}
+      @media(prefers-reduced-motion:reduce){#startup-status .spinner{animation:none}}
+      body{margin:0;background:#f6f8f6}
+    </style>
+    <script>
+      // A cached HTML document can refer to an asset removed by a new release.
+      // Refresh it once, then keep an explicit retry instead of looping.
+      function retryAssets() {
+        try {
+          var lastRetry = Number(sessionStorage.getItem('guide-asset-retry') || 0);
+          if (Date.now() - lastRetry > 60000) {
+            sessionStorage.setItem('guide-asset-retry', String(Date.now()));
+            location.reload();
+            return;
+          }
+        } catch (_) {}
+        var message = document.getElementById('startup-message');
+        var retry = document.getElementById('startup-retry');
+        if (message) message.textContent = 'The guide could not load. Please reload to try again.';
+        if (retry) retry.hidden = false;
+      }
+      window.addEventListener('vite:preloadError', function (event) { event.preventDefault(); retryAssets(); });
+      window.addEventListener('error', function (event) {
+        if (event.target instanceof HTMLScriptElement && event.target.type === 'module') retryAssets();
+      }, true);
+      window.setTimeout(function () {
+        var retry = document.getElementById('startup-retry');
+        if (retry) retry.hidden = false;
+      }, 10000);
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><div id="startup-status" role="status"><span class="spinner" aria-hidden="true"></span><span id="startup-message">Loading Austin guide…</span><button id="startup-retry" hidden onclick="location.reload()">Reload</button><noscript>Please enable JavaScript to view the map and places.</noscript></div></div>
     <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>

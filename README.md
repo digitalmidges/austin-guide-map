@@ -32,7 +32,9 @@ npm run build
 npm run preview
 ```
 
-The Vite build uses relative URLs so photos, map styles, and the map worker work beneath the GitHub Pages project path.
+The Vite build uses relative URLs so bundled photos and scripts work beneath the GitHub Pages project path. The map uses lightweight Leaflet image tiles and loads independently of the place list. An immediate HTML loading indicator stays visible while the application downloads, with a reload option for connection failures.
+
+Cards use lazy-loaded WebP thumbnails; opening a place loads the original photograph. To regenerate thumbnails after changing bundled photos, run `python3 scripts/make-thumbnails.py` with Pillow installed. The generated files and `src/lib/photo-thumbnails.json` are committed, so production builds need no image tooling.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Place photo sources
 
-Additional venue photographs used by the guide. These were sourced from the venues’ official websites; provenance is recorded here and in `src/lib/place-photos.json`. No free-license claim is made for official promotional photographs.
+Additional venue photographs used by the guide. These were sourced from the venues’ official websites; provenance is recorded here, and each place's `photo` in `src/data/guide.json` holds its credit. No free-license claim is made for official promotional photographs.
 
 | Place | Source page | Original image |
 | --- | --- | --- |

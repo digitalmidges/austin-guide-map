@@ -1,1232 +1,1584 @@
 {
   "settings": {
-    "title": "Austin guide",
+    "title": "Austin Recommendations",
     "intro": "Places to eat and things to do in Austin.",
-    "by": ""
+    "googleMapsListUrl": ""
   },
   "places": [
     {
-      "id": "ben-and-lynn-s",
-      "name": "Ben & Lynn's",
-      "category": "Food & drink",
-      "area": "2600 E Cesar Chavez St, Austin, TX 78702",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ben%20%26%20Lynn%27s%2C%202600%20E%20Cesar%20Chavez%20St%2C%20Austin%2C%20TX%2078702",
-      "website": "https://benandlynns.com/",
-      "lat": 30.2540592,
-      "lng": -97.7151509
-    },
-    {
-      "id": "saltgrass-steak-house",
-      "name": "Saltgrass Steak House",
-      "category": "Food & drink",
-      "area": "10614 Research Blvd, Austin, TX 78759",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Saltgrass%20Steak%20House%2C%2010614%20Research%20Blvd%2C%20Austin%2C%20TX%2078759",
-      "website": "https://www.saltgrass.com/location/saltgrass-austin/",
-      "lat": 30.3976343,
-      "lng": -97.747086
-    },
-    {
-      "id": "sugarwolf",
-      "name": "Sugarwolf",
-      "category": "Food & drink",
-      "area": "401 W 4th St #120, Austin, TX 78701",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sugarwolf%2C%20401%20W%204th%20St%20%23120%2C%20Austin%2C%20TX%2078701",
-      "website": "https://www.sugarwolfbakery.com/",
-      "lat": 30.2664047,
-      "lng": -97.7475899
-    },
-    {
-      "id": "ema-austin",
-      "name": "Ema - Austin",
-      "category": "Food & drink",
-      "area": "3120 Palm Way #170, Austin, TX 78758",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ema%20-%20Austin%2C%203120%20Palm%20Way%20%23170%2C%20Austin%2C%20TX%2078758",
-      "website": "https://www.emarestaurants.com/austin",
-      "lat": 30.4032495,
-      "lng": -97.7213988
-    },
-    {
-      "id": "fogo-de-chao-brazilian-steakhouse",
-      "name": "Fogo de Chão Brazilian Steakhouse",
-      "category": "Food & drink",
-      "area": "200 Congress Ave, Austin, TX 78701",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fogo%20de%20Ch%C3%A3o%20Brazilian%20Steakhouse%2C%20200%20Congress%20Ave%2C%20Austin%2C%20TX%2078701",
-      "website": "https://fogodechao.com/location/austin/",
-      "lat": 30.264824,
-      "lng": -97.744512
-    },
-    {
-      "id": "north-italia",
-      "name": "North Italia",
-      "category": "Food & drink",
-      "area": "11506 Century Oaks Terrace Ste 124, Austin, TX 78758",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=North%20Italia%2C%2011506%20Century%20Oaks%20Terrace%20Ste%20124%2C%20Austin%2C%20TX%2078758",
-      "website": "https://www.northitalia.com/locations/austin-tx-the-domain/",
-      "lat": 30.4023266,
-      "lng": -97.7259912
-    },
-    {
-      "id": "two-hands",
-      "name": "Two Hands",
-      "category": "Food & drink",
-      "area": "1011 S Congress Ave Ste 170, Austin, TX 78704",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Two%20Hands%2C%201011%20S%20Congress%20Ave%20Ste%20170%2C%20Austin%2C%20TX%2078704",
-      "website": "https://www.twohandshospitality.com/location/austin/",
-      "lat": 30.2534769,
-      "lng": -97.7478877
-    },
-    {
-      "id": "perla-s",
-      "name": "Perla's",
-      "category": "Food & drink",
-      "area": "1400 S Congress Ave, Austin, TX 78704",
-      "why": "Temporarily closed as of November 3, 2026. Check the restaurant's website before visiting.",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Perla%27s%2C%201400%20S%20Congress%20Ave%2C%20Austin%2C%20TX%2078704",
-      "website": "https://perlasaustin.com/",
-      "lat": 30.2499585,
-      "lng": -97.7500913
-    },
-    {
-      "id": "the-one-pho",
-      "name": "The One Pho",
-      "category": "Food & drink",
-      "area": "10721 Research Blvd, B110, near Costco, Austin, TX 78759",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20One%20Pho%2C%2010721%20Research%20Blvd%2C%20B110%2C%20near%20Costco%2C%20Austin%2C%20TX%2078759",
-      "website": "https://order.toasttab.com/online/the-one-pho-10721-research-blvd-b110",
-      "lat": 30.3987165,
-      "lng": -97.7445786
-    },
-    {
-      "id": "ichiumi-sushi-haru-sushi",
-      "name": "IchiUmi Sushi (Haru Sushi)",
-      "category": "Food & drink",
-      "area": "9503 Research Blvd #500, Austin, TX 78759",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=IchiUmi%20Sushi%20%28Haru%20Sushi%29%2C%209503%20Research%20Blvd%20%23500%2C%20Austin%2C%20TX%2078759",
-      "website": "https://ichiumisushitx.com/",
-      "lat": 30.3867822,
-      "lng": -97.7418725
-    },
-    {
-      "id": "zeds-real-fruit-ice-cream",
-      "name": "Zeds Real Fruit Ice Cream",
-      "category": "Food & drink",
-      "area": "1814 Harvey St, Austin, TX 78702",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zeds%20Real%20Fruit%20Ice%20Cream%2C%201814%20Harvey%20St%2C%20Austin%2C%20TX%2078702",
-      "website": "https://www.zedsicecream.com/eastside",
-      "lat": 30.2820797,
-      "lng": -97.7057133
-    },
-    {
-      "id": "nadc-burger",
-      "name": "NADC Burger",
-      "category": "Food & drink",
-      "area": "1007 E 6th St, Austin, TX 78702",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=NADC%20Burger%2C%201007%20E%206th%20St%2C%20Austin%2C%20TX%2078702",
-      "website": "https://www.nadcburger.com/",
-      "lat": 30.2648743,
-      "lng": -97.732205
-    },
-    {
-      "id": "phoenicia",
-      "name": "Phoenicia Bakery & Deli",
-      "category": "Food & drink",
-      "area": "4701 Burnet Rd, Austin, TX 78756",
-      "why": "Middle Eastern bakery and deli staples",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Phoenicia%20Bakery%20%26%20Deli%2C%204701%20Burnet%20Rd%2C%20Austin%2C%20TX%2078756",
-      "website": "https://phoeniciatx.com/",
-      "lat": 30.3178807,
-      "lng": -97.739636
-    },
-    {
-      "id": "oasis",
-      "name": "The Oasis On Lake Travis",
-      "category": "Food & drink",
-      "area": "6550 Comanche Trail, Austin, TX 78732",
-      "why": "Huge decks over the lake — sunset is the point",
-      "note": "",
-      "image": "/images/oasis.jpg",
-      "credit": {
-        "credit": "Rutio https://www.flickr.com/people/rutlo/ — CC BY 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Oasis_restaurant_(cropped).jpg"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Oasis%20On%20Lake%20Travis%2C%206550%20Comanche%20Trail%2C%20Austin%2C%20TX%2078732",
-      "website": "https://oasis-austin.com/",
-      "lat": 30.405661,
-      "lng": -97.8740631
-    },
-    {
-      "id": "desnudo-coffee-downtown",
-      "name": "Desnudo Coffee: Downtown",
-      "category": "Food & drink",
-      "area": "111 Congress Ave., Austin, TX 78701",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Desnudo%20Coffee%3A%20Downtown%2C%20111%20Congress%20Ave.%2C%20Austin%2C%20TX%2078701",
-      "website": "https://www.desnudocoffee.com/",
-      "lat": 30.2639778,
-      "lng": -97.7440548
-    },
-    {
-      "id": "lumi-s-crepes",
-      "name": "Lumi's Crepes",
-      "category": "Food & drink",
-      "area": "5004 Hamilton Rd, Austin, TX 78759",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lumi%27s%20Crepes%2C%205004%20Hamilton%20Rd%2C%20Austin%2C%20TX%2078759",
-      "website": "https://order.online/business/lumis-crepes-11185857",
-      "lat": 30.4030233,
-      "lng": -97.7470967
-    },
-    {
-      "id": "gourdough-s-big-fat-donuts-and-coffee",
-      "name": "Gourdough's Big Fat Donuts & Coffee",
-      "category": "Food & drink",
-      "area": "1503 S 1st St, Austin, TX 78704",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gourdough%27s%20Big%20Fat%20Donuts%20%26%20Coffee%2C%201503%20S%201st%20St%2C%20Austin%2C%20TX%2078704",
-      "website": "https://gourdoughs.com/",
-      "lat": 30.2493592,
-      "lng": -97.7548691
-    },
-    {
-      "id": "mezzeme",
-      "name": "MezzeMe",
-      "category": "Food & drink",
-      "area": "4700 W Guadalupe St Suite#9, Austin, TX 78751",
-      "why": "Mediterranean mezze — easy shared plates for a group",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=MezzeMe%2C%204700%20W%20Guadalupe%20St%20Suite%239%2C%20Austin%2C%20TX%2078751",
-      "website": "https://www.mezzeme.com/?y_source=1_OTMxODc4My03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
-      "lat": 30.3156424,
-      "lng": -97.7334755
-    },
-    {
-      "id": "jinya-ramen-bar-austin",
-      "name": "JINYA Ramen Bar - Austin",
-      "category": "Food & drink",
-      "area": "3210 Esperanza Crossing Suite 130, Austin, TX 78758",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=JINYA%20Ramen%20Bar%20-%20Austin%2C%203210%20Esperanza%20Crossing%20Suite%20130%2C%20Austin%2C%20TX%2078758",
-      "website": "https://www.jinyaramenbar.com/locations/austin/?utm_medium=soci&utm_source=gmb",
-      "lat": 30.4003019,
-      "lng": -97.7232498
-    },
-    {
-      "id": "kg",
-      "name": "KG BBQ",
-      "category": "Food & drink",
-      "area": "3108 Manor Rd, Austin, TX 78723",
-      "why": "Egyptian-inspired Texas barbecue",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=KG%20BBQ%2C%203108%20Manor%20Rd%2C%20Austin%2C%20TX%2078723",
-      "website": "https://www.kgbbq.com/",
-      "lat": 30.2867548,
-      "lng": -97.7051671
-    },
-    {
-      "id": "sangam-chettinad-indian-cuisine",
-      "name": "Sangam Chettinad Indian Cuisine",
-      "category": "Food & drink",
-      "area": "6001 W Parmer Ln #140, Austin, TX 78727",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sangam%20Chettinad%20Indian%20Cuisine%2C%206001%20W%20Parmer%20Ln%20%23140%2C%20Austin%2C%20TX%2078727",
-      "website": "https://www.sangamchettinad.com/",
-      "lat": 30.4420964,
-      "lng": -97.7439582
-    },
-    {
-      "id": "easy-tiger-the-linc",
-      "name": "Easy Tiger - The Linc",
-      "category": "Food & drink",
-      "area": "6406 N Interstate 35 Frontage Rd #1100, Austin, TX 78752",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Easy%20Tiger%20-%20The%20Linc%2C%206406%20N%20Interstate%2035%20Frontage%20Rd%20%231100%2C%20Austin%2C%20TX%2078752",
-      "website": "https://www.easytigerusa.com/location/north/",
-      "lat": 30.3272944,
-      "lng": -97.7072153
-    },
-    {
-      "id": "another-broken-egg-cafe",
-      "name": "Another Broken Egg Cafe",
-      "category": "Food & drink",
-      "area": "8012 Mesa Dr, Austin, TX 78731",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Another%20Broken%20Egg%20Cafe%2C%208012%20Mesa%20Dr%2C%20Austin%2C%20TX%2078731",
-      "website": "https://www.anotherbrokenegg.com/locations/austin-tx-mesa-drive/",
-      "lat": 30.3701396,
-      "lng": -97.7582031
-    },
-    {
-      "id": "machi-sushi-all-you-can-eat-austin",
-      "name": "Machi Sushi All You Can Eat (Austin)",
-      "category": "Food & drink",
-      "area": "2200 S I-35 Frontage Rd, Austin, TX 78704",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Machi%20Sushi%20All%20You%20Can%20Eat%20%28Austin%29%2C%202200%20S%20I-35%20Frontage%20Rd%2C%20Austin%2C%20TX%2078704",
-      "website": "https://machisushiaustin.com/",
-      "lat": 30.2348527,
-      "lng": -97.7417114
-    },
-    {
-      "id": "jewboy-burgers",
-      "name": "Jewboy Burgers",
-      "category": "Food & drink",
-      "area": "5111 Airport Blvd, Austin, TX 78751",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jewboy%20Burgers%2C%205111%20Airport%20Blvd%2C%20Austin%2C%20TX%2078751",
-      "website": "https://jewboyburgers.com/",
-      "lat": 30.3127395,
-      "lng": -97.7150318
-    },
-    {
-      "id": "swedish-hill",
-      "name": "Swedish Hill",
-      "category": "Food & drink",
-      "area": "1128 W 6th St, Austin, TX 78703",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Swedish%20Hill%2C%201128%20W%206th%20St%2C%20Austin%2C%20TX%2078703",
-      "website": "https://www.swedishhillbakery.com/westsixth",
-      "lat": 30.272816,
-      "lng": -97.756823
-    },
-    {
-      "id": "meanwhile",
-      "name": "Meanwhile Brewing",
-      "category": "Food & drink",
-      "area": "3901 Promontory Point Dr, Austin, TX 78744",
-      "why": "Brewery yard hang — casual afternoon with the group",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Meanwhile%20Brewing%2C%203901%20Promontory%20Point%20Dr%2C%20Austin%2C%20TX%2078744",
-      "website": "https://www.meanwhilebeer.com/",
-      "lat": 30.2086998,
-      "lng": -97.7296677
-    },
-    {
-      "id": "tinys-milk-and-cookies-austin",
-      "name": "Tinys Milk & Cookies - Austin",
-      "category": "Food & drink",
-      "area": "1515 W 35th St Bldg c, Austin, TX 78703",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tinys%20Milk%20%26%20Cookies%20-%20Austin%2C%201515%20W%2035th%20St%20Bldg%20c%2C%20Austin%2C%20TX%2078703",
-      "website": "https://tinysmilkandcookies.com/",
-      "lat": 30.306174,
-      "lng": -97.7503327
-    },
-    {
-      "id": "teapioca-lounge",
-      "name": "Teapioca Lounge",
-      "category": "Food & drink",
-      "area": "10000 Research Blvd Ste 137, Austin, TX 78759",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Teapioca%20Lounge%2C%2010000%20Research%20Blvd%20Ste%20137%2C%20Austin%2C%20TX%2078759",
-      "website": "https://www.teapiocalounge.com/teapioca-arboretum-austin-boba-tea/",
-      "lat": 30.3910729,
-      "lng": -97.7487887
-    },
-    {
-      "id": "the-lighthouse-restaurant-and-lounge",
-      "name": "The Lighthouse Restaurant & Lounge",
-      "category": "Food & drink",
-      "area": "513 Sleat Dr, Briarcliff, TX 78669",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Lighthouse%20Restaurant%20%26%20Lounge%2C%20513%20Sleat%20Dr%2C%20Briarcliff%2C%20TX%2078669",
-      "website": "https://thelighthouseonthelake.com/",
-      "lat": 30.41709,
-      "lng": -98.045228
-    },
-    {
-      "id": "county-line-on-the-lake",
-      "name": "County Line on the Lake",
-      "category": "Food & drink",
-      "area": "5204 Ranch to Market Rd 2222, Austin, TX 78731",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=County%20Line%20on%20the%20Lake%2C%205204%20Ranch%20to%20Market%20Rd%202222%2C%20Austin%2C%20TX%2078731",
-      "website": "https://www.countyline.com/",
-      "lat": 30.357107,
-      "lng": -97.7856212
-    },
-    {
-      "id": "steiner-ranch-steakhouse",
-      "name": "Steiner Ranch Steakhouse",
-      "category": "Food & drink",
-      "area": "5424 Steiner Ranch Blvd, Austin, TX 78732",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Steiner%20Ranch%20Steakhouse%2C%205424%20Steiner%20Ranch%20Blvd%2C%20Austin%2C%20TX%2078732",
-      "website": "https://www.steinersteakhouse.com/",
-      "lat": 30.3901274,
-      "lng": -97.8715847
-    },
-    {
       "id": "franklin",
       "name": "Franklin Barbecue",
-      "category": "Food & drink",
-      "area": "900 E 11th St, Austin, TX 78702",
-      "why": "World-famous Texas BBQ — expect a line; get there early",
-      "note": "",
-      "image": "/images/franklin.jpg",
-      "credit": {
-        "credit": "Larry D. Moore — CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Franklin_Barbecue_Austin_About_to_Open.jpg"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "category": "eat",
+      "area": "East Austin",
+      "address": "900 E 11th St, Austin, TX 78702",
+      "remark": "כנראה הברבקיו הכי מפורסם באוסטין, תור שמתחיל בערך ב-5 בבוקר",
+      "top": true,
+      "lat": 30.270125,
+      "lng": -97.7313419,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Franklin%20Barbecue%2C%20900%20E%2011th%20St%2C%20Austin%2C%20TX%2078702",
       "website": "https://franklinbarbecue.com/",
-      "lat": 30.270125,
-      "lng": -97.7313419
-    },
-    {
-      "id": "the-original-pancake-house",
-      "name": "The Original Pancake House",
-      "category": "Food & drink",
-      "area": "1700 W Parmer Ln #650, Austin, TX 78727",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Original%20Pancake%20House%2C%201700%20W%20Parmer%20Ln%20%23650%2C%20Austin%2C%20TX%2078727",
-      "website": "https://www.austinoph.com/",
-      "lat": 30.4144565,
-      "lng": -97.6892454
-    },
-    {
-      "id": "julie-s-noodles",
-      "name": "Julie's Noodles",
-      "category": "Food & drink",
-      "area": "8557 Research Blvd #110, Austin, TX 78758",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Julie%27s%20Noodles%2C%208557%20Research%20Blvd%20%23110%2C%20Austin%2C%20TX%2078758",
-      "website": "https://juliesnoodlesaustin.com/",
-      "lat": 30.3610671,
-      "lng": -97.7157829
-    },
-    {
-      "id": "terry",
-      "name": "Terry Black's Barbecue",
-      "category": "Food & drink",
-      "area": "1003 Barton Springs Rd, Austin, TX 78704",
-      "why": "Great BBQ without the all-day line — solid for a group",
-      "note": "",
-      "image": "/images/terry.jpg",
-      "credit": {
-        "credit": "Grant Hutchins — CC BY-SA 2.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Barbecue_from_Terry_Black%27s.jpg"
+      "photo": {
+        "src": "images/franklin.jpg",
+        "thumb": "images/thumbnails/franklin.webp",
+        "credit": "Larry D. Moore, CC BY 4.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Franklin_Barbecue_Austin_About_to_Open.jpg"
       },
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Terry%20Black%27s%20Barbecue%2C%201003%20Barton%20Springs%20Rd%2C%20Austin%2C%20TX%2078704",
-      "website": "https://terryblacksbbq.com/austin",
-      "lat": 30.2597121,
-      "lng": -97.7548241
-    },
-    {
-      "id": "whisler-s",
-      "name": "Whisler’s",
-      "category": "Food & drink",
-      "area": "1816 E 6th St, Austin, TX 78702",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Whisler%E2%80%99s%2C%201816%20E%206th%20St%2C%20Austin%2C%20TX%2078702",
-      "website": "https://www.whislersatx.com/",
-      "lat": 30.2619325,
-      "lng": -97.722738
-    },
-    {
-      "id": "aba",
-      "name": "Aba Austin",
-      "category": "Food & drink",
-      "area": "1011 S Congress Ave Bldg 2 Suite 180, Austin, TX 78704",
-      "why": "Mediterranean / Levantine flavors — familiar comfort for Israeli taste",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Aba%20Austin%2C%201011%20S%20Congress%20Ave%20Bldg%202%20Suite%20180%2C%20Austin%2C%20TX%2078704",
-      "website": "https://www.abarestaurants.com/austin/",
-      "lat": 30.2533154,
-      "lng": -97.7480244
-    },
-    {
-      "id": "interstellar",
-      "name": "Interstellar BBQ",
-      "category": "Food & drink",
-      "area": "12233 Ranch Rd 620 N Ste 105, Austin, TX 78750",
-      "why": "Top-tier BBQ with a shorter wait than Franklin most days",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Interstellar%20BBQ%2C%2012233%20Ranch%20Rd%20620%20N%20Ste%20105%2C%20Austin%2C%20TX%2078750",
-      "website": "https://www.theinterstellarbbq.com/",
-      "lat": 30.4614797,
-      "lng": -97.815213
-    },
-    {
-      "id": "stiles",
-      "name": "Stiles Switch BBQ",
-      "category": "Food & drink",
-      "area": "6610 N Lamar Blvd, Austin, TX 78752",
-      "why": "Local favorite Texas barbecue",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Stiles%20Switch%20BBQ%2C%206610%20N%20Lamar%20Blvd%2C%20Austin%2C%20TX%2078752",
-      "website": "https://stilesswitchbbq.com/",
-      "lat": 30.334575,
-      "lng": -97.721445
-    },
-    {
-      "id": "rudy-s-country-store-and-bar-b-q",
-      "name": "Rudy's \"Country Store\" and Bar-B-Q",
-      "category": "Food & drink",
-      "area": "11570 Research Blvd, Austin, TX 78759",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rudy%27s%20%22Country%20Store%22%20and%20Bar-B-Q%2C%2011570%20Research%20Blvd%2C%20Austin%2C%20TX%2078759",
-      "website": "https://rudysbbq.com/location/detail/austin-183-tx",
-      "lat": 30.4141544,
-      "lng": -97.7469867
-    },
-    {
-      "id": "85-c-bakery-cafe-airport-blvd",
-      "name": "85°C Bakery Cafe - Airport blvd",
-      "category": "Food & drink",
-      "area": "6929 Airport Blvd #197, Austin, TX 78752",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=85%C2%B0C%20Bakery%20Cafe%20-%20Airport%20blvd%2C%206929%20Airport%20Blvd%20%23197%2C%20Austin%2C%20TX%2078752",
-      "website": "https://www.85cbakerycafe.com/",
-      "lat": 30.3366115,
-      "lng": -97.7176728
-    },
-    {
-      "id": "sazan-ramen",
-      "name": "Sazan Ramen",
-      "category": "Food & drink",
-      "area": "6929 Airport Blvd #146, Austin, TX 78752",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sazan%20Ramen%2C%206929%20Airport%20Blvd%20%23146%2C%20Austin%2C%20TX%2078752",
-      "website": "https://sazanramen.com/",
-      "lat": 30.3366724,
-      "lng": -97.7166287
-    },
-    {
-      "id": "85-c-bakery-cafe-lakeline",
-      "name": "85°C Bakery Cafe - Lakeline",
-      "category": "Food & drink",
-      "area": "11301 Lakeline Blvd #140, Austin, TX 78717",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=85%C2%B0C%20Bakery%20Cafe%20-%20Lakeline%2C%2011301%20Lakeline%20Blvd%20%23140%2C%20Austin%2C%20TX%2078717",
-      "website": "https://www.85cbakerycafe.com/location/?wpsl_search=11301%20Lakeline%20Boulevard%20Suite%20140,%20Austin,%20Texas%2078717",
-      "lat": 30.4793589,
-      "lng": -97.7998978
-    },
-    {
-      "id": "flora-coffee-and-culture",
-      "name": "Flora Coffee & Culture",
-      "category": "Food & drink",
-      "area": "3300 W Anderson Ln. Ste 300, Austin, TX 78757",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Flora%20Coffee%20%26%20Culture%2C%203300%20W%20Anderson%20Ln.%20Ste%20300%2C%20Austin%2C%20TX%2078757",
-      "website": "https://www.floracoffee.co/",
-      "lat": 30.362347,
-      "lng": -97.7421123
-    },
-    {
-      "id": "las-mangonadas-3",
-      "name": "Las Mangonadas #3",
-      "category": "Food & drink",
-      "area": "8776 Research Blvd Ste C1, Austin, TX 78758",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Las%20Mangonadas%20%233%2C%208776%20Research%20Blvd%20Ste%20C1%2C%20Austin%2C%20TX%2078758",
-      "website": "",
-      "lat": 30.3660498,
-      "lng": -97.7198437
-    },
-    {
-      "id": "chuy-s",
-      "name": "Chuy's",
-      "category": "Food & drink",
-      "area": "11680 Research Blvd, Austin, TX 78759",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chuy%27s%2C%2011680%20Research%20Blvd%2C%20Austin%2C%20TX%2078759",
-      "website": "https://www.chuys.com/locations/tx/austin/austin-tx-hwy-183/6005?cmpid=br:chy_ag:ie_ch:loc_ca:CHYGMB_sn:gmb_gt:austin-tx-6005_pl:locurl_rd:1004",
-      "lat": 30.4186454,
-      "lng": -97.7477329
-    },
-    {
-      "id": "dean-s-italian-steakhouse",
-      "name": "Dean's Italian Steakhouse",
-      "category": "Food & drink",
-      "area": "110 E 2nd St, Austin, TX 78701",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dean%27s%20Italian%20Steakhouse%2C%20110%20E%202nd%20St%2C%20Austin%2C%20TX%2078701",
-      "website": "https://www.deanssteakhouseaustin.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
-      "lat": 30.2642247,
-      "lng": -97.7434837
-    },
-    {
-      "id": "bulevar-mexican-kitchen",
-      "name": "Bulevar Mexican Kitchen",
-      "category": "Food & drink",
-      "area": "9400 Arboretum Blvd, Austin, TX 78759",
-      "why": "",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bulevar%20Mexican%20Kitchen%2C%209400%20Arboretum%20Blvd%2C%20Austin%2C%20TX%2078759",
-      "website": "https://www.bulevaratx.com/",
-      "lat": 30.3891082,
-      "lng": -97.7529845
-    },
-    {
-      "id": "zilker",
-      "name": "Zilker Metropolitan Park",
-      "category": "Nature & water",
-      "area": "Central Austin",
-      "why": "The city's backyard — trails, picnic lawns, and the heart of outdoor Austin",
-      "note": "",
-      "image": "/images/zilker.jpg",
-      "credit": {
-        "credit": "Mwyzykowski0821 — CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Austin-skyline.jpg"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zilker%20Metropolitan%20Park%2C%20Central%20Austin%2C%20Texas",
-      "website": ""
-    },
-    {
-      "id": "zilker-boats",
-      "name": "Zilker Park Boat Rentals",
-      "category": "Nature & water",
-      "area": "Lady Bird Lake",
-      "why": "Kayaks and stand-up paddleboards right on the lake downtown",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zilker%20Park%20Boat%20Rentals%2C%20Lady%20Bird%20Lake%2C%20Texas",
-      "website": ""
-    },
-    {
-      "id": "trc",
-      "name": "Texas Rowing Center",
-      "category": "Nature & water",
-      "area": "Lady Bird Lake",
-      "why": "Easy kayak and SUP rentals with a classic Austin skyline view",
-      "note": "",
-      "image": "/images/trc.jpg",
-      "credit": {
-        "credit": "LoneStarMike — CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:AustinSkylineLouNeffPoint-Jun2010-a.JPG"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Texas%20Rowing%20Center%2C%20Lady%20Bird%20Lake%2C%20Texas",
-      "website": ""
+      "google": {
+        "rating": 4.7,
+        "reviews": 7348,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Franklin%20Barbecue%2C%20900%20E%2011th%20St%2C%20Austin%2C%20TX%2078702"
+      }
     },
     {
       "id": "barton",
       "name": "Barton Springs",
-      "category": "Nature & water",
+      "category": "outdoors",
       "area": "Zilker",
-      "why": "Natural spring-fed pool — cold, iconic, and very Austin",
-      "note": "",
-      "image": "/images/barton.jpg",
-      "credit": {
-        "credit": "Downtown Austin — Public domain",
-        "source": "https://commons.wikimedia.org/wiki/File:360_Barton_Springs_5July08_(9).JPG"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "מקום מגניב, בזילקר.. מלא צעירים אבל המים קרים",
+      "top": true,
+      "lat": 30.2638447,
+      "lng": -97.7701429,
       "mapsUrl": "https://www.google.com/maps/place/Barton+Springs+Pool/@30.2637304,-97.7739751,17z/data=!4m10!1m2!2m1!1sBarton+Springs+Pool!3m6!1s0x8644ca3d4e6d9977:0xd09efa9cfe432aa6!8m2!3d30.2637258!4d-97.7714002!15sChNCYXJ0b24gU3ByaW5ncyBQb29sWhUiE2JhcnRvbiBzcHJpbmdzIHBvb2ySARRwdWJsaWNfc3dpbW1pbmdfcG9vbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOVWVITnlNMlZuRUFF4AEA-gEFCLYIEEc!16zL20vMDE2NG1r",
-      "website": ""
-    },
-    {
-      "id": "bonnell",
-      "name": "Covert Park at Mount Bonnell",
-      "category": "Nature & water",
-      "area": "West Austin",
-      "why": "Quick climb for a sunset overlook over the Colorado River",
-      "note": "",
-      "image": "/images/bonnell.jpg",
-      "credit": {
-        "credit": "Leaflet — Public domain",
-        "source": "https://commons.wikimedia.org/wiki/File:Mount_Bonnell_2008.jpg"
+      "website": "",
+      "photo": {
+        "src": "images/barton.jpg",
+        "thumb": "images/thumbnails/barton.webp",
+        "credit": "Downtown Austin, Public domain",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:360_Barton_Springs_5July08_(9).JPG"
       },
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Covert%20Park%20at%20Mount%20Bonnell%2C%20West%20Austin%2C%20Texas",
-      "website": ""
+      "google": {
+        "rating": 4.6,
+        "reviews": 10967,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Barton+Springs+Pool/@30.2637304,-97.7739751,17z/data=!4m12!1m2!2m1!1sBarton+Springs+Pool!3m8!1s0x8644ca3d4e6d9977:0xd09efa9cfe432aa6!8m2!3d30.2637258!4d-97.7714002!9m1!1b1!15sChNCYXJ0b24gU3ByaW5ncyBQb29sWhUiE2JhcnRvbiBzcHJpbmdzIHBvb2ySARRwdWJsaWNfc3dpbW1pbmdfcG9vbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOVWVITnlNMlZuRUFF4AEA-gEFCLYIEEc!16zL20vMDE2NG1r"
+      }
     },
     {
       "id": "bats",
       "name": "Ann W. Richards Congress Avenue Bat Bridge",
-      "category": "Nature & water",
+      "category": "outdoors",
       "area": "Downtown",
-      "why": "Watch hundreds of thousands of bats fly out at dusk in warm months",
-      "note": "",
-      "image": "/images/bats.jpg",
-      "credit": {
-        "credit": "LoneStarMike — CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:CongressAveBridge-Apr2010.JPG"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "הגשר של הקונגרס, לראות את כל העטלפים בערב כשהם יוצאים מהגשר זה מיוחד",
+      "top": true,
+      "lat": 30.2589,
+      "lng": -97.7463,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ann%20W.%20Richards%20Congress%20Avenue%20Bat%20Bridge%2C%20Downtown%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/bats.jpg",
+        "thumb": "images/thumbnails/bats.webp",
+        "credit": "LoneStarMike, CC BY-SA 3.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:CongressAveBridge-Apr2010.JPG"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 366,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Ann+W.+Richards+Congress+Avenue+Bat+Bridge/@30.2617456,-97.7451692,17z/data=!4m8!3m7!1s0x8644b5232e97821f:0x9877a71b9abb6728!8m2!3d30.2617456!4d-97.7451692!9m1!1b1!16s%2Fg%2F11sw20xtw1"
+      }
     },
     {
-      "id": "hamilton",
-      "name": "Hamilton Pool",
-      "category": "Nature & water",
-      "area": "West of Austin",
-      "why": "Dramatic limestone grotto and waterfall — book ahead; limited entry",
-      "note": "",
-      "image": "/images/hamilton.jpg",
-      "credit": {
-        "credit": "Eric in SF — CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Hamilton_Pool_and_Falls.jpg"
+      "id": "interstellar",
+      "name": "Interstellar BBQ",
+      "category": "eat",
+      "area": "Northwest",
+      "address": "12233 Ranch Rd 620 N Ste 105, Austin, TX 78750",
+      "remark": "ברבקיו עם כוכב מישלן",
+      "top": true,
+      "lat": 30.4614797,
+      "lng": -97.815213,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Interstellar%20BBQ%2C%2012233%20Ranch%20Rd%20620%20N%20Ste%20105%2C%20Austin%2C%20TX%2078750",
+      "website": "https://www.theinterstellarbbq.com/",
+      "photo": {
+        "src": "images/venues/interstellar.jpg",
+        "thumb": "images/thumbnails/venues/interstellar.webp",
+        "credit": "InterStellar BBQ",
+        "creditUrl": "https://theinterstellarbbq.com/"
       },
-      "included": true,
-      "rating": null,
-      "pinned": false,
-      "mapsUrl": "https://www.google.com/maps/place/Hamilton+Pool+Preserve/@30.342281,-98.1270707,17z/data=!4m10!1m2!2m1!1sHamilton+Pool,+West+of+Austin,+Texas!3m6!1s0x865b3fb27b5050e3:0xd8c54250a880cf94!8m2!3d30.3423832!4d-98.1269025!15sCiRIYW1pbHRvbiBQb29sLCBXZXN0IG9mIEF1c3RpbiwgVGV4YXNaJCIiaGFtaWx0b24gcG9vbCB3ZXN0IG9mIGF1c3RpbiB0ZXhhc5IBD25hdHVyZV9wcmVzZXJ2ZZoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQydEdjRTFXVGxWaVZUbEVWVEZyTTJWRlNsaGFSVXBOWlZoQ1VsSnVZeEFC4AEA-gEECFQQSg!16s%2Fg%2F1v29cfqw",
-      "website": ""
+      "google": {
+        "rating": 4.5,
+        "reviews": 2254,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Interstellar%20BBQ%2C%2012233%20Ranch%20Rd%20620%20N%20Ste%20105%2C%20Austin%2C%20TX%2078750"
+      }
+    },
+    {
+      "id": "oasis",
+      "name": "The Oasis On Lake Travis",
+      "category": "eat",
+      "area": "Lake Travis",
+      "address": "6550 Comanche Trail, Austin, TX 78732",
+      "remark": "האוכל זוועה אבל המסעדה ענקית ועם נוף יפה לאגם טראוויס",
+      "top": true,
+      "lat": 30.405661,
+      "lng": -97.8740631,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Oasis%20On%20Lake%20Travis%2C%206550%20Comanche%20Trail%2C%20Austin%2C%20TX%2078732",
+      "website": "https://oasis-austin.com/",
+      "photo": {
+        "src": "images/oasis.jpg",
+        "thumb": "images/thumbnails/oasis.webp",
+        "credit": "Rutio, CC BY 2.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Oasis_restaurant_(cropped).jpg"
+      },
+      "google": {
+        "rating": 4.2,
+        "reviews": 26302,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=The%20Oasis%20On%20Lake%20Travis%2C%206550%20Comanche%20Trail%2C%20Austin%2C%20TX%2078732"
+      }
     },
     {
       "id": "enchanted",
       "name": "Enchanted Rock",
-      "category": "Day trips",
-      "area": "~1.5 hours west",
-      "why": "Giant pink granite dome you can hike — uniquely Texas",
-      "note": "",
-      "image": "/images/enchanted.jpg",
-      "credit": {
-        "credit": "Jmbuytaert — CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_Enchanted_Rock.jpg"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "category": "trips",
+      "area": "1.5 hrs west",
+      "address": "",
+      "remark": "אם מגיעים לפרדיכבורג זה מקום מיוחד, הולכים קצת ברגל לראות את הסלעים הגדולים אבל זה יפה",
+      "top": true,
+      "lat": 30.496033,
+      "lng": -98.819952,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Enchanted%20Rock%2C%20~1.5%20hours%20west%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/enchanted.jpg",
+        "thumb": "images/thumbnails/enchanted.webp",
+        "credit": "Jmbuytaert, CC BY-SA 4.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_Enchanted_Rock.jpg"
+      },
+      "google": {
+        "rating": 4.8,
+        "reviews": 8177,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Enchanted+Rock+State+Natural+Area/@30.4951229,-98.8199993,17z/data=!4m8!3m7!1s0x865bec1584eb84e7:0xf758d5a9830ee484!8m2!3d30.4951229!4d-98.8199993!9m1!1b1!16s%2Fg%2F1hc0gs3q4"
+      }
+    },
+    {
+      "id": "perla-s",
+      "name": "Perla's",
+      "category": "eat",
+      "area": "South Congress",
+      "address": "1400 S Congress Ave, Austin, TX 78704",
+      "remark": "מסעדת פירות ים מגניבה ברחוב קונגרס",
+      "top": false,
+      "lat": 30.2499585,
+      "lng": -97.7500913,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Perla%27s%2C%201400%20S%20Congress%20Ave%2C%20Austin%2C%20TX%2078704",
+      "website": "https://perlasaustin.com/",
+      "photo": {
+        "src": "images/venues/food-perla-s.jpg",
+        "thumb": "images/thumbnails/venues/food-perla-s.webp",
+        "credit": "Perla's",
+        "creditUrl": "https://perlasaustin.com/"
+      },
+      "google": {
+        "rating": 4.5,
+        "reviews": 3010,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Perla%27s%2C%201400%20S%20Congress%20Ave%2C%20Austin%2C%20TX%2078704"
+      }
+    },
+    {
+      "id": "phoenicia",
+      "name": "Phoenicia Bakery & Deli",
+      "category": "eat",
+      "area": "Burnet Road",
+      "address": "4701 Burnet Rd, Austin, TX 78756",
+      "remark": "סופר ערבי",
+      "top": false,
+      "lat": 30.3178807,
+      "lng": -97.739636,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Phoenicia%20Bakery%20%26%20Deli%2C%204701%20Burnet%20Rd%2C%20Austin%2C%20TX%2078756",
+      "website": "https://phoeniciatx.com/",
+      "photo": {
+        "src": "images/venues/food-phoenicia.jpg",
+        "thumb": "images/thumbnails/venues/food-phoenicia.webp",
+        "credit": "Phoenicia Bakery & Deli",
+        "creditUrl": "https://phoeniciatx.com/"
+      },
+      "google": {
+        "rating": 4.5,
+        "reviews": 725,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Phoenicia%20Bakery%20%26%20Deli%2C%204701%20Burnet%20Rd%2C%20Austin%2C%20TX%2078756"
+      }
+    },
+    {
+      "id": "kg",
+      "name": "KG BBQ",
+      "category": "eat",
+      "area": "East Austin",
+      "address": "3108 Manor Rd, Austin, TX 78723",
+      "remark": "ברביקיו מצרי - מיוחד",
+      "top": false,
+      "lat": 30.2867548,
+      "lng": -97.7051671,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=KG%20BBQ%2C%203108%20Manor%20Rd%2C%20Austin%2C%20TX%2078723",
+      "website": "https://www.kgbbq.com/",
+      "photo": {
+        "src": "images/venues/food-kg.jpg",
+        "thumb": "images/thumbnails/venues/food-kg.webp",
+        "credit": "KG BBQ",
+        "creditUrl": "https://www.kgbbq.com/"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 1725,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=KG%20BBQ%2C%203108%20Manor%20Rd%2C%20Austin%2C%20TX%2078723"
+      }
+    },
+    {
+      "id": "meanwhile",
+      "name": "Meanwhile Brewing",
+      "category": "eat",
+      "area": "South Austin",
+      "address": "3901 Promontory Point Dr, Austin, TX 78744",
+      "remark": "עוד מקום כיפי לשבת בחוץ ולשתות בירה עם אוכל מקומי",
+      "top": false,
+      "lat": 30.2086998,
+      "lng": -97.7296677,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Meanwhile%20Brewing%2C%203901%20Promontory%20Point%20Dr%2C%20Austin%2C%20TX%2078744",
+      "website": "https://www.meanwhilebeer.com/",
+      "photo": {
+        "src": "images/venues/meanwhile.jpg",
+        "thumb": "images/thumbnails/venues/meanwhile.webp",
+        "credit": "Meanwhile Brewing",
+        "creditUrl": "https://www.meanwhilebeer.com/"
+      },
+      "google": {
+        "rating": 4.8,
+        "reviews": 1507,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Meanwhile%20Brewing%2C%203901%20Promontory%20Point%20Dr%2C%20Austin%2C%20TX%2078744"
+      }
+    },
+    {
+      "id": "terry",
+      "name": "Terry Black's Barbecue",
+      "category": "eat",
+      "area": "Barton Springs Rd",
+      "address": "1003 Barton Springs Rd, Austin, TX 78704",
+      "remark": "אם עושים יום בזילקר שווה לעצור אחרי הקייקים ולאכול, התור זז ממש מהר\n\nברביקיו מדהים",
+      "top": false,
+      "lat": 30.2597121,
+      "lng": -97.7548241,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Terry%20Black%27s%20Barbecue%2C%201003%20Barton%20Springs%20Rd%2C%20Austin%2C%20TX%2078704",
+      "website": "https://terryblacksbbq.com/austin",
+      "photo": {
+        "src": "images/terry.jpg",
+        "thumb": "images/thumbnails/terry.webp",
+        "credit": "Grant Hutchins, CC BY-SA 2.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Barbecue_from_Terry_Black%27s.jpg"
+      },
+      "google": {
+        "rating": 4.7,
+        "reviews": 27433,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Terry%20Black%27s%20Barbecue%2C%201003%20Barton%20Springs%20Rd%2C%20Austin%2C%20TX%2078704"
+      }
+    },
+    {
+      "id": "stiles",
+      "name": "Stiles Switch BBQ",
+      "category": "eat",
+      "area": "North Austin",
+      "address": "6610 N Lamar Blvd, Austin, TX 78752",
+      "remark": "ברבקיו ממולץ של שי, ה beef ribs חובה - לא ניסיתי",
+      "top": false,
+      "lat": 30.334575,
+      "lng": -97.721445,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Stiles%20Switch%20BBQ%2C%206610%20N%20Lamar%20Blvd%2C%20Austin%2C%20TX%2078752",
+      "website": "https://stilesswitchbbq.com/",
+      "photo": {
+        "src": "images/venues/food-stiles.jpg",
+        "thumb": "images/thumbnails/venues/food-stiles.webp",
+        "credit": "Stiles Switch BBQ Austin",
+        "creditUrl": "https://austin.stilesswitchbbq.com/"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 5885,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Stiles%20Switch%20BBQ%2C%206610%20N%20Lamar%20Blvd%2C%20Austin%2C%20TX%2078752"
+      }
+    },
+    {
+      "id": "zilker",
+      "name": "Zilker Metropolitan Park",
+      "category": "outdoors",
+      "area": "Zilker",
+      "address": "",
+      "remark": "אחלה פארק בדאון טאון - יש שם גני שעשועים יפים לילדים ואזור כיפי לפיקניק בדשא - קרוב לקייאקים ואחכ לטרי בלאק",
+      "top": false,
+      "lat": 30.2694065,
+      "lng": -97.7735775,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zilker%20Metropolitan%20Park%2C%20Central%20Austin%2C%20Texas",
+      "website": "",
+      "photo": {
+        "src": "images/zilker.jpg",
+        "thumb": "images/thumbnails/zilker.webp",
+        "credit": "Mwyzykowski0821, CC BY-SA 4.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Austin-skyline.jpg"
+      },
+      "google": {
+        "rating": 4.8,
+        "reviews": 6339,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Zilker+Metropolitan+Park/@30.2669764,-97.7729703,17z/data=!4m8!3m7!1s0x8644b586e0f968db:0x9b503f3c7a9772ba!8m2!3d30.2669764!4d-97.7729703!9m1!1b1!16zL20vMDE2M3ow"
+      }
+    },
+    {
+      "id": "zilker-boats",
+      "name": "Zilker Park Boat Rentals",
+      "category": "outdoors",
+      "area": "Lady Bird Lake",
+      "address": "",
+      "remark": "ליד barton springs\nאחלה מקום להשכיר קייקים",
+      "top": false,
+      "lat": 30.2643375,
+      "lng": -97.7674691,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zilker%20Park%20Boat%20Rentals%2C%20Lady%20Bird%20Lake%2C%20Texas",
+      "website": "",
+      "photo": {
+        "src": "images/venues/zilker-boats.jpg",
+        "thumb": "images/thumbnails/venues/zilker-boats.webp",
+        "credit": "Zilker Park Boat Rentals",
+        "creditUrl": "https://www.zilkerboats.com/plan-your-visit-1"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 737,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Zilker+Park+Boat+Rentals/@30.2643819,-97.7674774,17z/data=!4m8!3m7!1s0x8644b53c9ca40bdd:0xcad0b474f3e5e93a!8m2!3d30.2643819!4d-97.7674774!9m1!1b1!16s%2Fg%2F11bysjwy8f"
+      }
+    },
+    {
+      "id": "trc",
+      "name": "Texas Rowing Center",
+      "category": "outdoors",
+      "area": "Lady Bird Lake",
+      "address": "",
+      "remark": "מקום מעולה לצאת ממנו לפאדל או קייקים, יש שם השכרה במקום. גם יש חניה ברחוב",
+      "top": false,
+      "lat": 30.2722466,
+      "lng": -97.7689174,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Texas%20Rowing%20Center%2C%20Lady%20Bird%20Lake%2C%20Texas",
+      "website": "",
+      "photo": {
+        "src": "images/trc.jpg",
+        "thumb": "images/thumbnails/trc.webp",
+        "credit": "LoneStarMike, CC BY-SA 3.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:AustinSkylineLouNeffPoint-Jun2010-a.JPG"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 672,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Texas+Rowing+Center/@30.2722466,-97.7689174,17z/data=!4m8!3m7!1s0x8644b53f28111089:0x373c4efdce38f1ec!8m2!3d30.2722466!4d-97.7689174!9m1!1b1!16s%2Fg%2F1thw73cg"
+      }
+    },
+    {
+      "id": "bonnell",
+      "name": "Covert Park at Mount Bonnell",
+      "category": "outdoors",
+      "area": "West Austin",
+      "address": "",
+      "remark": "מקום מגניב לעצירה של 20 דקות, מחנים את האוטו ברחוב, עולים לראות את הנוף",
+      "top": false,
+      "lat": 30.322179,
+      "lng": -97.7735296,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Covert%20Park%20at%20Mount%20Bonnell%2C%20West%20Austin%2C%20Texas",
+      "website": "",
+      "photo": {
+        "src": "images/bonnell.jpg",
+        "thumb": "images/thumbnails/bonnell.webp",
+        "credit": "Leaflet, Public domain",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Mount_Bonnell_2008.jpg"
+      },
+      "google": {
+        "rating": 4.7,
+        "reviews": 7255,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Covert+Park+at+Mount+Bonnell/@30.3216722,-97.7732083,17z/data=!4m8!3m7!1s0x8644cac8a719cb79:0xadf624e6d0d96bfd!8m2!3d30.3216722!4d-97.7732083!9m1!1b1!16s%2Fg%2F12hl63m8p"
+      }
+    },
+    {
+      "id": "hamilton",
+      "name": "Hamilton Pool",
+      "category": "outdoors",
+      "area": "45 min west",
+      "address": "",
+      "remark": "בריכה טבעית, מקום יפה אם המזג אוויר מתאים וירד גשם קצת לפני",
+      "top": false,
+      "lat": 30.3423294,
+      "lng": -98.1271142,
+      "mapsUrl": "https://www.google.com/maps/place/Hamilton+Pool+Preserve/@30.342281,-98.1270707,17z/data=!4m10!1m2!2m1!1sHamilton+Pool,+West+of+Austin,+Texas!3m6!1s0x865b3fb27b5050e3:0xd8c54250a880cf94!8m2!3d30.3423832!4d-98.1269025!15sCiRIYW1pbHRvbiBQb29sLCBXZXN0IG9mIEF1c3RpbiwgVGV4YXNaJCIiaGFtaWx0b24gcG9vbCB3ZXN0IG9mIGF1c3RpbiB0ZXhhc5IBD25hdHVyZV9wcmVzZXJ2ZZoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQydEdjRTFXVGxWaVZUbEVWVEZyTTJWRlNsaGFSVXBOWlZoQ1VsSnVZeEFC4AEA-gEECFQQSg!16s%2Fg%2F1v29cfqw",
+      "website": "",
+      "photo": {
+        "src": "images/hamilton.jpg",
+        "thumb": "images/thumbnails/hamilton.webp",
+        "credit": "Eric in SF, CC BY-SA 3.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Hamilton_Pool_and_Falls.jpg"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 2067,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Hamilton+Pool+Preserve/@30.342281,-98.1270707,17z/data=!4m12!1m2!2m1!1sHamilton+Pool,+West+of+Austin,+Texas!3m8!1s0x865b3fb27b5050e3:0xd8c54250a880cf94!8m2!3d30.3423832!4d-98.1269025!9m1!1b1!15sCiRIYW1pbHRvbiBQb29sLCBXZXN0IG9mIEF1c3RpbiwgVGV4YXNaJCIiaGFtaWx0b24gcG9vbCB3ZXN0IG9mIGF1c3RpbiB0ZXhhc5IBD25hdHVyZV9wcmVzZXJ2ZZoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQydEdjRTFXVGxWaVZUbEVWVEZyTTJWRlNsaGFSVXBOWlZoQ1VsSnVZeEFC4AEA-gEECFQQSg!16s%2Fg%2F1v29cfqw"
+      }
     },
     {
       "id": "mckinney",
       "name": "McKinney Falls State Park",
-      "category": "Nature & water",
+      "category": "outdoors",
       "area": "Southeast Austin",
-      "why": "Waterfalls and hiking inside city limits — easy half-day",
-      "note": "",
-      "image": "/images/mckinney.jpg",
-      "credit": {
-        "credit": "Larry D. Moore — CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Mckinney_lower_falls.jpg"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "פארק טבע יפה ומיוחד, המון מקומות להליכה ואזור עם בריכות טבעיות במידה ואין בצורת",
+      "top": false,
+      "lat": 30.180752,
+      "lng": -97.722007,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=McKinney%20Falls%20State%20Park%2C%20Southeast%20Austin%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/mckinney.jpg",
+        "thumb": "images/thumbnails/mckinney.webp",
+        "credit": "Larry D. Moore, CC BY 4.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Mckinney_lower_falls.jpg"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 8217,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/McKinney+Falls+State+Park/@30.1836487,-97.7221944,17z/data=!4m8!3m7!1s0x8644b3be3538b38b:0xfb83098f6001c693!8m2!3d30.1836487!4d-97.7221944!9m1!1b1!16s%2Fm%2F02qbk6z"
+      }
     },
     {
       "id": "travis",
       "name": "Lake Travis",
-      "category": "Nature & water",
-      "area": "Northwest",
-      "why": "Big lake for swimming, boats, and lakeside restaurants",
-      "note": "",
-      "image": "/images/travis.jpg",
-      "credit": {
-        "credit": "Antony-22 — CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Lake_Travis_aerial_2018.jpg"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "category": "outdoors",
+      "area": "Lake Travis",
+      "address": "",
+      "remark": "להשכיר סירה פה",
+      "top": false,
+      "lat": 30.4645913,
+      "lng": -98.0783472,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake%20Travis%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/travis.jpg",
+        "thumb": "images/thumbnails/travis.webp",
+        "credit": "Antony-22, CC BY-SA 4.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Lake_Travis_aerial_2018.jpg"
+      },
+      "google": {
+        "rating": 4.7,
+        "reviews": 775,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Lake+Travis/@30.4637255,-98.0646404,11z/data=!4m8!3m7!1s0x865b234b3c3d1495:0x74e585eef7396b82!8m2!3d30.4205138!4d-97.9102647!9m1!1b1!16zL20vMDE2NXRx"
+      }
     },
     {
       "id": "ski-shores",
       "name": "Ski Shores Cafe",
-      "category": "Food",
+      "category": "eat",
       "area": "Lake Austin",
-      "why": "Casual lakeside food with boats pulling up — Texas waterfront vibe",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "ליד האמה לונג - מקום כיפי לשתות ולאכול",
+      "top": false,
+      "lat": 30.3335565,
+      "lng": -97.8228996,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ski%20Shores%20Cafe%2C%20Lake%20Austin%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/venues/ski-shores.jpg",
+        "thumb": "images/thumbnails/venues/ski-shores.webp",
+        "credit": "Ski Shores Cafe / Justin Cook",
+        "creditUrl": "https://www.skishorescafe.com/"
+      },
+      "google": {
+        "rating": 4.3,
+        "reviews": 2203,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Ski%20Shores%20Cafe%2C%20Lake%20Austin%2C%20Texas"
+      }
     },
     {
       "id": "leroy",
       "name": "Leroy and Lewis Barbecue",
-      "category": "Food",
+      "category": "eat",
       "area": "South Austin",
-      "why": "Creative smoked meats at a South Austin barbecue restaurant",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "עוד ברבקיו שאומרים שממש טוב",
+      "top": false,
+      "lat": 30.2098205,
+      "lng": -97.787332,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Leroy%20and%20Lewis%20Barbecue%2C%20South%20Austin%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/venues/leroy.jpg",
+        "thumb": "images/thumbnails/venues/leroy.webp",
+        "credit": "LeRoy and Lewis",
+        "creditUrl": "https://leroyandlewisbbq.com/"
+      },
+      "google": {
+        "rating": 4.4,
+        "reviews": 2579,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Leroy+and+Lewis+Barbecue/@30.2098566,-97.7873058,17z/data=!4m8!3m7!1s0x8644b495681d7af5:0x91a8de87bc0c5716!8m2!3d30.2098566!4d-97.7873058!9m1!1b1!16s%2Fg%2F11dxj0bvcg"
+      }
     },
     {
       "id": "bouldin",
       "name": "Bouldin Acres",
-      "category": "Hangouts",
-      "area": "South Austin",
-      "why": "Huge patio hang with games, drinks, and a relaxed group vibe",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "category": "eat",
+      "area": "South Lamar",
+      "address": "",
+      "remark": "אחלה מקום בחוץ לשבת ולשתות בירה ולאכול אוכל אמרקאי - כמו oz",
+      "top": false,
+      "lat": 30.248211,
+      "lng": -97.7686804,
       "mapsUrl": "https://www.google.com/maps/place/Bouldin+Acres/data=!4m7!3m6!1s0x8644b5a7f6162b03:0x616ba830e701a29c!8m2!3d30.2482149!4d-97.7686448!16s%2Fg%2F11fnvwfvwt!19sChIJAysW9qe1RIYRnKIB5zCoa2E",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/venues/bouldin.jpg",
+        "thumb": "images/thumbnails/venues/bouldin.webp",
+        "credit": "Bouldin Acres",
+        "creditUrl": "https://lamar.bouldinacres.com/"
+      },
+      "google": {
+        "rating": 4.5,
+        "reviews": 1215,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Bouldin+Acres/data=!4m7!3m6!1s0x8644b5a7f6162b03:0x616ba830e701a29c!8m2!3d30.2482149!4d-97.7686448!16s%2Fg%2F11fnvwfvwt!19sChIJAysW9qe1RIYRnKIB5zCoa2E"
+      }
     },
     {
       "id": "pins",
       "name": "Pins Mechanical Co.",
-      "category": "Hangouts",
-      "area": "South Congress / St. Elmo",
-      "why": "Pinball, arcade, and drinks — easy win for mixed ages",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "category": "fun",
+      "area": "St. Elmo",
+      "address": "",
+      "remark": "ארקדיה מגניבה",
+      "top": false,
+      "lat": 30.2183172,
+      "lng": -97.7650069,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pins%20Mechanical%20Co.%2C%20East%20Austin%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/venues/pins.jpg",
+        "thumb": "images/thumbnails/venues/pins.webp",
+        "credit": "Pins Mechanical Co.",
+        "creditUrl": "https://www.pinsbar.com/locations/austin"
+      },
+      "google": {
+        "rating": 4.4,
+        "reviews": 431,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Pins+Mechanical+Co./@30.2183566,-97.7649238,17z/data=!4m8!3m7!1s0x8644b5002897c639:0x5e76de555fb4e911!8m2!3d30.2183566!4d-97.7649238!9m1!1b1!16s%2Fg%2F11y8flbznj"
+      }
     },
     {
       "id": "pinstack",
       "name": "PINSTACK",
-      "category": "Hangouts",
+      "category": "fun",
       "area": "North Austin",
-      "why": "Bowling, arcade, and food under one roof",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "עוד ארקדיה ובאולינג",
+      "top": false,
+      "lat": 30.4040568,
+      "lng": -97.67239,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=PINSTACK%2C%20North%20Austin%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/venues/pinstack.jpg",
+        "thumb": "images/thumbnails/venues/pinstack.webp",
+        "credit": "PINSTACK",
+        "creditUrl": "https://pinstackbowl.com/locations/austin-texas/"
+      },
+      "google": {
+        "rating": 4.2,
+        "reviews": 1177,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/PINSTACK/@30.4040805,-97.6724028,17z/data=!4m8!3m7!1s0x8644cf229e5a46d5:0xe6ae496a1b47a8b5!8m2!3d30.4040805!4d-97.6724028!9m1!1b1!16s%2Fg%2F11j1tnbkd1"
+      }
     },
     {
       "id": "main-event",
       "name": "Main Event Bowling Alley",
-      "category": "Hangouts",
+      "category": "fun",
       "area": "North Austin",
-      "why": "Bowling, laser tag, arcade — good for a family night",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "באולינג עם ארקדיה ומיני גולף וכאלה... בימי שני יש מבצעים של 20 דולר הכל חופשי אחרי הבית ספר",
+      "top": false,
+      "lat": 30.4455265,
+      "lng": -97.7845758,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Main%20Event%20Bowling%20Alley%2C%20North%20Austin%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/venues/main-event.jpg",
+        "thumb": "images/thumbnails/venues/main-event.webp",
+        "credit": "Main Event",
+        "creditUrl": "https://www.mainevent.com/locations/texas/austin/"
+      },
+      "google": {
+        "rating": 4.2,
+        "reviews": 6157,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Main+Event+Austin/@30.4451569,-97.7847581,17z/data=!4m8!3m7!1s0x8644cd2d57dbe79d:0x4d8855d801472f5e!8m2!3d30.4451569!4d-97.7847581!9m1!1b1!16s%2Fg%2F1tf0q_t0"
+      }
     },
     {
       "id": "topgolf",
       "name": "Topgolf Austin",
-      "category": "Hangouts",
-      "area": "Domain / North",
-      "why": "Climate-friendly golf bays with food and views — no skill needed",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "category": "fun",
+      "area": "The Domain",
+      "address": "",
+      "remark": "אחלה טופ גולף - שווה לבקר בזה",
+      "top": false,
+      "lat": 30.3985993,
+      "lng": -97.7167349,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Topgolf%20Austin%2C%20Domain%20%2F%20North%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/venues/topgolf.jpg",
+        "thumb": "images/thumbnails/venues/topgolf.webp",
+        "credit": "Topgolf",
+        "creditUrl": "https://topgolf.com/us/austin/"
+      },
+      "google": {
+        "rating": 4.4,
+        "reviews": 4455,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Topgolf+Austin/@30.398246,-97.7175093,17z/data=!4m8!3m7!1s0x8644cc734b862887:0x9fa52087722fe7ad!8m2!3d30.398246!4d-97.7175093!9m1!1b1!16s%2Fg%2F12hz4lcwq"
+      }
     },
     {
       "id": "petes",
       "name": "Pete's Dueling Piano Bar",
-      "category": "Hangouts",
+      "category": "fun",
       "area": "Downtown",
-      "why": "Loud, fun piano show — more of a night out than a kids stop",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "המקום האהוב על עדן בדאון טאון - בר מגניב כזה של פסנתר שהנגנים מאלתרים כל שיר",
+      "top": false,
+      "lat": 30.266712,
+      "lng": -97.7385615,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pete%27s%20Dueling%20Piano%20Bar%2C%20Downtown%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/venues/petes.jpg",
+        "thumb": "images/thumbnails/venues/petes.webp",
+        "credit": "Pete’s Dueling Piano Bar",
+        "creditUrl": "https://www.petesduelingpianobar.com/austin/"
+      },
+      "google": {
+        "rating": 4.7,
+        "reviews": 2472,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Pete's+Dueling+Piano+Bar/@30.266615,-97.7386345,17z/data=!4m8!3m7!1s0x8644b5a64e170c7b:0xab76e84472f2a21b!8m2!3d30.266615!4d-97.7386345!9m1!1b1!16s%2Fg%2F1thzp8w9"
+      }
     },
     {
       "id": "alamo",
       "name": "Alamo Drafthouse Cinema South Lamar",
-      "category": "Hangouts",
+      "category": "fun",
       "area": "South Lamar",
-      "why": "Austin movie theater where you order food and drinks to your seat",
-      "note": "",
-      "image": "/images/alamo.jpg",
-      "credit": {
-        "credit": "Blwarren713 at English Wikipedia — CC BY-SA 3.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Alamo_Drafthouse_sign.jpg"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "קולנוע שווה ביותר - מלצר שמגיע אליכם ומגישים בירות קוקטלים אוכל והכל",
+      "top": false,
+      "lat": 30.255811,
+      "lng": -97.7636195,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Alamo%20Drafthouse%20Cinema%20South%20Lamar%2C%20South%20Lamar%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/alamo.jpg",
+        "thumb": "images/thumbnails/alamo.webp",
+        "credit": "Blwarren713 at English Wikipedia, CC BY-SA 3.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Alamo_Drafthouse_sign.jpg"
+      },
+      "google": {
+        "rating": 4.5,
+        "reviews": 5862,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Alamo+Drafthouse+Cinema+South+Lamar/@30.2560666,-97.7633276,17z/data=!4m8!3m7!1s0x8644b51f13dbe7d3:0x1b3eeeeb51b22f0c!8m2!3d30.2560666!4d-97.7633276!9m1!1b1!16s%2Fg%2F1yl49kw3r"
+      }
     },
     {
       "id": "thinkery",
       "name": "Thinkery",
-      "category": "Hangouts",
+      "category": "fun",
       "area": "Mueller",
-      "why": "Hands-on children's museum if kids are in the mix",
-      "note": "",
-      "image": "/images/thinkery.jpg",
-      "credit": {
-        "credit": "Larry D. Moore — CC BY 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:The_thinkery_austin_2014.jpg"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "מוזיאון לילדים",
+      "top": false,
+      "lat": 30.2975662,
+      "lng": -97.7048316,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Thinkery%2C%20Mueller%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/thinkery.jpg",
+        "thumb": "images/thumbnails/thinkery.webp",
+        "credit": "Larry D. Moore, CC BY 4.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:The_thinkery_austin_2014.jpg"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 5720,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Thinkery/@30.297417,-97.704971,17z/data=!4m8!3m7!1s0x8644b5089ad5aa81:0x505e64e261623ea7!8m2!3d30.297417!4d-97.704971!9m1!1b1!16s%2Fm%2F0k3rfw4"
+      }
     },
     {
       "id": "cota",
       "name": "Circuit of The Americas",
-      "category": "Day trips",
+      "category": "trips",
       "area": "Southeast Austin",
-      "why": "F1 track complex — observation tower and events when racing isn't on",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "הפורמולה 1 - יש שם קרטינג למבוגרים שווה ביותר",
+      "top": false,
+      "lat": 30.1356307,
+      "lng": -97.63662,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Circuit%20of%20The%20Americas%2C%20Southeast%20Austin%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/venues/cota.jpg",
+        "thumb": "images/thumbnails/venues/cota.webp",
+        "credit": "Earl McGehee / Wikimedia Commons · CC BY-SA 3.0 · resized",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Tower_at_Circuit_of_the_Americas.jpg"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 18076,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Circuit+of+The+Americas/@30.1358413,-97.6383332,17z/data=!4m8!3m7!1s0x8644b03ad152eaf9:0x8ae827dd1ff5e0ed!8m2!3d30.1358413!4d-97.6383332!9m1!1b1!16s%2Fm%2F0czd9dd"
+      }
     },
     {
       "id": "mozarts",
       "name": "Mozart's Coffee Roasters",
-      "category": "Food",
+      "category": "eat",
       "area": "Lake Austin",
-      "why": "Coffee on the water with live music some evenings",
-      "note": "",
-      "image": null,
-      "credit": null,
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "קפה במקום יפה על הנהר אבל כמו רוב הדברים באוסטין דיי בינוני באוכל ובקפה",
+      "top": false,
+      "lat": 30.2954311,
+      "lng": -97.784238,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mozart%27s%20Coffee%20Roasters%2C%20Lake%20Austin%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/venues/mozarts.jpg",
+        "thumb": "images/thumbnails/venues/mozarts.webp",
+        "credit": "Mozart’s Coffee Roasters",
+        "creditUrl": "https://mozartscoffee.com/blogs/blog/your-office-away-from-the-office-with-free-wifi"
+      },
+      "google": {
+        "rating": 4.5,
+        "reviews": 10994,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Mozart's+Coffee+Roasters/@30.2954696,-97.7839512,17z/data=!4m8!3m7!1s0x8644b5554461664d:0xbc4ff333ec9ad1ad!8m2!3d30.2954696!4d-97.7839512!9m1!1b1!16s%2Fm%2F020z4hc"
+      }
     },
     {
       "id": "fbg",
       "name": "Fredericksburg",
-      "category": "Day trips",
+      "category": "trips",
       "area": "Hill Country",
-      "why": "German-Texan town, Main Street shopping, and nearby wineries",
-      "note": "",
-      "image": "/images/fbg.jpg",
-      "credit": {
-        "credit": "Hot Furnace — CC BY-SA 4.0",
-        "source": "https://commons.wikimedia.org/wiki/File:Downtown_Fredericksburg,_TX_IMG_0406.JPG"
-      },
-      "included": true,
-      "rating": null,
-      "pinned": false,
+      "address": "",
+      "remark": "שווה מאוד לבקר שם ביקבים, לעשות airbnb ולצא לטיולים באזור",
+      "top": false,
+      "lat": 30.2752011,
+      "lng": -98.8719843,
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fredericksburg%2C%20Hill%20Country%2C%20Texas",
-      "website": ""
+      "website": "",
+      "photo": {
+        "src": "images/fbg.jpg",
+        "thumb": "images/thumbnails/fbg.webp",
+        "credit": "Hot Furnace, CC BY-SA 4.0",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Fredericksburg,_TX_IMG_0406.JPG"
+      },
+      "google": {
+        "rating": null,
+        "reviews": null,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Fredericksburg%2C%20Hill%20Country%2C%20Texas"
+      }
+    },
+    {
+      "id": "ben-and-lynn-s",
+      "name": "Ben & Lynn's",
+      "category": "eat",
+      "area": "East Austin",
+      "address": "2600 E Cesar Chavez St, Austin, TX 78702",
+      "remark": "המסעדה של ג׳ושעה וויסמן - יוטיובר מפורסם, אמור להיות סנדוויץ עוף מעולה",
+      "top": false,
+      "lat": 30.2540592,
+      "lng": -97.7151509,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ben%20%26%20Lynn%27s%2C%202600%20E%20Cesar%20Chavez%20St%2C%20Austin%2C%20TX%2078702",
+      "website": "https://benandlynns.com/",
+      "photo": {
+        "src": "images/venues/food-ben-and-lynn-s.jpg",
+        "thumb": "images/thumbnails/venues/food-ben-and-lynn-s.webp",
+        "credit": "Ben & Lynn's",
+        "creditUrl": "https://www.benandlynns.com/"
+      },
+      "google": {
+        "rating": 4.3,
+        "reviews": 307,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Ben%20%26%20Lynn%27s%2C%202600%20E%20Cesar%20Chavez%20St%2C%20Austin%2C%20TX%2078702"
+      }
+    },
+    {
+      "id": "saltgrass-steak-house",
+      "name": "Saltgrass Steak House",
+      "category": "eat",
+      "area": "Arboretum",
+      "address": "10614 Research Blvd, Austin, TX 78759",
+      "remark": "סטיקייה יותר טובה מtexas roadhouse",
+      "top": false,
+      "lat": 30.3976343,
+      "lng": -97.747086,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Saltgrass%20Steak%20House%2C%2010614%20Research%20Blvd%2C%20Austin%2C%20TX%2078759",
+      "website": "https://www.saltgrass.com/location/saltgrass-austin/",
+      "photo": {
+        "src": "images/venues/food-saltgrass-steak-house.jpg",
+        "thumb": "images/thumbnails/venues/food-saltgrass-steak-house.webp",
+        "credit": "Saltgrass Steak House",
+        "creditUrl": "https://www.saltgrass.com/location/saltgrass-austin/"
+      },
+      "google": {
+        "rating": 4.3,
+        "reviews": 3180,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Saltgrass%20Steak%20House%2C%2010614%20Research%20Blvd%2C%20Austin%2C%20TX%2078759"
+      }
+    },
+    {
+      "id": "sugarwolf",
+      "name": "Sugarwolf",
+      "category": "eat",
+      "area": "Downtown",
+      "address": "401 W 4th St #120, Austin, TX 78701",
+      "remark": "המאפיה הכי טובה באוסטין בלי ספק! שווה ביקור",
+      "top": false,
+      "lat": 30.2664047,
+      "lng": -97.7475899,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sugarwolf%2C%20401%20W%204th%20St%20%23120%2C%20Austin%2C%20TX%2078701",
+      "website": "https://www.sugarwolfbakery.com/",
+      "photo": {
+        "src": "images/venues/food-sugarwolf.jpg",
+        "thumb": "images/thumbnails/venues/food-sugarwolf.webp",
+        "credit": "Sugarwolf",
+        "creditUrl": "https://www.sugarwolfbakery.com/"
+      },
+      "google": {
+        "rating": 4.2,
+        "reviews": 385,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Sugarwolf%2C%20401%20W%204th%20St%20%23120%2C%20Austin%2C%20TX%2078701"
+      }
+    },
+    {
+      "id": "ema-austin",
+      "name": "Ema - Austin",
+      "category": "eat",
+      "area": "North Austin",
+      "address": "3120 Palm Way #170, Austin, TX 78758",
+      "remark": "המסעדה שעדן הכי אוהבת - אוכל ישראלי",
+      "top": false,
+      "lat": 30.4032495,
+      "lng": -97.7213988,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ema%20-%20Austin%2C%203120%20Palm%20Way%20%23170%2C%20Austin%2C%20TX%2078758",
+      "website": "https://www.emarestaurants.com/austin",
+      "photo": {
+        "src": "images/venues/food-ema-austin.jpg",
+        "thumb": "images/thumbnails/venues/food-ema-austin.webp",
+        "credit": "Ēma Austin / Chase Daniel",
+        "creditUrl": "https://www.emarestaurants.com/austin"
+      },
+      "google": {
+        "rating": 4.9,
+        "reviews": 5396,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Ema%20-%20Austin%2C%203120%20Palm%20Way%20%23170%2C%20Austin%2C%20TX%2078758"
+      }
+    },
+    {
+      "id": "fogo-de-chao-brazilian-steakhouse",
+      "name": "Fogo de Chão Brazilian Steakhouse",
+      "category": "eat",
+      "area": "Downtown",
+      "address": "200 Congress Ave, Austin, TX 78701",
+      "remark": "מסעדה ברזילאית ניראת אש",
+      "top": false,
+      "lat": 30.264824,
+      "lng": -97.744512,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fogo%20de%20Ch%C3%A3o%20Brazilian%20Steakhouse%2C%20200%20Congress%20Ave%2C%20Austin%2C%20TX%2078701",
+      "website": "https://fogodechao.com/location/austin/",
+      "photo": {
+        "src": "images/venues/food-fogo-de-chao-brazilian-steakhouse.jpg",
+        "thumb": "images/thumbnails/venues/food-fogo-de-chao-brazilian-steakhouse.webp",
+        "credit": "Fogo de Chão Brazilian Steakhouse",
+        "creditUrl": "https://fogodechao.com/location/austin/"
+      },
+      "google": {
+        "rating": 4.7,
+        "reviews": 10494,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Fogo%20de%20Ch%C3%A3o%20Brazilian%20Steakhouse%2C%20200%20Congress%20Ave%2C%20Austin%2C%20TX%2078701"
+      }
+    },
+    {
+      "id": "north-italia",
+      "name": "North Italia",
+      "category": "eat",
+      "area": "North Austin",
+      "address": "11506 Century Oaks Terrace Ste 124, Austin, TX 78758",
+      "remark": "רשת איטלקית - נראה ממש סבבה",
+      "top": false,
+      "lat": 30.4023266,
+      "lng": -97.7259912,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=North%20Italia%2C%2011506%20Century%20Oaks%20Terrace%20Ste%20124%2C%20Austin%2C%20TX%2078758",
+      "website": "https://www.northitalia.com/locations/austin-tx-the-domain/",
+      "photo": {
+        "src": "images/venues/food-north-italia.jpg",
+        "thumb": "images/thumbnails/venues/food-north-italia.webp",
+        "credit": "North Italia",
+        "creditUrl": "https://www.northitalia.com/locations/austin-tx-the-domain/"
+      },
+      "google": {
+        "rating": 4.3,
+        "reviews": 3124,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=North%20Italia%2C%2011506%20Century%20Oaks%20Terrace%20Ste%20124%2C%20Austin%2C%20TX%2078758"
+      }
+    },
+    {
+      "id": "two-hands",
+      "name": "Two Hands",
+      "category": "eat",
+      "area": "South Congress",
+      "address": "1011 S Congress Ave Ste 170, Austin, TX 78704",
+      "remark": "קפה מגניב",
+      "top": false,
+      "lat": 30.2534769,
+      "lng": -97.7478877,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Two%20Hands%2C%201011%20S%20Congress%20Ave%20Ste%20170%2C%20Austin%2C%20TX%2078704",
+      "website": "https://www.twohandshospitality.com/location/austin/",
+      "photo": {
+        "src": "images/venues/food-two-hands.jpg",
+        "thumb": "images/thumbnails/venues/food-two-hands.webp",
+        "credit": "Two Hands",
+        "creditUrl": "https://www.twohandshospitality.com/location/two-hands-austin/"
+      },
+      "google": {
+        "rating": 4.4,
+        "reviews": 1132,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Two%20Hands%2C%201011%20S%20Congress%20Ave%20Ste%20170%2C%20Austin%2C%20TX%2078704"
+      }
+    },
+    {
+      "id": "the-one-pho",
+      "name": "The One Pho",
+      "category": "eat",
+      "area": "Arboretum",
+      "address": "10721 Research Blvd, B110, near Costco, Austin, TX 78759",
+      "remark": "מסעדה ויאטנמית מעולה - אוכל פועלים פשוט וטוב",
+      "top": false,
+      "lat": 30.3987165,
+      "lng": -97.7445786,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20One%20Pho%2C%2010721%20Research%20Blvd%2C%20B110%2C%20near%20Costco%2C%20Austin%2C%20TX%2078759",
+      "website": "https://order.toasttab.com/online/the-one-pho-10721-research-blvd-b110",
+      "photo": {
+        "src": "images/venues/food-the-one-pho.jpg",
+        "thumb": "images/thumbnails/venues/food-the-one-pho.webp",
+        "credit": "The One Pho",
+        "creditUrl": "https://order.toasttab.com/online/the-one-pho-10721-research-blvd-b110"
+      },
+      "google": {
+        "rating": 4.5,
+        "reviews": 399,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=The%20One%20Pho%2C%2010721%20Research%20Blvd%2C%20B110%2C%20near%20Costco%2C%20Austin%2C%20TX%2078759"
+      }
+    },
+    {
+      "id": "ichiumi-sushi-haru-sushi",
+      "name": "IchiUmi Sushi (Haru Sushi)",
+      "category": "eat",
+      "area": "Arboretum",
+      "address": "9503 Research Blvd #500, Austin, TX 78759",
+      "remark": "סתם סושי שמצאתי בגוגל, שווה לבדוק",
+      "top": false,
+      "lat": 30.3867822,
+      "lng": -97.7418725,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=IchiUmi%20Sushi%20%28Haru%20Sushi%29%2C%209503%20Research%20Blvd%20%23500%2C%20Austin%2C%20TX%2078759",
+      "website": "https://ichiumisushitx.com/",
+      "photo": {
+        "src": "images/venues/food-ichiumi-sushi-haru-sushi.jpg",
+        "thumb": "images/thumbnails/venues/food-ichiumi-sushi-haru-sushi.webp",
+        "credit": "Ichi-Umi Sushi",
+        "creditUrl": "https://ichiumisushitx.com/menu/18710912"
+      },
+      "google": {
+        "rating": 4.5,
+        "reviews": 2445,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=IchiUmi%20Sushi%20%28Haru%20Sushi%29%2C%209503%20Research%20Blvd%20%23500%2C%20Austin%2C%20TX%2078759"
+      }
+    },
+    {
+      "id": "zeds-real-fruit-ice-cream",
+      "name": "Zeds Real Fruit Ice Cream",
+      "category": "eat",
+      "area": "East Austin",
+      "address": "1814 Harvey St, Austin, TX 78702",
+      "remark": "גלידה שראינו בדרך וניראת טוב",
+      "top": false,
+      "lat": 30.2820797,
+      "lng": -97.7057133,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zeds%20Real%20Fruit%20Ice%20Cream%2C%201814%20Harvey%20St%2C%20Austin%2C%20TX%2078702",
+      "website": "https://www.zedsicecream.com/eastside",
+      "photo": {
+        "src": "images/venues/food-zeds-real-fruit-ice-cream.jpg",
+        "thumb": "images/thumbnails/venues/food-zeds-real-fruit-ice-cream.webp",
+        "credit": "Zeds Real Fruit Ice Cream",
+        "creditUrl": "https://www.zedsicecream.com/eastside"
+      },
+      "google": {
+        "rating": 4.7,
+        "reviews": 976,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Zeds%20Real%20Fruit%20Ice%20Cream%2C%201814%20Harvey%20St%2C%20Austin%2C%20TX%2078702"
+      }
+    },
+    {
+      "id": "nadc-burger",
+      "name": "NADC Burger",
+      "category": "eat",
+      "area": "East Austin",
+      "address": "1007 E 6th St, Austin, TX 78702",
+      "remark": "אמור להיות סמאש חולההה",
+      "top": false,
+      "lat": 30.2648743,
+      "lng": -97.732205,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=NADC%20Burger%2C%201007%20E%206th%20St%2C%20Austin%2C%20TX%2078702",
+      "website": "https://www.nadcburger.com/",
+      "photo": {
+        "src": "images/venues/food-nadc-burger.jpg",
+        "thumb": "images/thumbnails/venues/food-nadc-burger.webp",
+        "credit": "NADC Burger",
+        "creditUrl": "https://www.nadcburger.com/"
+      },
+      "google": {
+        "rating": 4.1,
+        "reviews": 788,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=NADC%20Burger%2C%201007%20E%206th%20St%2C%20Austin%2C%20TX%2078702"
+      }
+    },
+    {
+      "id": "desnudo-coffee-downtown",
+      "name": "Desnudo Coffee: Downtown",
+      "category": "eat",
+      "area": "Downtown",
+      "address": "111 Congress Ave., Austin, TX 78701",
+      "remark": "קפה עם מיסו",
+      "top": false,
+      "lat": 30.2639778,
+      "lng": -97.7440548,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Desnudo%20Coffee%3A%20Downtown%2C%20111%20Congress%20Ave.%2C%20Austin%2C%20TX%2078701",
+      "website": "https://www.desnudocoffee.com/",
+      "photo": {
+        "src": "images/venues/food-desnudo-coffee-downtown.jpg",
+        "thumb": "images/thumbnails/venues/food-desnudo-coffee-downtown.webp",
+        "credit": "Desnudo Coffee: Downtown",
+        "creditUrl": "https://desnudocoffee.com/pages/locations"
+      },
+      "google": {
+        "rating": 4.7,
+        "reviews": 378,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Desnudo%20Coffee%3A%20Downtown%2C%20111%20Congress%20Ave.%2C%20Austin%2C%20TX%2078701"
+      }
+    },
+    {
+      "id": "lumi-s-crepes",
+      "name": "Lumi's Crepes",
+      "category": "eat",
+      "area": "Arboretum",
+      "address": "5004 Hamilton Rd, Austin, TX 78759",
+      "remark": "קרפ מטורף של עמית ומוריה",
+      "top": false,
+      "lat": 30.4030233,
+      "lng": -97.7470967,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lumi%27s%20Crepes%2C%205004%20Hamilton%20Rd%2C%20Austin%2C%20TX%2078759",
+      "website": "https://order.online/business/lumis-crepes-11185857",
+      "photo": {
+        "src": "images/venues/food-lumi-s-crepes.jpg",
+        "thumb": "images/thumbnails/venues/food-lumi-s-crepes.webp",
+        "credit": "Lumi’s Crepes",
+        "creditUrl": "https://order.online/store/lumi%27s-crepes-austin-26096079/?hideModal=true"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 569,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Lumi%27s%20Crepes%2C%205004%20Hamilton%20Rd%2C%20Austin%2C%20TX%2078759"
+      }
+    },
+    {
+      "id": "gourdough-s-big-fat-donuts-and-coffee",
+      "name": "Gourdough's Big Fat Donuts & Coffee",
+      "category": "eat",
+      "area": "South Austin",
+      "address": "1503 S 1st St, Austin, TX 78704",
+      "remark": "דונאטס של מוריה ועמית",
+      "top": false,
+      "lat": 30.2493592,
+      "lng": -97.7548691,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gourdough%27s%20Big%20Fat%20Donuts%20%26%20Coffee%2C%201503%20S%201st%20St%2C%20Austin%2C%20TX%2078704",
+      "website": "https://gourdoughs.com/",
+      "photo": {
+        "src": "images/venues/food-gourdough-s-big-fat-donuts-and-coffee.jpg",
+        "thumb": "images/thumbnails/venues/food-gourdough-s-big-fat-donuts-and-coffee.webp",
+        "credit": "Gourdough's Big Fat Donuts & Coffee",
+        "creditUrl": "https://gourdoughs.com/"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 2821,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Gourdough%27s%20Big%20Fat%20Donuts%20%26%20Coffee%2C%201503%20S%201st%20St%2C%20Austin%2C%20TX%2078704"
+      }
+    },
+    {
+      "id": "jinya-ramen-bar-austin",
+      "name": "JINYA Ramen Bar - Austin",
+      "category": "eat",
+      "area": "North Austin",
+      "address": "3210 Esperanza Crossing Suite 130, Austin, TX 78758",
+      "remark": "ראמן טוב ממש",
+      "top": false,
+      "lat": 30.4003019,
+      "lng": -97.7232498,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=JINYA%20Ramen%20Bar%20-%20Austin%2C%203210%20Esperanza%20Crossing%20Suite%20130%2C%20Austin%2C%20TX%2078758",
+      "website": "https://www.jinyaramenbar.com/locations/austin/?utm_medium=soci&utm_source=gmb",
+      "photo": {
+        "src": "images/venues/food-jinya-ramen-bar-austin.jpg",
+        "thumb": "images/thumbnails/venues/food-jinya-ramen-bar-austin.webp",
+        "credit": "JINYA Ramen Bar",
+        "creditUrl": "https://www.jinyaramenbar.com/locations/austin/"
+      },
+      "google": {
+        "rating": 4.4,
+        "reviews": 3891,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=JINYA%20Ramen%20Bar%20-%20Austin%2C%203210%20Esperanza%20Crossing%20Suite%20130%2C%20Austin%2C%20TX%2078758"
+      }
+    },
+    {
+      "id": "sangam-chettinad-indian-cuisine",
+      "name": "Sangam Chettinad Indian Cuisine",
+      "category": "eat",
+      "area": "North Austin",
+      "address": "6001 W Parmer Ln #140, Austin, TX 78727",
+      "remark": "מסעדה הודית מומלצת של גל ואליעד",
+      "top": false,
+      "lat": 30.4420964,
+      "lng": -97.7439582,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sangam%20Chettinad%20Indian%20Cuisine%2C%206001%20W%20Parmer%20Ln%20%23140%2C%20Austin%2C%20TX%2078727",
+      "website": "https://www.sangamchettinad.com/",
+      "photo": {
+        "src": "images/venues/food-sangam-chettinad-indian-cuisine.jpg",
+        "thumb": "images/thumbnails/venues/food-sangam-chettinad-indian-cuisine.webp",
+        "credit": "Sangam Chettinad Indian Cuisine",
+        "creditUrl": "https://www.sangamchettinad.com/menu/"
+      },
+      "google": {
+        "rating": 4.7,
+        "reviews": 20525,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Sangam%20Chettinad%20Indian%20Cuisine%2C%206001%20W%20Parmer%20Ln%20%23140%2C%20Austin%2C%20TX%2078727"
+      }
+    },
+    {
+      "id": "easy-tiger-the-linc",
+      "name": "Easy Tiger - The Linc",
+      "category": "eat",
+      "area": "North Austin",
+      "address": "6406 N Interstate 35 Frontage Rd #1100, Austin, TX 78752",
+      "remark": "סנדוויצים סבבה",
+      "top": false,
+      "lat": 30.3272944,
+      "lng": -97.7072153,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Easy%20Tiger%20-%20The%20Linc%2C%206406%20N%20Interstate%2035%20Frontage%20Rd%20%231100%2C%20Austin%2C%20TX%2078752",
+      "website": "https://www.easytigerusa.com/location/north/",
+      "photo": {
+        "src": "images/venues/food-easy-tiger-the-linc.jpg",
+        "thumb": "images/thumbnails/venues/food-easy-tiger-the-linc.webp",
+        "credit": "Easy Tiger - The Linc",
+        "creditUrl": "https://www.easytigeraustin.com/"
+      },
+      "google": {
+        "rating": 4.3,
+        "reviews": 2165,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Easy%20Tiger%20-%20The%20Linc%2C%206406%20N%20Interstate%2035%20Frontage%20Rd%20%231100%2C%20Austin%2C%20TX%2078752"
+      }
+    },
+    {
+      "id": "another-broken-egg-cafe",
+      "name": "Another Broken Egg Cafe",
+      "category": "eat",
+      "area": "Northwest Hills",
+      "address": "8012 Mesa Dr, Austin, TX 78731",
+      "remark": "מקום לארוחת בוקר",
+      "top": false,
+      "lat": 30.3701396,
+      "lng": -97.7582031,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Another%20Broken%20Egg%20Cafe%2C%208012%20Mesa%20Dr%2C%20Austin%2C%20TX%2078731",
+      "website": "https://www.anotherbrokenegg.com/locations/austin-tx-mesa-drive/",
+      "photo": {
+        "src": "images/venues/food-another-broken-egg-cafe.jpg",
+        "thumb": "images/thumbnails/venues/food-another-broken-egg-cafe.webp",
+        "credit": "Another Broken Egg Cafe",
+        "creditUrl": "https://www.anotherbrokenegg.com/"
+      },
+      "google": {
+        "rating": 4.9,
+        "reviews": 8433,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Another%20Broken%20Egg%20Cafe%2C%208012%20Mesa%20Dr%2C%20Austin%2C%20TX%2078731"
+      }
+    },
+    {
+      "id": "machi-sushi-all-you-can-eat-austin",
+      "name": "Machi Sushi All You Can Eat (Austin)",
+      "category": "eat",
+      "area": "South Austin",
+      "address": "2200 S I-35 Frontage Rd, Austin, TX 78704",
+      "remark": "סושייי",
+      "top": false,
+      "lat": 30.2348527,
+      "lng": -97.7417114,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Machi%20Sushi%20All%20You%20Can%20Eat%20%28Austin%29%2C%202200%20S%20I-35%20Frontage%20Rd%2C%20Austin%2C%20TX%2078704",
+      "website": "https://machisushiaustin.com/",
+      "photo": {
+        "src": "images/venues/food-machi-sushi-all-you-can-eat-austin.jpg",
+        "thumb": "images/thumbnails/venues/food-machi-sushi-all-you-can-eat-austin.webp",
+        "credit": "Machi Sushi All You Can Eat",
+        "creditUrl": "https://machisushiaustin.com/"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 1997,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Machi%20Sushi%20All%20You%20Can%20Eat%20%28Austin%29%2C%202200%20S%20I-35%20Frontage%20Rd%2C%20Austin%2C%20TX%2078704"
+      }
+    },
+    {
+      "id": "swedish-hill",
+      "name": "Swedish Hill",
+      "category": "eat",
+      "area": "Clarksville",
+      "address": "1128 W 6th St, Austin, TX 78703",
+      "remark": "הבית קפה התל אביבי שעדן אוהבת",
+      "top": false,
+      "lat": 30.272816,
+      "lng": -97.756823,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Swedish%20Hill%2C%201128%20W%206th%20St%2C%20Austin%2C%20TX%2078703",
+      "website": "https://www.swedishhillbakery.com/westsixth",
+      "photo": {
+        "src": "images/venues/food-swedish-hill.jpg",
+        "thumb": "images/thumbnails/venues/food-swedish-hill.webp",
+        "credit": "Swedish Hill / Justin Cook",
+        "creditUrl": "https://www.swedishhillbakery.com/westsixth"
+      },
+      "google": {
+        "rating": 4.1,
+        "reviews": 1061,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Swedish%20Hill%2C%201128%20W%206th%20St%2C%20Austin%2C%20TX%2078703"
+      }
+    },
+    {
+      "id": "tinys-milk-and-cookies-austin",
+      "name": "Tinys Milk & Cookies - Austin",
+      "category": "eat",
+      "area": "Clarksville",
+      "address": "1515 W 35th St Bldg c, Austin, TX 78703",
+      "remark": "כנראה בין העוגיות הטובות פה",
+      "top": false,
+      "lat": 30.306174,
+      "lng": -97.7503327,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tinys%20Milk%20%26%20Cookies%20-%20Austin%2C%201515%20W%2035th%20St%20Bldg%20c%2C%20Austin%2C%20TX%2078703",
+      "website": "https://tinysmilkandcookies.com/",
+      "photo": {
+        "src": "images/venues/food-tinys-milk-and-cookies-austin.jpg",
+        "thumb": "images/thumbnails/venues/food-tinys-milk-and-cookies-austin.webp",
+        "credit": "Tiny’s Milk & Cookies",
+        "creditUrl": "https://tinysmilkandcookies.com/"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 486,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Tinys%20Milk%20%26%20Cookies%20-%20Austin%2C%201515%20W%2035th%20St%20Bldg%20c%2C%20Austin%2C%20TX%2078703"
+      }
+    },
+    {
+      "id": "teapioca-lounge",
+      "name": "Teapioca Lounge",
+      "category": "eat",
+      "area": "Arboretum",
+      "address": "10000 Research Blvd Ste 137, Austin, TX 78759",
+      "remark": "שייקים עם boba טעים ממש",
+      "top": false,
+      "lat": 30.3910729,
+      "lng": -97.7487887,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Teapioca%20Lounge%2C%2010000%20Research%20Blvd%20Ste%20137%2C%20Austin%2C%20TX%2078759",
+      "website": "https://www.teapiocalounge.com/teapioca-arboretum-austin-boba-tea/",
+      "photo": {
+        "src": "images/venues/food-teapioca-lounge.jpg",
+        "thumb": "images/thumbnails/venues/food-teapioca-lounge.webp",
+        "credit": "Teapioca Lounge Arboretum",
+        "creditUrl": "https://teapiocalounge.com/teapioca-arboretum-austin-boba-tea/"
+      },
+      "google": {
+        "rating": 4.3,
+        "reviews": 475,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Teapioca%20Lounge%2C%2010000%20Research%20Blvd%20Ste%20137%2C%20Austin%2C%20TX%2078759"
+      }
+    },
+    {
+      "id": "county-line-on-the-lake",
+      "name": "County Line on the Lake",
+      "category": "eat",
+      "area": "Northwest Hills",
+      "address": "5204 Ranch to Market Rd 2222, Austin, TX 78731",
+      "remark": "אוכל בסדר, אמור להיות טוב לילדים",
+      "top": false,
+      "lat": 30.357107,
+      "lng": -97.7856212,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=County%20Line%20on%20the%20Lake%2C%205204%20Ranch%20to%20Market%20Rd%202222%2C%20Austin%2C%20TX%2078731",
+      "website": "https://www.countyline.com/",
+      "photo": {
+        "src": "images/venues/food-county-line-on-the-lake.jpg",
+        "thumb": "images/thumbnails/venues/food-county-line-on-the-lake.webp",
+        "credit": "County Line on the Lake",
+        "creditUrl": "https://countyline.com/lake-austin-tx/"
+      },
+      "google": {
+        "rating": 4.4,
+        "reviews": 5548,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=County%20Line%20on%20the%20Lake%2C%205204%20Ranch%20to%20Market%20Rd%202222%2C%20Austin%2C%20TX%2078731"
+      }
+    },
+    {
+      "id": "steiner-ranch-steakhouse",
+      "name": "Steiner Ranch Steakhouse",
+      "category": "eat",
+      "area": "Lake Travis",
+      "address": "5424 Steiner Ranch Blvd, Austin, TX 78732",
+      "remark": "אם נמצאים באזור של האגם, מסעדה מיושנת אבל ברמה גבוה",
+      "top": false,
+      "lat": 30.3901274,
+      "lng": -97.8715847,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Steiner%20Ranch%20Steakhouse%2C%205424%20Steiner%20Ranch%20Blvd%2C%20Austin%2C%20TX%2078732",
+      "website": "https://www.steinersteakhouse.com/",
+      "photo": {
+        "src": "images/venues/food-steiner-ranch-steakhouse.jpg",
+        "thumb": "images/thumbnails/venues/food-steiner-ranch-steakhouse.webp",
+        "credit": "Steiner Ranch Steakhouse",
+        "creditUrl": "https://www.steinersteakhouse.com/"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 6023,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Steiner%20Ranch%20Steakhouse%2C%205424%20Steiner%20Ranch%20Blvd%2C%20Austin%2C%20TX%2078732"
+      }
+    },
+    {
+      "id": "the-original-pancake-house",
+      "name": "The Original Pancake House",
+      "category": "eat",
+      "area": "North Austin",
+      "address": "1700 W Parmer Ln #650, Austin, TX 78727",
+      "remark": "דיינר סבבה, אם הילדים רוצים פנקייקים",
+      "top": false,
+      "lat": 30.4144565,
+      "lng": -97.6892454,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Original%20Pancake%20House%2C%201700%20W%20Parmer%20Ln%20%23650%2C%20Austin%2C%20TX%2078727",
+      "website": "https://www.austinoph.com/",
+      "photo": {
+        "src": "images/venues/food-the-original-pancake-house.jpg",
+        "thumb": "images/thumbnails/venues/food-the-original-pancake-house.webp",
+        "credit": "The Original Pancake House Austin",
+        "creditUrl": "https://www.austinoph.com/"
+      },
+      "google": {
+        "rating": 4.4,
+        "reviews": 3247,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=The%20Original%20Pancake%20House%2C%201700%20W%20Parmer%20Ln%20%23650%2C%20Austin%2C%20TX%2078727"
+      }
+    },
+    {
+      "id": "julie-s-noodles",
+      "name": "Julie's Noodles",
+      "category": "eat",
+      "area": "North Austin",
+      "address": "8557 Research Blvd #110, Austin, TX 78758",
+      "remark": "מסעדה סינית אמיתית, נראה כמו מקום של פועלים אבל טעים ממש - השמן צ׳ילי הכי טעים בעולם",
+      "top": false,
+      "lat": 30.3610671,
+      "lng": -97.7157829,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Julie%27s%20Noodles%2C%208557%20Research%20Blvd%20%23110%2C%20Austin%2C%20TX%2078758",
+      "website": "https://juliesnoodlesaustin.com/",
+      "photo": {
+        "src": "images/venues/food-julie-s-noodles.jpg",
+        "thumb": "images/thumbnails/venues/food-julie-s-noodles.webp",
+        "credit": "Julie’s Noodles Austin",
+        "creditUrl": "https://juliesnoodlesaustin.com/"
+      },
+      "google": {
+        "rating": 4.5,
+        "reviews": 1587,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Julie%27s%20Noodles%2C%208557%20Research%20Blvd%20%23110%2C%20Austin%2C%20TX%2078758"
+      }
+    },
+    {
+      "id": "whisler-s",
+      "name": "Whisler’s",
+      "category": "eat",
+      "area": "East Austin",
+      "address": "1816 E 6th St, Austin, TX 78702",
+      "remark": "אחלה בר באיסט אוסטין - מקום ענק, יושבים בחוץ",
+      "top": false,
+      "lat": 30.2619325,
+      "lng": -97.722738,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Whisler%E2%80%99s%2C%201816%20E%206th%20St%2C%20Austin%2C%20TX%2078702",
+      "website": "https://www.whislersatx.com/",
+      "photo": {
+        "src": "images/venues/food-whisler-s.jpg",
+        "thumb": "images/thumbnails/venues/food-whisler-s.webp",
+        "credit": "Whisler’s",
+        "creditUrl": "https://www.whislersatx.com/"
+      },
+      "google": {
+        "rating": 4.6,
+        "reviews": 1866,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Whisler%E2%80%99s%2C%201816%20E%206th%20St%2C%20Austin%2C%20TX%2078702"
+      }
+    },
+    {
+      "id": "flora-coffee-and-culture",
+      "name": "Flora Coffee & Culture",
+      "category": "eat",
+      "area": "Crestview",
+      "address": "3300 W Anderson Ln. Ste 300, Austin, TX 78757",
+      "remark": "קפה סבבה שנמצא בתוך מרכז יוגה כזה... מוזר אבל הכי טוב שמצאתי באזור",
+      "top": false,
+      "lat": 30.362347,
+      "lng": -97.7421123,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Flora%20Coffee%20%26%20Culture%2C%203300%20W%20Anderson%20Ln.%20Ste%20300%2C%20Austin%2C%20TX%2078757",
+      "website": "https://www.floracoffee.co/",
+      "photo": {
+        "src": "images/venues/food-flora-coffee-and-culture.jpg",
+        "thumb": "images/thumbnails/venues/food-flora-coffee-and-culture.webp",
+        "credit": "Flora Coffee & Culture",
+        "creditUrl": "https://www.floracoffee.co/"
+      },
+      "google": {
+        "rating": 4.9,
+        "reviews": 414,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Flora%20Coffee%20%26%20Culture%2C%203300%20W%20Anderson%20Ln.%20Ste%20300%2C%20Austin%2C%20TX%2078757"
+      }
+    },
+    {
+      "id": "las-mangonadas-3",
+      "name": "Las Mangonadas #3",
+      "category": "eat",
+      "area": "North Austin",
+      "address": "8776 Research Blvd Ste C1, Austin, TX 78758",
+      "remark": "גלידה מקסיקנית נחמדה, הכי קרוב שמצאנו לגלידה אמיתית באזור הזה",
+      "top": false,
+      "lat": 30.3660498,
+      "lng": -97.7198437,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Las%20Mangonadas%20%233%2C%208776%20Research%20Blvd%20Ste%20C1%2C%20Austin%2C%20TX%2078758",
+      "website": "",
+      "photo": {
+        "src": "images/venues/food-las-mangonadas-3.jpg",
+        "thumb": "images/thumbnails/venues/food-las-mangonadas-3.webp",
+        "credit": "Las Mangonadas #3",
+        "creditUrl": "https://order.online/store/LasMangonadas3-1880812"
+      },
+      "google": {
+        "rating": 4.8,
+        "reviews": 644,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Las%20Mangonadas%20%233%2C%208776%20Research%20Blvd%20Ste%20C1%2C%20Austin%2C%20TX%2078758"
+      }
+    },
+    {
+      "id": "dean-s-italian-steakhouse",
+      "name": "Dean's Italian Steakhouse",
+      "category": "eat",
+      "area": "Downtown",
+      "address": "110 E 2nd St, Austin, TX 78701",
+      "remark": "לא הייתי אבל הרבה המליצו עליה",
+      "top": false,
+      "lat": 30.2642247,
+      "lng": -97.7434837,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dean%27s%20Italian%20Steakhouse%2C%20110%20E%202nd%20St%2C%20Austin%2C%20TX%2078701",
+      "website": "https://www.deanssteakhouseaustin.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
+      "photo": {
+        "src": "images/venues/food-dean-s-italian-steakhouse.jpg",
+        "thumb": "images/thumbnails/venues/food-dean-s-italian-steakhouse.webp",
+        "credit": "Dean’s Italian Steakhouse Austin",
+        "creditUrl": "https://www.deanssteakhouseaustin.com/"
+      },
+      "google": {
+        "rating": 4.9,
+        "reviews": 3447,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Dean%27s%20Italian%20Steakhouse%2C%20110%20E%202nd%20St%2C%20Austin%2C%20TX%2078701"
+      }
+    },
+    {
+      "id": "bulevar-mexican-kitchen",
+      "name": "Bulevar Mexican Kitchen",
+      "category": "eat",
+      "area": "Arboretum",
+      "address": "9400 Arboretum Blvd, Austin, TX 78759",
+      "remark": "לא הייתי אבל שמעתי דברים טובים על המסעדה הזאת",
+      "top": false,
+      "lat": 30.3891082,
+      "lng": -97.7529845,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bulevar%20Mexican%20Kitchen%2C%209400%20Arboretum%20Blvd%2C%20Austin%2C%20TX%2078759",
+      "website": "https://www.bulevaratx.com/",
+      "photo": {
+        "src": "images/venues/food-bulevar-mexican-kitchen.jpg",
+        "thumb": "images/thumbnails/venues/food-bulevar-mexican-kitchen.webp",
+        "credit": "Bulevar Mexican Kitchen",
+        "creditUrl": "https://www.bulevaratx.com/"
+      },
+      "google": {
+        "rating": 4.5,
+        "reviews": 1142,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/search/?api=1&query=Bulevar%20Mexican%20Kitchen%2C%209400%20Arboretum%20Blvd%2C%20Austin%2C%20TX%2078759"
+      }
     }
   ]
 }

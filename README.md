@@ -1,51 +1,49 @@
-# Austin guide
+# Austin Recommendations
 
-A public map of Austin places, with venue photos, public descriptions, category filters, and Google Maps links. No ChatGPT account is needed to view it.
+A small, phone-first guide to places in Austin: food, outdoors, fun, and day trips, each with the owner's own notes, a photo, a map pin, and directions.
 
 - Website: https://digitalmidges.github.io/austin-guide-map/
-- Draft editor: https://digitalmidges.github.io/austin-guide-map/editor.html
-- Published data: `src/data/guide.json`
+- Editor (only useful to the owner): https://digitalmidges.github.io/austin-guide-map/editor.html
+- Phone / desktop preview: https://digitalmidges.github.io/austin-guide-map/preview.html
+- All place data: `src/data/guide.json`
 
-The initial release includes 72 places, including all 49 entries from the owner's Austin food list. The separate owner backup retains the full original dataset; hidden entries are excluded from this public repository and website.
+## Editing the guide
 
-## Update the guide
+1. Open the editor on your phone or computer. Tap a place to change it, or **Add a place**.
+2. Paste a Google Maps link and the pin and address fill in. Short share links (`maps.app.goo.gl`) can't be read, so tap the small map to drop the pin instead.
+3. **Notes** show on the place card for friends to read. The **private note** is only for you.
+4. Star places to make them top picks. Drag the dots to reorder.
+5. Tap **Publish**. The site updates about a minute later.
 
-1. Open the draft editor. Change public descriptions, order, photos, or map pins. Private notes and your personal rating stay in the local draft.
-2. **Save draft** keeps your work in this browser. It does not update the public website.
-3. Export `guide.json`. Only places marked visible are included in that publishing file. Private notes and personal ratings are removed.
-4. Follow **Publish on GitHub**, upload the exported `guide.json` into `src/data`, and commit the replacement. GitHub requires repository write access for this step.
-5. The **Publish Austin guide** workflow rebuilds and updates the public website after a commit to `main`.
+Your draft saves itself in that browser as you go. The first time you publish, the editor asks for a GitHub key (Settings → Publishing). Create a fine-grained key that can only see `austin-guide-map`, with **Contents: Read and write**. It's saved only in that browser. Anyone who can use that browser could publish, so disconnect on shared devices. Other sites under `digitalmidges.github.io` share browser storage with this one.
 
-You can also edit `src/data/guide.json` directly on GitHub. Google Maps saved lists and downloaded CSV/KML files remain separate snapshots; they do not automatically sync with this website.
+Settings also has a private backup (with your notes), import, "load the live version" (to pick up changes made on another device), a CSV for Google My Maps, and a plain `guide.json` download if you ever want to publish by hand (upload it to `src/data` on GitHub).
 
-The draft editor stores no GitHub token or password. Visitors can edit a local copy, but only repository writers can publish changes. Importing a JSON file loads a local draft; it does not publish it.
+## Privacy
+
+Private notes and hidden places live only in the editor's browser storage and in private backups. Publishing sends a public copy that keeps a fixed list of fields. `scripts/check-public-data.mjs` also runs on every build and refuses any `guide.json` with other fields, embedded photos, or missing photo files. Never upload a private backup to this repository.
 
 ## Development
 
-Use Node.js 24 or newer.
+Use Node.js 24.
 
 ```sh
 npm ci
-npm run dev
+npm run dev        # http://127.0.0.1:5173 (editor Save writes src/data/guide.json; preview.html toggles phone/desktop)
+npm test           # editor logic: privacy, changes, merging, Maps links
 npm run typecheck
-npm run build
-npm run preview
+npm run build      # runs the privacy check, type check, and Vite build
 ```
 
-The Vite build uses relative URLs so bundled photos and scripts work beneath the GitHub Pages project path. The map uses lightweight Leaflet image tiles and loads independently of the place list. An immediate HTML loading indicator stays visible while the application downloads, with a reload option for connection failures.
+Every push to `main` runs the **Publish Austin guide** workflow, which tests, builds, and deploys to GitHub Pages.
 
-Cards use lazy-loaded WebP thumbnails; opening a place loads the original photograph. To regenerate thumbnails after changing bundled photos, run `python3 scripts/make-thumbnails.py` with Pillow installed. The generated files and `src/lib/photo-thumbnails.json` are committed, so production builds need no image tooling.
+Code map:
+
+- `src/shared/`: types, categories, the "Notes" card, base styles.
+- `src/site/`: the public page (list, filters, map, place sheet).
+- `src/editor/`: the editor (list, place form, settings, GitHub publishing).
+- `scripts/make-thumbnails.py`, `scripts/make-og-image.py`: optional photo tools (need Pillow).
 
 ## Sources
 
-Venue photographs are credited in the place details and `PHOTO-SOURCES.md`. Map data and styling are described in `MAP-SOURCES.md`; location provenance is in `LOCATION-SOURCES.md`. Official venue photography is credited to its source, with no claim that it has an open license. The two 85°C locations use a clearly credited official chain product photograph.
-
-This repository contains the static public guide. It has no ChatGPT authentication, Cloudflare database, API server, credentials, or private import captures.
-
-## Private notes
-
-The legacy note field is private. It is never shown to visitors or included in public search, CSV/KML, or publication JSON. Use Public description for wording intended for visitors. Save private notes in the local draft or a private backup; never upload a private backup to this public repository. The build refuses guide data containing private notes or hidden places.
-
-## Google ratings
-
-Google stars and review counts are separate from personal ratings. Values are dated snapshots with a link to Google Maps; they are not automatically refreshed.
+Photo credits show on each place and are listed in `PHOTO-SOURCES.md`. Map data and styling are described in `MAP-SOURCES.md`, pin sources in `LOCATION-SOURCES.md`, and Google rating snapshots in `RATING-SOURCES.md`. Google stars are dated snapshots, not live data.

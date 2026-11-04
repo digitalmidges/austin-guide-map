@@ -1,10 +1,17 @@
 import { createRoot } from 'react-dom/client';
-import Guide from './components/guide';
-import publishedGuide from './data/guide.json';
-import type { GuideData } from './lib/guide-types';
-import './globals.css';
+import guideData from './data/guide.json';
+import type { Guide } from './shared/types';
+import App from './site/App';
+import './shared/base.css';
+import './site/site.css';
 
-const guide = publishedGuide as GuideData;
-createRoot(document.getElementById('root')!).render(
-  <Guide initialGuide={{ ...guide, places: guide.places.filter(place => place.included) }} canEdit={false} />,
-);
+const root = createRoot(document.getElementById('root')!);
+const render = (guide: Guide) => root.render(<App guide={guide} />);
+render(guideData as Guide);
+
+// Local preview only: show saved changes right away, without reloading the page.
+if (import.meta.hot) {
+  import.meta.hot.accept('./data/guide.json', (next) => {
+    if (next) render(next.default as Guide);
+  });
+}

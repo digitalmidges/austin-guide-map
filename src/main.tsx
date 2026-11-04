@@ -5,4 +5,13 @@ import App from './site/App';
 import './shared/base.css';
 import './site/site.css';
 
-createRoot(document.getElementById('root')!).render(<App guide={guideData as Guide} />);
+const root = createRoot(document.getElementById('root')!);
+const render = (guide: Guide) => root.render(<App guide={guide} />);
+render(guideData as Guide);
+
+// Local preview only: show saved changes right away, without reloading the page.
+if (import.meta.hot) {
+  import.meta.hot.accept('./data/guide.json', (next) => {
+    if (next) render(next.default as Guide);
+  });
+}

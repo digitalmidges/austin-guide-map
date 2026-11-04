@@ -47,5 +47,6 @@ export type Settings = {
 export type Guide = { settings: Settings; places: Place[] };
 
 /** Editor-only fields. These never leave the owner's device except in a private backup. */
-export type DraftPlace = Place & { note: string; hidden: boolean };
+/** `isNew` marks places that arrived from outside the editor (like an import) until you open them. */
+export type DraftPlace = Place & { note: string; hidden: boolean; isNew?: boolean };
 export type DraftGuide = { settings: Settings; places: DraftPlace[] };

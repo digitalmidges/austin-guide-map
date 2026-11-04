@@ -71,6 +71,7 @@ export const draftSchema = z.object({
     photo: draftPhoto.nullable(),
     note: z.string().max(10000).default(''),
     hidden: z.boolean().default(false),
+    isNew: z.boolean().optional(),
   })).max(400),
 });
 

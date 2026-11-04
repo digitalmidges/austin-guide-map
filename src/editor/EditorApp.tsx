@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Check } from 'lucide-react';
 import type { DraftGuide, DraftPlace, Guide, Settings } from '@/shared/types';
 import { useToast } from '@/site/hooks';
@@ -12,13 +12,32 @@ import SettingsScreen from '@/editor/SettingsScreen';
 
 type Screen = { name: 'list' } | { name: 'edit'; id: string; isNew: boolean } | { name: 'settings'; needsConnection?: boolean };
 
+/* Each screen has its own address (#place=franklin, #settings), so the browser's Back button
+   works exactly like the app's back arrow, and a refresh stays on the same screen. */
+function screenFromUrl(places: DraftPlace[]): Screen {
+  const hash = window.location.hash;
+  if (hash === '#settings') return { name: 'settings' };
+  const match = hash.match(/^#place=([A-Za-z0-9_-]+)$/);
+  if (match && places.some((place) => place.id === match[1])) {
+    return { name: 'edit', id: match[1], isNew: window.history.state?.isNew === true };
+  }
+  return { name: 'list' };
+}
+
+function urlFor(screen: Screen): string {
+  if (screen.name === 'edit') return `#place=${screen.id}`;
+  if (screen.name === 'settings') return '#settings';
+  return window.location.pathname + window.location.search;
+}
+
 /** How long after publishing we trust this device's copy over the built-in one. */
 const FRESH_PUBLISH_MS = 15 * 60 * 1000;
 
 function initialState(built: Guide): Stored & { message: string } {
   const stored = loadStored(built);
   // The page was built from the live site. If that's newer than this device's copy, move onto it.
-  const justPublished = stored.publishedAt && Date.now() - new Date(stored.publishedAt).getTime() < FRESH_PUBLISH_MS;
+  // On the live site, the page can lag a fresh publish by a minute. In the local preview the file is always current.
+  const justPublished = !LOCAL_PREVIEW && stored.publishedAt && Date.now() - new Date(stored.publishedAt).getTime() < FRESH_PUBLISH_MS;
   if (!justPublished && countChanges(asDraft(built), stored.base) > 0) {
     return { ...stored, draft: rebase(stored.draft, stored.base, built), base: built };
   }
@@ -28,7 +47,7 @@ function initialState(built: Guide): Stored & { message: string } {
 export default function EditorApp({ built }: { built: Guide }) {
   const [state, setState] = useState(() => initialState(built));
   const { draft, base, publishedAt } = state;
-  const [screen, setScreenState] = useState<Screen>({ name: 'list' });
+  const [screen, setScreenState] = useState<Screen>(() => screenFromUrl(state.draft.places));
   const [listView, setListView] = useState<ListView>({ filter: 'all', search: '', scroll: 0 });
   const [connection, setConnection] = useState<Connection | null>(savedConnection);
   const [publishState, setPublishState] = useState<PublishState>({ kind: 'idle' });
@@ -50,11 +69,42 @@ export default function EditorApp({ built }: { built: Guide }) {
     return () => window.clearTimeout(timer);
   }, [draft, base, publishedAt]);
 
-  /** Remember where the list was scrolled, and start other screens at the top. */
-  function setScreen(next: Screen) {
-    if (screen.name === 'list' && next.name !== 'list') setListView((view) => ({ ...view, scroll: window.scrollY }));
-    if (next.name !== 'list') window.scrollTo(0, 0);
+  // In the local preview, a saved or changed data file arrives here without reloading the page.
+  useEffect(() => {
+    setState((current) => (countChanges(asDraft(built), current.base) > 0
+      ? { ...current, draft: rebase(current.draft, current.base, built), base: built }
+      : current));
+  }, [built]);
+
+  // The browser's Back and Forward buttons move between screens.
+  const placesRef = useRef(draft.places);
+  placesRef.current = draft.places;
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual';
+    const onPop = () => setScreenState(screenFromUrl(placesRef.current));
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  /** Open a place or Settings. The list remembers where it was, so Back returns to the same spot. */
+  function openScreen(next: Screen) {
+    if (screen.name === 'list') {
+      const scroll = window.scrollY; // Read now, before the page moves to the top.
+      setListView((view) => ({ ...view, scroll }));
+    }
+    window.history.pushState({ editorScreen: true, isNew: next.name === 'edit' && next.isNew }, '', urlFor(next));
+    window.scrollTo(0, 0);
     setScreenState(next);
+  }
+
+  /** Back to the list, the same way the browser's Back button does it. */
+  function backToList() {
+    if (window.history.state?.editorScreen) {
+      window.history.back();
+    } else {
+      window.history.replaceState(null, '', urlFor({ name: 'list' }));
+      setScreenState({ name: 'list' });
+    }
   }
 
   const setDraft = (update: (draft: DraftGuide) => DraftGuide) => setState((current) => ({ ...current, draft: update(current.draft) }));
@@ -69,7 +119,7 @@ export default function EditorApp({ built }: { built: Guide }) {
       mapsUrl: '', website: '', photo: null, google: null, note: '', hidden: false,
     };
     setDraft((current) => ({ ...current, places: [place, ...current.places] }));
-    setScreen({ name: 'edit', id, isNew: true });
+    openScreen({ name: 'edit', id, isNew: true });
   }
 
   function finishEditing(id: string, isNew: boolean) {
@@ -83,19 +133,24 @@ export default function EditorApp({ built }: { built: Guide }) {
       const taken = new Set(draft.places.filter((item) => item.id !== id).map((item) => item.id));
       updatePlace(id, { id: newPlaceId(place.name, taken) });
     }
-    setScreen({ name: 'list' });
+    if (place?.isNew) updatePlace(id, { isNew: false }); // Opened, so no longer new.
+    backToList();
   }
 
-  function movePlace(id: string, toIndex: number) {
+  /** Move a place into another place's spot (it lands just before or after it). */
+  function movePlace(id: string, targetId: string) {
     setDraft((current) => {
       const places = [...current.places];
       const from = places.findIndex((place) => place.id === id);
-      if (from < 0) return current;
+      const to = places.findIndex((place) => place.id === targetId);
+      if (from < 0 || to < 0 || from === to) return current;
       const [moved] = places.splice(from, 1);
-      places.splice(toIndex, 0, moved);
+      places.splice(to, 0, moved);
       return { ...current, places };
     });
   }
+
+  const clearNew = () => setDraft((current) => ({ ...current, places: current.places.map(({ isNew, ...place }) => place) }));
 
   /** In the preview on this computer, Save writes the project files. Nothing goes live. */
   async function saveLocally() {
@@ -114,7 +169,7 @@ export default function EditorApp({ built }: { built: Guide }) {
 
   async function doPublish() {
     if (LOCAL_PREVIEW) return saveLocally();
-    if (!connection) return setScreen({ name: 'settings', needsConnection: true });
+    if (!connection) return openScreen({ name: 'settings', needsConnection: true });
     setPublishState({ kind: 'publishing' });
     try {
       const result = await publish(connection, draft, base);
@@ -180,11 +235,12 @@ export default function EditorApp({ built }: { built: Guide }) {
           publishState={publishState}
           onPublish={doPublish}
           onLoadLatest={loadLatest}
-          onOpen={(id) => setScreen({ name: 'edit', id, isNew: false })}
+          onOpen={(id) => openScreen({ name: 'edit', id, isNew: false })}
           onAdd={addPlace}
-          onSettings={() => setScreen({ name: 'settings' })}
+          onSettings={() => openScreen({ name: 'settings' })}
           onToggleTop={(id) => updatePlace(id, { top: !draft.places.find((place) => place.id === id)?.top })}
           onMove={movePlace}
+          onClearNew={clearNew}
           view={listView}
           onView={setListView}
         />
@@ -198,7 +254,7 @@ export default function EditorApp({ built }: { built: Guide }) {
           onDone={() => finishEditing(editing.id, screen.isNew)}
           onDelete={() => {
             setDraft((current) => ({ ...current, places: current.places.filter((place) => place.id !== editing.id) }));
-            setScreen({ name: 'list' });
+            backToList();
             toast.show('Deleted. Publish to remove it from the site.');
           }}
         />
@@ -209,13 +265,13 @@ export default function EditorApp({ built }: { built: Guide }) {
           draft={draft}
           connection={connection}
           needsConnection={!!screen.needsConnection}
-          onBack={() => setScreen({ name: 'list' })}
+          onBack={backToList}
           onSettings={updateSettings}
           onConnected={(next) => {
             setConnection(next);
             if (next) {
               toast.show(`Connected as ${next.login}`);
-              if (screen.needsConnection) setScreen({ name: 'list' });
+              if (screen.needsConnection) backToList();
             }
           }}
           onImport={importFile}

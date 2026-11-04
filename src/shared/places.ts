@@ -16,8 +16,12 @@ export function googleMapsUrl(place: Place): string {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query(place))}`;
 }
 
+/** With a street address, Google finds the business by name. Without one, go to the pin. */
 export function directionsUrl(place: Place): string {
-  return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(query(place))}`;
+  const destination = !place.address && place.lat !== null && place.lng !== null
+    ? `${place.lat},${place.lng}`
+    : query(place);
+  return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}`;
 }
 
 export function safeLink(url: string): string | undefined {

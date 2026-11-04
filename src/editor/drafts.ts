@@ -188,9 +188,9 @@ export function rebase(draft: DraftGuide, base: Guide, live: Guide): DraftGuide 
     if (!mine) {
       // Deleted here: keep it deleted unless it changed on the live site meanwhile.
       if (baseById.has(livePlace.id) && json(livePlace) === json(baseById.get(livePlace.id))) continue;
-      places.push({ ...livePlace, note: '', hidden: false });
+      places.push({ ...livePlace, note: '', hidden: false, isNew: !baseById.has(livePlace.id) });
     } else {
-      places.push(edited(mine) ? mine : { ...livePlace, note: mine.note, hidden: false });
+      places.push(edited(mine) ? mine : { ...livePlace, note: mine.note, hidden: false, ...(mine.isNew ? { isNew: true } : {}) });
     }
   }
   for (const mine of draft.places) {

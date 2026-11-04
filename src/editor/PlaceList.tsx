@@ -1,6 +1,7 @@
-import { useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { Check, EyeOff, GripVertical, Pencil, Plus, Search, Settings as SettingsIcon, Smartphone, UploadCloud } from 'lucide-react';
-import { StarIcon } from '@/shared/icons';
+import { useLayoutEffect, useMemo, useState } from 'react';
+import { Check, CheckCheck, EyeOff, GripVertical, Pencil, Plus, Search, Settings as SettingsIcon, Smartphone, UploadCloud } from 'lucide-react';
+import { categoryInfo } from '@/shared/categories';
+import { CategoryIcon, StarIcon } from '@/shared/icons';
 import { LOCAL_PREVIEW } from '@/editor/local-save';
 import { assetUrl, matchesSearch } from '@/shared/places';
 import type { DraftGuide, DraftPlace } from '@/shared/types';
@@ -22,7 +23,10 @@ type Props = {
   onAdd: () => void;
   onSettings: () => void;
   onToggleTop: (id: string) => void;
-  onMove: (id: string, toIndex: number) => void;
+  /** Move a place into another place's spot. */
+  onMove: (id: string, targetId: string) => void;
+  /** Mark every new place as seen. */
+  onClearNew: () => void;
   /** Filter, search and scroll live in the parent so they survive opening a place. */
   view: ListView;
   onView: (view: ListView) => void;
@@ -37,68 +41,119 @@ export default function PlaceList(props: Props) {
   const setFilter = (next: Filter) => onView({ ...view, filter: next });
   const setSearch = (next: string) => onView({ ...view, search: next });
   useLayoutEffect(() => { window.scrollTo(0, view.scroll); }, []); // Restore once, when coming back to the list.
+
   const needs = draft.places.filter((place) => !place.remark.trim()).length;
   const hidden = draft.places.filter((place) => place.hidden).length;
+  const searching = search.trim() !== '';
+  const sections = filter === 'all' && !searching;
 
-  const shown = useMemo(() => draft.places.filter((place) => {
+  const newPlaces = useMemo(() => draft.places.filter((place) => place.isNew), [draft.places]);
+  const reviewed = useMemo(() => draft.places.filter((place) => !place.isNew), [draft.places]);
+  const filtered = useMemo(() => draft.places.filter((place) => {
     if (filter === 'needs' && place.remark.trim()) return false;
     if (filter === 'hidden' && !place.hidden) return false;
     return matchesSearch(place, search);
   }), [draft.places, filter, search]);
-  const canReorder = filter === 'all' && !search.trim();
 
   const chips: { id: Filter; label: string; show: boolean }[] = [
     { id: 'all', label: `All · ${draft.places.length}`, show: true },
     { id: 'needs', label: `No notes · ${needs}`, show: needs > 0 || filter === 'needs' },
     { id: 'hidden', label: `Hidden · ${hidden}`, show: hidden > 0 || filter === 'hidden' },
   ];
+  const gridProps = { onOpen: props.onOpen, onToggleTop: props.onToggleTop, onMove: props.onMove };
 
   return (
     <div className="screen">
       <header className="ed-header">
-        <div className="ed-header-top">
-          <span className="caption">Editor · only you</span>
-          <div className="ed-header-actions">
-            <a className="icon-btn" href={assetUrl('preview.html#phone/site')} target="_blank" rel="noreferrer" aria-label="Preview the site on a phone or desktop">
-              <Smartphone size={20} strokeWidth={2.2} />
-            </a>
-            <button className="icon-btn" onClick={props.onSettings} aria-label="Settings">
-              <SettingsIcon size={20} strokeWidth={2.2} />
-            </button>
+        <div className="ed-header-main">
+          <div className="ed-header-top">
+            <span className="caption">Editor · only you</span>
+            <div className="ed-header-actions">
+              <a className="icon-btn" href={assetUrl('preview.html#phone/site')} target="_blank" rel="noreferrer" aria-label="Preview the site on a phone or desktop">
+                <Smartphone size={20} strokeWidth={2.2} />
+              </a>
+              <button className="icon-btn" onClick={props.onSettings} aria-label="Settings">
+                <SettingsIcon size={20} strokeWidth={2.2} />
+              </button>
+            </div>
           </div>
+          <h1>Your places</h1>
         </div>
-        <h1>Your places</h1>
         <PublishCard {...props} />
       </header>
 
       <div className="ed-body">
-        <button className="btn btn--soft btn--block" onClick={props.onAdd}>
-          <Plus size={18} strokeWidth={2.8} aria-hidden="true" />
-          Add a place
-        </button>
-
-        <label className="ed-search">
-          <Search size={18} strokeWidth={2.2} aria-hidden="true" />
-          <span className="sr-only">Search your places</span>
-          <input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search your places" />
-        </label>
-
-        <div className="ed-chips">
-          {chips.filter((chip) => chip.show).map((chip) => (
-            <button key={chip.id} className="pill" aria-pressed={filter === chip.id} onClick={() => setFilter(chip.id)}>
-              {chip.id === 'needs' && <span className="dot" style={{ background: '#e07a3a' }} />}
-              {chip.label}
-            </button>
-          ))}
+        <div className="ed-toolbar">
+          <button className="btn btn--soft ed-add" onClick={props.onAdd}>
+            <Plus size={18} strokeWidth={2.8} aria-hidden="true" />
+            Add a place
+          </button>
+          <label className="ed-search">
+            <Search size={18} strokeWidth={2.2} aria-hidden="true" />
+            <span className="sr-only">Search your places</span>
+            <input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search your places" />
+          </label>
+          <div className="ed-chips">
+            {chips.filter((chip) => chip.show).map((chip) => (
+              <button key={chip.id} className="pill" aria-pressed={filter === chip.id} onClick={() => setFilter(chip.id)}>
+                {chip.id === 'needs' && <span className="dot" style={{ background: '#e07a3a' }} />}
+                {chip.label}
+              </button>
+            ))}
+          </div>
         </div>
 
-        <Rows places={shown} canReorder={canReorder} onOpen={props.onOpen} onToggleTop={props.onToggleTop} onMove={props.onMove} />
-
-        {shown.length === 0 && <p className="ed-note">Nothing here.</p>}
-        {canReorder && shown.length > 1 && (
-          <p className="ed-note">Drag the dots to reorder. Starred places are your top picks and lead the site.</p>
+        {sections ? (
+          <>
+            {newPlaces.length > 0 && (
+              <section className="ed-section ed-section--new" aria-labelledby="new-title">
+                <div className="ed-section-head">
+                  <div>
+                    <h2 id="new-title">New <span className="ed-count ed-count--new">{newPlaces.length}</span></h2>
+                    <p className="ed-help">Added from your Google Maps list. Each one stays here until you open it.</p>
+                  </div>
+                  <button className="btn btn--soft ed-seen" onClick={props.onClearNew}>
+                    <CheckCheck size={17} strokeWidth={2.6} aria-hidden="true" />
+                    Mark all as seen
+                  </button>
+                </div>
+                <PlaceGrid places={newPlaces} canReorder={false} {...gridProps} />
+              </section>
+            )}
+            <section className="ed-section" aria-labelledby="all-title">
+              <div className="ed-section-head">
+                <div>
+                  <h2 id="all-title">{newPlaces.length ? 'Your places' : 'All places'} <span className="ed-count">{reviewed.length}</span></h2>
+                  <p className="ed-help">Drag the dots to reorder. Starred places are your top picks and lead the site.</p>
+                </div>
+              </div>
+              <PlaceGrid places={reviewed} canReorder {...gridProps} />
+            </section>
+          </>
+        ) : (
+          <section className="ed-section">
+            <PlaceGrid places={filtered} canReorder={false} {...gridProps} />
+            {filtered.length === 0 && <p className="ed-note">Nothing here.</p>}
+          </section>
         )}
       </div>
+
+      <SaveBar {...props} />
+    </div>
+  );
+}
+
+/** Pinned to the bottom while there are unsaved changes, so you can save without scrolling up. */
+function SaveBar({ changes, publishState, onPublish }: Props) {
+  const busy = publishState.kind === 'publishing';
+  if ((changes === 0 && !busy) || publishState.kind === 'conflict') return null;
+  return (
+    <div className="save-bar" role="region" aria-label="Unsaved changes">
+      <span>{busy ? (LOCAL_PREVIEW ? 'Saving…' : 'Publishing…') : changes === 1 ? '1 change waiting' : `${changes} changes waiting`}</span>
+      <button className="btn btn--gold" onClick={onPublish} disabled={busy}>
+        <UploadCloud size={18} strokeWidth={2.6} aria-hidden="true" />
+        {LOCAL_PREVIEW ? 'Save' : 'Publish'}
+      </button>
     </div>
   );
 }
@@ -145,57 +200,54 @@ function timeAgo(iso: string): string {
   return new Date(iso).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
 }
 
-/** The list, with drag-to-reorder on the grip handle (works with touch and mouse). */
-function Rows({ places, canReorder, onOpen, onToggleTop, onMove }: {
+type GridProps = {
   places: DraftPlace[];
   canReorder: boolean;
   onOpen: (id: string) => void;
   onToggleTop: (id: string) => void;
-  onMove: (id: string, toIndex: number) => void;
-}) {
-  const list = useRef<HTMLDivElement>(null);
-  const [drag, setDrag] = useState<{ id: string; from: number; to: number; startY: number; dy: number; step: number } | null>(null);
+  onMove: (id: string, targetId: string) => void;
+};
 
-  function start(event: React.PointerEvent, index: number, id: string) {
-    const rows = list.current?.children;
-    if (!rows || rows.length < 2) return;
-    const step = (rows[1] as HTMLElement).offsetTop - (rows[0] as HTMLElement).offsetTop;
+/**
+ * A list on phones and a grid of cards on wide screens. Drag the grip to move a place:
+ * it takes the spot of the card you drop it on. Works with touch and mouse.
+ */
+function PlaceGrid({ places, canReorder, onOpen, onToggleTop, onMove }: GridProps) {
+  const [drag, setDrag] = useState<{ id: string; startX: number; startY: number; dx: number; dy: number; overId: string | null } | null>(null);
+
+  function start(event: React.PointerEvent, id: string) {
     event.currentTarget.setPointerCapture(event.pointerId);
-    setDrag({ id, from: index, to: index, startY: event.clientY, dy: 0, step });
+    setDrag({ id, startX: event.clientX, startY: event.clientY, dx: 0, dy: 0, overId: null });
   }
   function move(event: React.PointerEvent) {
     if (!drag) return;
-    const dy = event.clientY - drag.startY;
-    const to = Math.max(0, Math.min(places.length - 1, drag.from + Math.round(dy / drag.step)));
-    setDrag({ ...drag, dy, to });
+    const under = document.elementsFromPoint(event.clientX, event.clientY)
+      .map((element) => element.closest<HTMLElement>('[data-place-id]'))
+      .find((card) => card && card.dataset.placeId !== drag.id);
+    setDrag({ ...drag, dx: event.clientX - drag.startX, dy: event.clientY - drag.startY, overId: under?.dataset.placeId ?? null });
   }
   function end() {
-    if (drag && drag.to !== drag.from) onMove(drag.id, drag.to);
+    if (drag?.overId) onMove(drag.id, drag.overId);
     setDrag(null);
-  }
-  function shift(index: number) {
-    if (!drag || index === drag.from) return 0;
-    if (drag.from < drag.to && index > drag.from && index <= drag.to) return -drag.step;
-    if (drag.from > drag.to && index < drag.from && index >= drag.to) return drag.step;
-    return 0;
   }
 
   return (
-    <div className="ed-rows" ref={list}>
-      {places.map((place, index) => {
+    <div className="ed-grid">
+      {places.map((place) => {
         const dragging = drag?.id === place.id;
-        const offset = dragging ? drag!.dy : shift(index);
+        const category = categoryInfo(place.category);
         return (
           <div
             key={place.id}
-            className={`ed-row ${dragging ? 'is-dragging' : ''} ${place.hidden ? 'is-hidden' : ''}`}
-            style={offset ? { transform: `translateY(${offset}px)` } : undefined}
+            data-place-id={place.id}
+            className={['ed-place', dragging && 'is-dragging', drag?.overId === place.id && 'is-drop-target', place.hidden && 'is-hidden'].filter(Boolean).join(' ')}
+            style={dragging ? { transform: `translate(${drag!.dx}px, ${drag!.dy}px)` } : undefined}
           >
             {canReorder && (
               <span
                 className="ed-grip"
                 aria-hidden="true"
-                onPointerDown={(event) => start(event, index, place.id)}
+                onPointerDown={(event) => start(event, place.id)}
                 onPointerMove={move}
                 onPointerUp={end}
                 onPointerCancel={() => setDrag(null)}
@@ -203,21 +255,28 @@ function Rows({ places, canReorder, onOpen, onToggleTop, onMove }: {
                 <GripVertical size={20} strokeWidth={2.2} />
               </span>
             )}
-            <button className="ed-row-main" onClick={() => onOpen(place.id)}>
+            <button className="ed-place-main" onClick={() => onOpen(place.id)}>
               {place.photo ? (
-                <img src={assetUrl(place.photo.thumb || place.photo.src)} alt="" loading="lazy" />
+                <img className="ed-place-img" src={assetUrl(place.photo.thumb || place.photo.src)} alt="" loading="lazy" />
               ) : (
-                <span className="ed-row-noimg" aria-hidden="true" />
+                <span className="ed-place-img ed-place-noimg" style={{ color: category.color }} aria-hidden="true">
+                  <CategoryIcon category={place.category} size={26} />
+                </span>
               )}
-              <span className="ed-row-text">
-                <span className="ed-row-name">
+              <span className="ed-place-text">
+                <span className="ed-place-meta">
+                  <span className="dot" style={{ background: category.color }} />
+                  <span className="ed-place-meta-text">{category.short} · {place.area || 'No area'}</span>
+                </span>
+                <span className="ed-place-name">
                   {place.name || 'Untitled place'}
+                  {place.isNew && <span className="ed-tag ed-tag--new">New</span>}
                   {place.hidden && <span className="ed-tag"><EyeOff size={12} strokeWidth={2.6} aria-hidden="true" />Hidden</span>}
                 </span>
                 {place.remark.trim() ? (
-                  <span className="ed-row-remark" dir="auto">{place.remark}</span>
+                  <span className="ed-place-remark" dir="auto">{place.remark}</span>
                 ) : (
-                  <span className="ed-row-missing"><Pencil size={14} strokeWidth={2.6} aria-hidden="true" />Add notes</span>
+                  <span className="ed-place-missing"><Pencil size={14} strokeWidth={2.6} aria-hidden="true" />Add notes</span>
                 )}
               </span>
             </button>

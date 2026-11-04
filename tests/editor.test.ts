@@ -89,3 +89,25 @@ test('reads pins from Google Maps links', () => {
   assert.deepEqual(readMapsLink('https://maps.app.goo.gl/abc123'), { kind: 'short' });
   assert.deepEqual(readMapsLink('not a link'), { kind: 'none' });
 });
+
+test('places that arrive from outside the editor are marked new, and never published as new', () => {
+  const base = clone(live);
+  const newer = clone(live);
+  newer.places.push({ ...clone(live.places[0]), id: 'brand-new-place', name: 'Brand new place' });
+  const result = rebase(asDraft(base), base, newer);
+  assert.equal(result.places.find((place) => place.id === 'brand-new-place')?.isNew, true);
+  assert.equal(result.places.find((place) => place.id === 'franklin')?.isNew, undefined);
+  assert.ok(!JSON.stringify(publishable(result)).includes('isNew'));
+  assert.equal(countChanges(result, newer), 0);
+});
+
+test('a place stays new when the live site updates it (for example, adds a photo)', () => {
+  const base = clone(live);
+  const draft = asDraft(base);
+  draft.places[1] = { ...draft.places[1], isNew: true };
+  const newer = clone(live);
+  newer.places[1] = { ...newer.places[1], photo: { src: 'images/places/x.jpg', thumb: 'images/places/x.jpg', credit: '', creditUrl: '' } };
+  const result = rebase(draft, base, newer);
+  assert.equal(result.places[1].isNew, true);
+  assert.equal(result.places[1].photo?.src, 'images/places/x.jpg');
+});

@@ -72,3 +72,51 @@ Photographs for the restored saved-list entries come from official venue website
 | Bulevar Mexican Kitchen | https://www.bulevaratx.com/ | Photo: Bulevar Mexican Kitchen (official website) |
 | IchiUmi Sushi (Haru Sushi) | https://ichiumisushitx.com/menu/18710912 | Photo: Ichi-Umi Sushi (official restaurant menu) |
 | Lumi's Crepes | https://order.online/store/lumi%27s-crepes-austin-26096079/?hideModal=true | Photo: Lumi’s Crepes (restaurant menu photo) |
+
+## Photos added in November 2026
+
+Free-licensed photos come from Wikimedia Commons, credited with their author and license. Business photos come from each venue's official website, credited to the venue, with no free-license claim.
+
+| Place | Photo | Source |
+| --- | --- | --- |
+| The Preserve | Venue's own website photo | https://www.visitthepreserve.com/ |
+| Prochnow Vineyard at Crabapple Creek | Venue's own website photo | https://prochnowvineyard.com/ |
+| Perissos Vineyard and Winery | Venue's own website photo | https://www.perissosvineyards.com/ |
+| Horseshoe Bay Resort | Venue's own website photo | https://www.hsbresort.com/ |
+| Summer Moon Coffee | Venue's own website photo | https://www.summermooncoffee.com/ |
+| Gelato Paradiso | Venue's own website photo | https://gelatoparadiso.com/ |
+| ARWA YEMENI COFFEE | Venue's own website photo | https://arwacoffee.com/ |
+| Round Top | Renelibrary, CC BY-SA 4.0 (free license) | https://commons.wikimedia.org/wiki/File:RoundTop2_(1_of_1).jpg |
+| Magnolia Market | Carlapendergraft, CC BY-SA 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Magnolia_Market,_Waco,_TX.jpg |
+| Old Baldy | Larry D. Moore, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Old_Baldy_Wimberley_Texas_2020.jpg |
+| Marfa | Mathieu Lebreton from Paris, France, CC BY 2.0 (free license) | https://commons.wikimedia.org/wiki/File:MarfaTX_Downtown_15Aug2012.jpg |
+| Bob Wentz Park | Tony Webster from Minneapolis, Minnesota, United States, CC BY 2.0 (free license) | https://commons.wikimedia.org/wiki/File:Bob_Wentz_Park_at_Windy_Point_on_Lake_Travis_-_Austin,_Travis_County,_Texas_(47550178722).jpg |
+| Hat Creek Burger Company | Venue's own website photo | https://hatcreekburgers.com/ |
+| St. Elmo Brewing Company - Springdale | Venue's own website photo | https://www.stelmobrewing.com/springdale |
+| Texas Capitol | LoneStarMike, CC BY 3.0 (free license) | https://commons.wikimedia.org/wiki/File:TexasStateCapitol-2010-01.JPG |
+| Creation Evidence Museum of Texas | Michael Barera, CC BY-SA 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Glen_Rose_August_2017_28_(Creation_Evidence_Museum).jpg |
+| Milk & Honey Ranch | Venue's own website photo | https://milkandhoneyranch.com/ |
+| Schlitterbahn Waterpark New Braunfels | Venue's own website photo | https://www.sixflags.com/schlitterbahnnewbraunfels |
+| Rockport Beach Park | dwh1974@hotmail.com, CC BY 3.0 (free license) | https://commons.wikimedia.org/wiki/File:Rockport_Beach_-_panoramio.jpg |
+| Devil's Waterhole | Larry D. Moore, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Devils_Waterhole_Inks_Lake_State_Park_Texas_2023.jpg |
+| Krause Springs | Brian P. Barnes, CC BY-SA 3.0 (free license) | https://commons.wikimedia.org/wiki/File:Ks-2013.0507-0411.4x6.jpg |
+| 99 Ranch Market | WhisperToMe, CC0 (free license) | https://commons.wikimedia.org/wiki/File:99RanchMarketSpringBranchHouston.jpg |
+| Garner State Park | Larry D. Moore, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Garner_state_park.jpg |
+| Colorado Bend State Park | Wing-Chi Poon, CC BY-SA 2.5 (free license) | https://commons.wikimedia.org/wiki/File:Base_of_Gorman_Fall_like_Raining.jpg |
+| Longhorn Cavern State Park | Billy Hathorn, CC BY 3.0 (free license) | https://commons.wikimedia.org/wiki/File:Tourists_at_Longhorn_Cavern_IMG_2026.JPG |
+| Typhoon Texas Waterpark Austin | Larry D. Moore, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Typhoon_Texas_Waterpark_Austin_2020_c.jpg |
+| Bullock Museum IMAX Theatre | ajay_suresh, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:The_Bullock_Texas_State_History_Museum_(54985038510).jpg |
+| Pease District Park | Bryanrutherford0, CC BY-SA 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Pease_Park_Gate.jpg |
+| Butler Metro Park | Larry D. Moore, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Butler_Metro_Park_Austin_View.jpg |
+| Big Top Candy Shop | Venue's own website photo | https://www.bigtopcandyshop.com/ |
+| Peter Pan Mini-Golf | Venue's own website photo | https://peterpanminigolf.com/ |
+| San Marcos Premium Outlets | Venue's own website photo | https://www.premiumoutlets.com/outlet/san-marcos |
+| Bull Creek District Park | Larry D. Moore, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Bull_Creek_District_Park_Austin,_Texas_2022.jpg |
+| Parking lot | Billy Hathorn, CC BY-SA 3.0 (free license) | https://commons.wikimedia.org/wiki/File:Kayakers_on_Lady_Bird_Lake,_Austin,_TX_IMG_6368.JPG |
+| East Austin | William Newton from Berkeley, CA, Public domain (free license) | https://commons.wikimedia.org/wiki/File:East_Austin_Murals_(4681048380).jpg |
+| Mary Elizabeth Branch Park | Larry D. Moore, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Texas_Farmers_Market_at_Mueller_Austin_2016.jpg |
+| Mueller Lake Park | Larry D. Moore, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Mueller_lake_park_and_hangar_2014.jpg |
+| Barton Creek Square | Larry D. Moore, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Barton_Creek_Square_Mall_Austin_Texas_2020.jpg |
+| Indigo Play | Venue's own website photo | https://indigoplay.com/ |
+| K1 Speed - Indoor Go Karts, Food, Games, and Things to Do In Austin | Venue's own website photo | https://www.k1speed.com/austin-location.html |
+| Texas Roadhouse | Rick Obst, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Texas_Roadhouse_Restaurant_Building.jpg |

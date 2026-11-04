@@ -23,7 +23,12 @@
         "credit": "",
         "creditUrl": ""
       },
-      "google": null
+      "google": {
+        "rating": 4.6,
+        "reviews": 3335,
+        "checkedAt": "2026-11-03",
+        "url": "https://www.google.com/maps/place/Emma+Long+Metropolitan+Park/@30.3280315,-97.8445028,17z/data=!3m1!4b1!4m6!3m5!1s0x865b3453575fee85:0xcd23194b656e6ca8!8m2!3d30.3280269!4d-97.8419279!16s%2Fm%2F052w9zx?entry=ttu&g_ep=EgoyMDI2MTEwMS4wIKXMDSoASAFQAw%3D%3D"
+      }
     },
     {
       "id": "franklin",
@@ -1518,7 +1523,12 @@
         "credit": "The Preserve",
         "creditUrl": "https://www.visitthepreserve.com/"
       },
-      "google": null
+      "google": {
+        "rating": 4.1,
+        "reviews": 1157,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=595525264443421642"
+      }
     },
     {
       "id": "prochnow-vineyard-at-crabapple-creek",
@@ -1538,7 +1548,12 @@
         "credit": "Prochnow Vineyard at Crabapple Creek",
         "creditUrl": "https://prochnowvineyard.com/"
       },
-      "google": null
+      "google": {
+        "rating": 5,
+        "reviews": 84,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=4540167306779512018"
+      }
     },
     {
       "id": "perissos-vineyard-and-winery",
@@ -1558,7 +1573,12 @@
         "credit": "Perissos Vineyard and Winery",
         "creditUrl": "https://www.perissosvineyards.com/"
       },
-      "google": null
+      "google": {
+        "rating": 4.9,
+        "reviews": 426,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=1254075540360229238"
+      }
     },
     {
       "id": "horseshoe-bay-resort",
@@ -1578,7 +1598,12 @@
         "credit": "Horseshoe Bay Resort",
         "creditUrl": "https://www.hsbresort.com/"
       },
-      "google": null
+      "google": {
+        "rating": 4.4,
+        "reviews": 3364,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=18329214785302534688"
+      }
     },
     {
       "id": "cafe-du-bliss",
@@ -1598,7 +1623,12 @@
         "credit": "",
         "creditUrl": ""
       },
-      "google": null
+      "google": {
+        "rating": 4.8,
+        "reviews": 280,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=13189394892161886121"
+      }
     },
     {
       "id": "summer-moon-coffee",
@@ -1618,7 +1648,12 @@
         "credit": "Summer Moon Coffee",
         "creditUrl": "https://www.summermooncoffee.com/"
       },
-      "google": null
+      "google": {
+        "rating": 4.6,
+        "reviews": 995,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=17507676218831335185"
+      }
     },
     {
       "id": "gelato-paradiso",
@@ -1638,7 +1673,12 @@
         "credit": "Gelato Paradiso",
         "creditUrl": "https://gelatoparadiso.com/"
       },
-      "google": null
+      "google": {
+        "rating": 4.8,
+        "reviews": 568,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=4217221063913493774"
+      }
     },
     {
       "id": "e-picerie",
@@ -1653,7 +1693,12 @@
       "mapsUrl": "https://maps.google.com/?cid=7873098001645829314",
       "website": "",
       "photo": null,
-      "google": null
+      "google": {
+        "rating": 4.4,
+        "reviews": 1143,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=7873098001645829314"
+      }
     },
     {
       "id": "hyatt-regency-hill-country-resort-and-villas",
@@ -1668,7 +1713,12 @@
       "mapsUrl": "https://maps.google.com/?cid=9383882385348522230",
       "website": "",
       "photo": null,
-      "google": null
+      "google": {
+        "rating": 4.6,
+        "reviews": 4585,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=9383882385348522230"
+      }
     },
     {
       "id": "arwa-yemeni-coffee",
@@ -1688,7 +1738,12 @@
         "credit": "ARWA YEMENI COFFEE",
         "creditUrl": "https://arwacoffee.com/"
       },
-      "google": null
+      "google": {
+        "rating": 4.8,
+        "reviews": 1068,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=10453825868657691277"
+      }
     },
     {
       "id": "round-top",
@@ -1708,7 +1763,12 @@
         "credit": "Renelibrary, CC BY-SA 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:RoundTop2_(1_of_1).jpg"
       },
-      "google": null
+      "google": {
+        "rating": null,
+        "reviews": null,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=10147316075158664491"
+      }
     },
     {
       "id": "magnolia-market",
@@ -1728,7 +1788,12 @@
         "credit": "Carlapendergraft, CC BY-SA 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Magnolia_Market,_Waco,_TX.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.4,
+        "reviews": 17618,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=16747065004222489221"
+      }
     },
     {
       "id": "cypress-falls-swimming-hole",
@@ -1743,7 +1808,12 @@
       "mapsUrl": "https://maps.google.com/?cid=7191791941533283486",
       "website": "",
       "photo": null,
-      "google": null
+      "google": {
+        "rating": 4.5,
+        "reviews": 688,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=7191791941533283486"
+      }
     },
     {
       "id": "old-baldy",
@@ -1763,7 +1833,12 @@
         "credit": "Larry D. Moore, CC BY 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Old_Baldy_Wimberley_Texas_2020.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.7,
+        "reviews": 162,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=14590749476438941744"
+      }
     },
     {
       "id": "community-pizza-beer-garden",
@@ -1783,7 +1858,12 @@
         "credit": "",
         "creditUrl": ""
       },
-      "google": null
+      "google": {
+        "rating": 4.5,
+        "reviews": 1246,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=7990139759500303077"
+      }
     },
     {
       "id": "bob-wentz-park",
@@ -1803,7 +1883,12 @@
         "credit": "Tony Webster from Minneapolis, Minnesota, United States, CC BY 2.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Bob_Wentz_Park_at_Windy_Point_on_Lake_Travis_-_Austin,_Travis_County,_Texas_(47550178722).jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.4,
+        "reviews": 1295,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=13461850362651257714"
+      }
     },
     {
       "id": "hat-creek-burger-company",
@@ -1823,7 +1908,12 @@
         "credit": "Hat Creek Burger Company",
         "creditUrl": "https://hatcreekburgers.com/"
       },
-      "google": null
+      "google": {
+        "rating": 4.3,
+        "reviews": 1296,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=16513722891483594358"
+      }
     },
     {
       "id": "desnudo-coffee-east-austin",
@@ -1843,7 +1933,12 @@
         "credit": "",
         "creditUrl": ""
       },
-      "google": null
+      "google": {
+        "rating": 4.8,
+        "reviews": 938,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=2122253810048959866"
+      }
     },
     {
       "id": "st-elmo-brewing-company-springdale",
@@ -1863,7 +1958,12 @@
         "credit": "St. Elmo Brewing Company",
         "creditUrl": "https://www.stelmobrewing.com/springdale"
       },
-      "google": null
+      "google": {
+        "rating": 4.7,
+        "reviews": 148,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=16187380650784585046"
+      }
     },
     {
       "id": "texas-capitol",
@@ -1883,7 +1983,12 @@
         "credit": "LoneStarMike, CC BY 3.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:TexasStateCapitol-2010-01.JPG"
       },
-      "google": null
+      "google": {
+        "rating": 4.8,
+        "reviews": 5242,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=14659031118466371641"
+      }
     },
     {
       "id": "johnny-yurts",
@@ -1903,7 +2008,12 @@
         "credit": "",
         "creditUrl": ""
       },
-      "google": null
+      "google": {
+        "rating": 4.5,
+        "reviews": 88,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=11326594915143780891"
+      }
     },
     {
       "id": "creation-evidence-museum-of-texas",
@@ -1923,7 +2033,12 @@
         "credit": "Michael Barera, CC BY-SA 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Glen_Rose_August_2017_28_(Creation_Evidence_Museum).jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.1,
+        "reviews": 877,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=12685788316590820717"
+      }
     },
     {
       "id": "milk-honey-ranch",
@@ -1943,7 +2058,12 @@
         "credit": "Milk & Honey Ranch",
         "creditUrl": "https://milkandhoneyranch.com/"
       },
-      "google": null
+      "google": {
+        "rating": 4.9,
+        "reviews": 828,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=6469452496155495293"
+      }
     },
     {
       "id": "schlitterbahn-waterpark-new-braunfels",
@@ -1963,7 +2083,12 @@
         "credit": "Schlitterbahn Waterpark New Braunfels",
         "creditUrl": "https://www.sixflags.com/schlitterbahnnewbraunfels"
       },
-      "google": null
+      "google": {
+        "rating": 4.3,
+        "reviews": 11091,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=13256023580986040002"
+      }
     },
     {
       "id": "rockport-beach-park",
@@ -1983,7 +2108,12 @@
         "credit": "dwh1974@hotmail.com, CC BY 3.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Rockport_Beach_-_panoramio.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.7,
+        "reviews": 4061,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=15007700107399948428"
+      }
     },
     {
       "id": "devil-s-waterhole",
@@ -2003,7 +2133,12 @@
         "credit": "Larry D. Moore, CC BY 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Devils_Waterhole_Inks_Lake_State_Park_Texas_2023.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.8,
+        "reviews": 316,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=5383477832267912862"
+      }
     },
     {
       "id": "krause-springs",
@@ -2023,7 +2158,12 @@
         "credit": "Brian P. Barnes, CC BY-SA 3.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Ks-2013.0507-0411.4x6.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.6,
+        "reviews": 2547,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=12393089313686603575"
+      }
     },
     {
       "id": "99-ranch-market",
@@ -2043,7 +2183,12 @@
         "credit": "WhisperToMe, CC0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:99RanchMarketSpringBranchHouston.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.4,
+        "reviews": 2881,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=2780065102880022910"
+      }
     },
     {
       "id": "garner-state-park",
@@ -2063,7 +2208,12 @@
         "credit": "Larry D. Moore, CC BY 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Garner_state_park.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.7,
+        "reviews": 6664,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=14480206865721067569"
+      }
     },
     {
       "id": "colorado-bend-state-park",
@@ -2083,7 +2233,12 @@
         "credit": "Wing-Chi Poon, CC BY-SA 2.5",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Base_of_Gorman_Fall_like_Raining.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.7,
+        "reviews": 2565,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=8041312326329082727"
+      }
     },
     {
       "id": "longhorn-cavern-state-park",
@@ -2103,7 +2258,12 @@
         "credit": "",
         "creditUrl": ""
       },
-      "google": null
+      "google": {
+        "rating": 4.8,
+        "reviews": 5875,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=6653789478779606197"
+      }
     },
     {
       "id": "typhoon-texas-waterpark-austin",
@@ -2123,7 +2283,12 @@
         "credit": "Larry D. Moore, CC BY 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Typhoon_Texas_Waterpark_Austin_2020_c.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.4,
+        "reviews": 3778,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=1219116366392261744"
+      }
     },
     {
       "id": "bullock-museum-imax-theatre",
@@ -2143,7 +2308,12 @@
         "credit": "ajay_suresh, CC BY 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:The_Bullock_Texas_State_History_Museum_(54985038510).jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.7,
+        "reviews": 1014,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=371509525070689410"
+      }
     },
     {
       "id": "mayfield-s-bar-and-billiards",
@@ -2163,7 +2333,12 @@
         "credit": "",
         "creditUrl": ""
       },
-      "google": null
+      "google": {
+        "rating": 4.4,
+        "reviews": 49,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=8375396325856752827"
+      }
     },
     {
       "id": "moviehouse-eatery-by-cine-polis-nw-austin",
@@ -2183,7 +2358,12 @@
         "credit": "",
         "creditUrl": ""
       },
-      "google": null
+      "google": {
+        "rating": 4.5,
+        "reviews": 3733,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=15134382181737148122"
+      }
     },
     {
       "id": "pease-district-park",
@@ -2203,7 +2383,12 @@
         "credit": "Bryanrutherford0, CC BY-SA 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Pease_Park_Gate.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.8,
+        "reviews": 3107,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=18357554210300390233"
+      }
     },
     {
       "id": "butler-metro-park",
@@ -2223,7 +2408,12 @@
         "credit": "Larry D. Moore, CC BY 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Butler_Metro_Park_Austin_View.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.7,
+        "reviews": 3151,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=9143100201009943774"
+      }
     },
     {
       "id": "big-top-candy-shop",
@@ -2243,7 +2433,12 @@
         "credit": "Big Top Candy Shop",
         "creditUrl": "https://www.bigtopcandyshop.com/"
       },
-      "google": null
+      "google": {
+        "rating": 4.6,
+        "reviews": 1259,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=16761310213043447169"
+      }
     },
     {
       "id": "st-edward-s-greenbelt",
@@ -2263,7 +2458,12 @@
         "credit": "",
         "creditUrl": ""
       },
-      "google": null
+      "google": {
+        "rating": 4.5,
+        "reviews": 1180,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=17893416359195252509"
+      }
     },
     {
       "id": "peter-pan-mini-golf",
@@ -2283,7 +2483,12 @@
         "credit": "Peter Pan Mini-Golf",
         "creditUrl": "https://peterpanminigolf.com/"
       },
-      "google": null
+      "google": {
+        "rating": 4.6,
+        "reviews": 2899,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=4546098976964668771"
+      }
     },
     {
       "id": "mt-supermarket",
@@ -2303,7 +2508,12 @@
         "credit": "",
         "creditUrl": ""
       },
-      "google": null
+      "google": {
+        "rating": 4.3,
+        "reviews": 2501,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=4872708640649857694"
+      }
     },
     {
       "id": "san-marcos-premium-outlets",
@@ -2323,7 +2533,12 @@
         "credit": "San Marcos Premium Outlets",
         "creditUrl": "https://www.premiumoutlets.com/outlet/san-marcos"
       },
-      "google": null
+      "google": {
+        "rating": 4.6,
+        "reviews": 18504,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=14409278313094013202"
+      }
     },
     {
       "id": "bull-creek-district-park",
@@ -2343,7 +2558,12 @@
         "credit": "Larry D. Moore, CC BY 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Bull_Creek_District_Park_Austin,_Texas_2022.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.6,
+        "reviews": 2324,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=12266618508383607999"
+      }
     },
     {
       "id": "parking-lot",
@@ -2363,7 +2583,12 @@
         "credit": "Billy Hathorn, CC BY-SA 3.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Kayakers_on_Lady_Bird_Lake,_Austin,_TX_IMG_6368.JPG"
       },
-      "google": null
+      "google": {
+        "rating": null,
+        "reviews": null,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=13771653828917129563"
+      }
     },
     {
       "id": "east-austin",
@@ -2383,7 +2608,12 @@
         "credit": "William Newton from Berkeley, CA, Public domain",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:East_Austin_Murals_(4681048380).jpg"
       },
-      "google": null
+      "google": {
+        "rating": null,
+        "reviews": null,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=13374649534452344431"
+      }
     },
     {
       "id": "mary-elizabeth-branch-park",
@@ -2403,7 +2633,12 @@
         "credit": "Larry D. Moore, CC BY 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Texas_Farmers_Market_at_Mueller_Austin_2016.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.6,
+        "reviews": 161,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=11582194214931769734"
+      }
     },
     {
       "id": "mueller-lake-park",
@@ -2423,7 +2658,12 @@
         "credit": "Larry D. Moore, CC BY 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Mueller_lake_park_and_hangar_2014.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.7,
+        "reviews": 6293,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=14315970095901078493"
+      }
     },
     {
       "id": "barton-creek-square",
@@ -2443,7 +2683,12 @@
         "credit": "Larry D. Moore, CC BY 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Barton_Creek_Square_Mall_Austin_Texas_2020.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.4,
+        "reviews": 10035,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=4508505961563546767"
+      }
     },
     {
       "id": "indigo-play",
@@ -2463,7 +2708,12 @@
         "credit": "Indigo Play",
         "creditUrl": "https://indigoplay.com/"
       },
-      "google": null
+      "google": {
+        "rating": 4.5,
+        "reviews": 916,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=7342061343128761653"
+      }
     },
     {
       "id": "k1-speed-indoor-go-karts-food-games-and-things-to-do-in-aust",
@@ -2483,7 +2733,12 @@
         "credit": "K1 Speed",
         "creditUrl": "https://www.k1speed.com/austin-location.html"
       },
-      "google": null
+      "google": {
+        "rating": 4,
+        "reviews": 3314,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.google.com/?cid=16754596237518629057"
+      }
     },
     {
       "id": "texas-roadhouse",
@@ -2503,7 +2758,12 @@
         "credit": "Rick Obst, CC BY 4.0",
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Texas_Roadhouse_Restaurant_Building.jpg"
       },
-      "google": null
+      "google": {
+        "rating": 4.5,
+        "reviews": 6591,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.app.goo.gl/BJhpZtF6aXyz8iGx7"
+      }
     },
     {
       "id": "nautical-boat-club",
@@ -2523,7 +2783,12 @@
         "credit": "Nautical Boat Club",
         "creditUrl": "https://www.nauticalboatclub.com/locations/austin-texas-lake-travis-lakeway"
       },
-      "google": null
+      "google": {
+        "rating": 4.9,
+        "reviews": 147,
+        "checkedAt": "2026-11-03",
+        "url": "https://maps.app.goo.gl/XsQ3LtkH9dnQUQ3DA"
+      }
     }
   ]
 }

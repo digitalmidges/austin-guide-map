@@ -56,6 +56,17 @@ test('rebase keeps local edits and takes other live changes', () => {
   assert.equal(countChanges(result, newer), 1);
 });
 
+test('rebase takes new Google ratings even for a place edited here', () => {
+  const base = clone(live);
+  const draft = edit(asDraft(base), 'franklin', { remark: 'Edited here' });
+  const newer = clone(live);
+  const rating = { rating: 4.1, reviews: 12, checkedAt: '2026-11-04', url: 'https://maps.google.com/?cid=1' };
+  newer.places.find((place) => place.id === 'franklin')!.google = rating;
+  const franklin = rebase(draft, base, newer).places.find((place) => place.id === 'franklin')!;
+  assert.equal(franklin.remark, 'Edited here');
+  assert.deepEqual(franklin.google, rating);
+});
+
 test('rebase keeps a place deleted live as hidden when it has a private note', () => {
   const base = clone(live);
   const draft = edit(asDraft(base), 'bats', { note: 'remember this' });

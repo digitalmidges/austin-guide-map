@@ -75,4 +75,64 @@ Checked November 3, 2026, in the user-visible Google Maps listings. These values
 | Thinkery | 4.6 | 5720 | [Google Maps](https://www.google.com/maps/place/Thinkery/@30.297417,-97.704971,17z/data=!4m8!3m7!1s0x8644b5089ad5aa81:0x505e64e261623ea7!8m2!3d30.297417!4d-97.704971!9m1!1b1!16s%2Fm%2F0k3rfw4) |
 | Circuit of The Americas | 4.6 | 18076 | [Google Maps](https://www.google.com/maps/place/Circuit+of+The+Americas/@30.1358413,-97.6383332,17z/data=!4m8!3m7!1s0x8644b03ad152eaf9:0x8ae827dd1ff5e0ed!8m2!3d30.1358413!4d-97.6383332!9m1!1b1!16s%2Fm%2F0czd9dd) |
 | Mozart's Coffee Roasters | 4.5 | 10994 | [Google Maps](https://www.google.com/maps/place/Mozart's+Coffee+Roasters/@30.2954696,-97.7839512,17z/data=!4m8!3m7!1s0x8644b5554461664d:0xbc4ff333ec9ad1ad!8m2!3d30.2954696!4d-97.7839512!9m1!1b1!16s%2Fm%2F020z4hc) |
-| Fredericksburg | Not rated | — | [Google Maps](https://www.google.com/maps/search/?api=1&query=Fredericksburg%2C%20Hill%20Country%2C%20Texas) |
+| Fredericksburg | Not rated | None | [Google Maps](https://www.google.com/maps/search/?api=1&query=Fredericksburg%2C%20Hill%20Country%2C%20Texas) |
+
+## Places added in November 2026
+
+Checked November 3, 2026, in each place's public Google Maps listing, opened from the guide's Maps link. Round Top, East Austin and the parking lot are a town, a neighborhood and a lot, so Google shows no rating for them. The Nautical Boat Club link opens a search; the rating is for the Volente location at the saved pin.
+
+| Place | Stars | Reviews | Source |
+| --- | ---: | ---: | --- |
+| Emma Long Metropolitan Park | 4.6 | 3335 | [Google Maps](https://www.google.com/maps/place/Emma+Long+Metropolitan+Park/@30.3280315,-97.8445028,17z/data=!3m1!4b1!4m6!3m5!1s0x865b3453575fee85:0xcd23194b656e6ca8!8m2!3d30.3280269!4d-97.8419279!16s%2Fm%2F052w9zx?entry=ttu&g_ep=EgoyMDI2MTEwMS4wIKXMDSoASAFQAw%3D%3D) |
+| The Preserve | 4.1 | 1157 | [Google Maps](https://maps.google.com/?cid=595525264443421642) |
+| Prochnow Vineyard at Crabapple Creek | 5.0 | 84 | [Google Maps](https://maps.google.com/?cid=4540167306779512018) |
+| Perissos Vineyard and Winery | 4.9 | 426 | [Google Maps](https://maps.google.com/?cid=1254075540360229238) |
+| Horseshoe Bay Resort | 4.4 | 3364 | [Google Maps](https://maps.google.com/?cid=18329214785302534688) |
+| Cafe du Bliss | 4.8 | 280 | [Google Maps](https://maps.google.com/?cid=13189394892161886121) |
+| Summer Moon Coffee | 4.6 | 995 | [Google Maps](https://maps.google.com/?cid=17507676218831335185) |
+| Gelato Paradiso | 4.8 | 568 | [Google Maps](https://maps.google.com/?cid=4217221063913493774) |
+| épicerie | 4.4 | 1143 | [Google Maps](https://maps.google.com/?cid=7873098001645829314) |
+| Hyatt Regency Hill Country Resort and Villas | 4.6 | 4585 | [Google Maps](https://maps.google.com/?cid=9383882385348522230) |
+| ARWA YEMENI COFFEE | 4.8 | 1068 | [Google Maps](https://maps.google.com/?cid=10453825868657691277) |
+| Round Top | Not rated | None | [Google Maps](https://maps.google.com/?cid=10147316075158664491) |
+| Magnolia Market | 4.4 | 17618 | [Google Maps](https://maps.google.com/?cid=16747065004222489221) |
+| Cypress Falls Swimming Hole | 4.5 | 688 | [Google Maps](https://maps.google.com/?cid=7191791941533283486) |
+| Old Baldy | 4.7 | 162 | [Google Maps](https://maps.google.com/?cid=14590749476438941744) |
+| Community Pizza & Beer Garden | 4.5 | 1246 | [Google Maps](https://maps.google.com/?cid=7990139759500303077) |
+| Bob Wentz Park | 4.4 | 1295 | [Google Maps](https://maps.google.com/?cid=13461850362651257714) |
+| Hat Creek Burger Company | 4.3 | 1296 | [Google Maps](https://maps.google.com/?cid=16513722891483594358) |
+| Desnudo Coffee: East Austin | 4.8 | 938 | [Google Maps](https://maps.google.com/?cid=2122253810048959866) |
+| St. Elmo Brewing Company - Springdale | 4.7 | 148 | [Google Maps](https://maps.google.com/?cid=16187380650784585046) |
+| Texas Capitol | 4.8 | 5242 | [Google Maps](https://maps.google.com/?cid=14659031118466371641) |
+| Johnny Yurts | 4.5 | 88 | [Google Maps](https://maps.google.com/?cid=11326594915143780891) |
+| Creation Evidence Museum of Texas | 4.1 | 877 | [Google Maps](https://maps.google.com/?cid=12685788316590820717) |
+| Milk & Honey Ranch | 4.9 | 828 | [Google Maps](https://maps.google.com/?cid=6469452496155495293) |
+| Schlitterbahn Waterpark New Braunfels | 4.3 | 11091 | [Google Maps](https://maps.google.com/?cid=13256023580986040002) |
+| Rockport Beach Park | 4.7 | 4061 | [Google Maps](https://maps.google.com/?cid=15007700107399948428) |
+| Devil's Waterhole | 4.8 | 316 | [Google Maps](https://maps.google.com/?cid=5383477832267912862) |
+| Krause Springs | 4.6 | 2547 | [Google Maps](https://maps.google.com/?cid=12393089313686603575) |
+| 99 Ranch Market | 4.4 | 2881 | [Google Maps](https://maps.google.com/?cid=2780065102880022910) |
+| Garner State Park | 4.7 | 6664 | [Google Maps](https://maps.google.com/?cid=14480206865721067569) |
+| Colorado Bend State Park | 4.7 | 2565 | [Google Maps](https://maps.google.com/?cid=8041312326329082727) |
+| Longhorn Cavern State Park | 4.8 | 5875 | [Google Maps](https://maps.google.com/?cid=6653789478779606197) |
+| Typhoon Texas Waterpark Austin | 4.4 | 3778 | [Google Maps](https://maps.google.com/?cid=1219116366392261744) |
+| Bullock Museum IMAX Theatre | 4.7 | 1014 | [Google Maps](https://maps.google.com/?cid=371509525070689410) |
+| Mayfield’s Bar and Billiards | 4.4 | 49 | [Google Maps](https://maps.google.com/?cid=8375396325856752827) |
+| Moviehouse & Eatery by Cinépolis NW Austin | 4.5 | 3733 | [Google Maps](https://maps.google.com/?cid=15134382181737148122) |
+| Pease District Park | 4.8 | 3107 | [Google Maps](https://maps.google.com/?cid=18357554210300390233) |
+| Butler Metro Park | 4.7 | 3151 | [Google Maps](https://maps.google.com/?cid=9143100201009943774) |
+| Big Top Candy Shop | 4.6 | 1259 | [Google Maps](https://maps.google.com/?cid=16761310213043447169) |
+| St. Edward's Greenbelt | 4.5 | 1180 | [Google Maps](https://maps.google.com/?cid=17893416359195252509) |
+| Peter Pan Mini-Golf | 4.6 | 2899 | [Google Maps](https://maps.google.com/?cid=4546098976964668771) |
+| MT Supermarket | 4.3 | 2501 | [Google Maps](https://maps.google.com/?cid=4872708640649857694) |
+| San Marcos Premium Outlets | 4.6 | 18504 | [Google Maps](https://maps.google.com/?cid=14409278313094013202) |
+| Bull Creek District Park | 4.6 | 2324 | [Google Maps](https://maps.google.com/?cid=12266618508383607999) |
+| Parking lot | Not rated | None | [Google Maps](https://maps.google.com/?cid=13771653828917129563) |
+| East Austin | Not rated | None | [Google Maps](https://maps.google.com/?cid=13374649534452344431) |
+| Mary Elizabeth Branch Park | 4.6 | 161 | [Google Maps](https://maps.google.com/?cid=11582194214931769734) |
+| Mueller Lake Park | 4.7 | 6293 | [Google Maps](https://maps.google.com/?cid=14315970095901078493) |
+| Barton Creek Square | 4.4 | 10035 | [Google Maps](https://maps.google.com/?cid=4508505961563546767) |
+| Indigo Play | 4.5 | 916 | [Google Maps](https://maps.google.com/?cid=7342061343128761653) |
+| K1 Speed - Indoor Go Karts, Food, Games, and Things to Do In Austin | 4.0 | 3314 | [Google Maps](https://maps.google.com/?cid=16754596237518629057) |
+| Texas Roadhouse | 4.5 | 6591 | [Google Maps](https://maps.app.goo.gl/BJhpZtF6aXyz8iGx7) |
+| Nautical Boat Club | 4.9 | 147 | [Google Maps](https://maps.app.goo.gl/XsQ3LtkH9dnQUQ3DA) |

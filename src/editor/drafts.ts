@@ -190,7 +190,8 @@ export function rebase(draft: DraftGuide, base: Guide, live: Guide): DraftGuide 
       if (baseById.has(livePlace.id) && json(livePlace) === json(baseById.get(livePlace.id))) continue;
       places.push({ ...livePlace, note: '', hidden: false, isNew: !baseById.has(livePlace.id) });
     } else {
-      places.push(edited(mine) ? mine : { ...livePlace, note: mine.note, hidden: false, ...(mine.isNew ? { isNew: true } : {}) });
+      // The editor never changes Google ratings, so always take the live ones.
+      places.push(edited(mine) ? { ...mine, google: livePlace.google } : { ...livePlace, note: mine.note, hidden: false, ...(mine.isNew ? { isNew: true } : {}) });
     }
   }
   for (const mine of draft.places) {

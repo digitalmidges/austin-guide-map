@@ -2504,6 +2504,26 @@
         "creditUrl": "https://commons.wikimedia.org/wiki/File:Texas_Roadhouse_Restaurant_Building.jpg"
       },
       "google": null
+    },
+    {
+      "id": "nautical-boat-club",
+      "name": "Nautical Boat Club",
+      "category": "outdoors",
+      "area": "Lake Travis",
+      "address": "",
+      "remark": "להשכיר פה סירה באגם",
+      "top": false,
+      "lat": 30.4407946,
+      "lng": -97.9174189,
+      "mapsUrl": "https://maps.app.goo.gl/XsQ3LtkH9dnQUQ3DA",
+      "website": "https://www.nauticalboatclub.com/locations/austin-texas-lake-travis-volente",
+      "photo": {
+        "src": "images/places/nautical-boat-club.jpg",
+        "thumb": "images/thumbnails/places/nautical-boat-club.jpg",
+        "credit": "Nautical Boat Club",
+        "creditUrl": "https://www.nauticalboatclub.com/locations/austin-texas-lake-travis-lakeway"
+      },
+      "google": null
     }
   ]
 }

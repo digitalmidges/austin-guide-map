@@ -120,3 +120,4 @@ Free-licensed photos come from Wikimedia Commons, credited with their author and
 | Indigo Play | Venue's own website photo | https://indigoplay.com/ |
 | K1 Speed - Indoor Go Karts, Food, Games, and Things to Do In Austin | Venue's own website photo | https://www.k1speed.com/austin-location.html |
 | Texas Roadhouse | Rick Obst, CC BY 4.0 (free license) | https://commons.wikimedia.org/wiki/File:Texas_Roadhouse_Restaurant_Building.jpg |
+| Nautical Boat Club | Venue's own website photo | https://www.nauticalboatclub.com/locations/austin-texas-lake-travis-lakeway |
